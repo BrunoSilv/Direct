@@ -6,4 +6,4 @@
  * and open the template in the editor.
  */
 
-echo 'ola';
+echo 'ola mundo';
