@@ -2,7 +2,7 @@
 
 /**
  * php\gestor.php
- * 
+
  * @author  <author@example.org>
  * @package php
  */
@@ -21,6 +21,7 @@ require_once('./lib/nusoap.php');
  * @author  <author@example.org>
  */
 //require_once('./Condutor.php');
+
 
 /**
  * include class person
@@ -150,8 +151,7 @@ class Admin  {
         $query = "insert into user (email,token,nome) values ('" . $email . "','" . $token . "','" . $nome . "')";
         $result = mysqli_query($conn, $query);
         mysqli_close($conn);
-            return $token;
-        
+            return $token;   
     }
 
     /**
@@ -213,12 +213,13 @@ class Admin  {
      * @author <author@example.org>
      * @return int (Retorna 0 se o email e o token não coincidirem com o gestor e 1 se coincidir)
      */
-    public static function validate($token,$email){
-        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
-        if($conn==0){
-            die ("falha na conexão à BD");
-        }
-
+    private static function validate($token,$email){
+//        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
+//        if($conn==0){
+//            die ("falha na conexão à BD");
+//        }
+        
+        $conn = Admin::connection();
         $query =  "select token from gestor where email='" . $email . "';";
         $result = mysqli_fetch_assoc(mysqli_query($conn, $query));
         mysqli_close($conn);
@@ -253,6 +254,22 @@ class Admin  {
         mysqli_close($conn);
        
         return ($result[email]);
+    }
+    
+    public static function novalocal($token,$email,$id,$lat,$long){
+        
+        $s= Admin::validate($token, $email);
+        
+        if($s==$token){
+            
+            $conn= Admin::connection();
+        $query="UPDATE `dbws1`.`veiculo` SET `lat`='".$lat."', `long`='".$long."' WHERE `id`='".$id."';";
+        $result = mysqli_query($conn, $query);
+        return $result;
+        }
+        
+        return "Falhou";
+        
     }
 
     /**
@@ -408,15 +425,24 @@ class Admin  {
      * @return String
      */
     public function updateEmpresa($email, $novaEmpresa) {
-        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
-        if($conn==0){
-            die ("falha na conexão à BD");
-        }
-
+//        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
+//        if($conn==0){
+//            die ("falha na conexão à BD");
+//        }
+        $conn = Admin::connection();
         $query="UPDATE `dbws1`.`gestor` SET `empresa`='".$novaEmpresa."' WHERE `email`='".$email."';";
         $result = mysqli_query($conn, $query);
         mysqli_close($conn);
      
+    }
+    
+    public static function connection(){
+        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
+        if($conn==0){
+            die ("falha na conexão à BD");
+        }
+        return $conn;
+ 
     }
 
     /**
@@ -494,10 +520,7 @@ class Admin  {
         
         $resultado=Admin::validate($token,$email);
        if($token==$resultado){
-        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
-        if($conn==0){
-            die ("falha na conexão à BD");
-        }
+        $conn = Admin::connection();
         $query = "select * from veiculo where estado='Livre';";
         $result = mysqli_query($conn, $query);
         
@@ -515,6 +538,31 @@ class Admin  {
       
     }
     
+    public static function alterainfo($token,$email,$tabela,$campo,$valor,$id){
+        $resultado=Admin::validate($token,$email);
+        if($token==$resultado){
+        $conn= Admin::connection();
+       // $query = "UPDATE `dbws1`.`".$tabela."` SET `".$campo."`='".$value."' WHERE `id`='".$id."';";
+        //$query="select id from veiculo where nomecondutor='Pinito';";
+        $query="UPDATE `dbws1`.`".$tabela."` SET `".$campo."`='".$valor."' WHERE `id`='".$id."';";
+        $result = mysqli_query($conn, $query);
+        mysqli_close($conn);
+        
+        if($result){
+            return "Alterado com sucesso!";
+            
+        }else{
+            return "Nao alterado!";
+        }
+            
+        
+        
+        }
+        
+        return "nao validado!";
+    }
+
+
     
     public function ListAllCarsUser($lat,$long) {
         
@@ -539,6 +587,15 @@ class Admin  {
 
         mysqli_close($conn);
         return $veiculo;
+    }
+    
+    
+    public static function testeme($string){
+       //$novocondutor= new Condutor("Pedro", "galohca", "", "");
+     //  $result=$novocondutor->teste("Pedro");
+  
+        return "peedrito";
+        
     }
     
     
@@ -573,6 +630,9 @@ $ws->registerMethod('Admin.registarUser');
 $ws->registerMethod('Admin.listAllCars');
 $ws->registerMethod('Admin.validateUser');
 $ws->registerMethod('Admin.ListAllCarsUser');
+$ws->registerMethod('Admin.testeme');
+$ws->registerMethod('Admin.novalocal');
+$ws->registerMethod('Admin.alterainfo');
 
 
 
@@ -584,7 +644,7 @@ $ws->server->wsdl->addComplexType('query', 'complexType', 'array', 'sequence', '
 //register webservice documentation
 $ws->server->register('Admin.registar', // method name
     array('nome' => 'xsd:string', 'email'=> 'xsd:string'), // input parameters
-    array('result' => 'xsd:integer'), // output parameters
+    array('result' => 'xsd:string'), // output parameters
     'urn:projectWS1', // namespace
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
@@ -726,6 +786,16 @@ $ws->server->register('Admin.regista_veiculo', // method name
     'regista um novo veiculo'            // documentation
 );
 
+$ws->server->register('Admin.testeme', // method name
+    array('string'=>'xsd:string'), // input parameters
+    array('return' => 'xsd:string'), // output parameters
+    'urn:projectWS1', // namespace
+    'urn:projectWS1wsdl#getUserQuery', // soapaction
+    'rpc', // style
+    'encoded', // use
+    'regista um novo veiculo'            // documentation
+);
+
 $ws->server->register('Admin.reserva_veiculo', // method name
     array('email' => 'xsd:string', 'matricula' => 'xsd:string','destino' => 'xsd:string'), // input parameters
     array('return' => 'xsd:string'), // output parameters
@@ -735,6 +805,28 @@ $ws->server->register('Admin.reserva_veiculo', // method name
     'encoded', // use
     'reserva um veiculo para uma nova viagem'            // documentation
 );
+
+$ws->server->register('Admin.novalocal', // method name
+    array('token'=>'xsd:string','email'=>'xsd:string','id' => 'xsd:string', 'lat' => 'xsd:string','long' => 'xsd:string'), // input parameters
+    array('return' => 'xsd:string'), // output parameters
+    'urn:projectWS1', // namespace
+    'urn:projectWS1wsdl#getUserQuery', // soapaction
+    'rpc', // style
+    'encoded', // use
+    'reserva um veiculo para uma nova viagem'            // documentation
+);
+
+$ws->server->register('Admin.alterainfo', // method name
+    array('token'=>'xsd:string','email'=>'xsd:string','tabela' => 'xsd:string','campo' => 'xsd:string', 'valor' => 'xsd:string','id' => 'xsd:string'), // input parameters
+    array('return' => 'xsd:string'), // output parameters
+    'urn:projectWS1', // namespace
+    'urn:projectWS1wsdl#getUserQuery', // soapaction
+    'rpc', // style
+    'encoded', // use
+    'reserva um veiculo para uma nova viagem'            // documentation
+);
+
+
 $ws->processRequest();
 
 /* end of class gestor */

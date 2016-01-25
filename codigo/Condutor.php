@@ -129,6 +129,11 @@ class Condutor
         }
         
     }
+    
+    
+    public static function teste($name){
+        return "Ola";
+    }
 
     /**
      * Short description of method registar
