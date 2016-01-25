@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-
-
-
+<form action="view1.php" method="get">
+Token Validator: <input type="token" name="token_admin" value=<?php echo $_GET["token_admin"] ?> >
+Email Validator: <input type="email" name="email_admin" value=<?php echo $_GET["email"] ?> >
 </body>
 </html>
 <?php
@@ -12,12 +11,18 @@
 require_once "../lib/nusoap.php";
 
 // Create the client instance
-$client = new nusoap_client("http://192.168.24.128/w4/server.php");
+$client = new nusoap_client("http://192.168.24.128/projeto/Admin.php");
 
-$vard=$_GET["numero1"];
-$varf=$_GET["numero2"];
-$num=$_GET["operacao"];
+$token=$_GET["token_admin"];
+$email=$_GET["email_admin"];
 
+if($token){
+    echo "Este e o seu token ".$token;    
+    echo "Este e o seu email ".$email;
+}
+
+
+//$result1= $client->call('Admin.registar',array('token_admin'=>$token,'email_admin'=>$email));
 
 
 
@@ -47,7 +52,7 @@ if ($err) {
 ?>
 <h1>Inserir</h1>
 <p>registar_condutor()</p>
-<form action="index.php" method="get">
+<form action="view1.php" method="get">
 Id: <input type="id" name="id_condutor" value=<?php echo $_GET["id_condutor"] ?> >
 Email: <input type="email" name="email_condutor" value=<?php echo $_GET["email_condutor"] ?> >
 Nome: <input type="nome" name="nome_condutor" value=<?php echo $_GET["nome_condutor"] ?> >
@@ -64,7 +69,7 @@ Carta: <input type="carta" name="carta_condutor" value=<?php echo $_GET["carta_c
 <br>
 
 <p>registar_veiculo()</p>
-<form action="index.php" method="get">
+<form action="view1.php" method="get">
 Id: <input type="id" name="id_veiculo" value=<?php echo $_GET["id_veiculo"] ?> >
 Matricula: <input type="matricula" name="matricula_veiculo" value=<?php echo $_GET["matricula_veiculo"] ?> >
 Marca: <input type="marca" name="marca_veiculo" value=<?php echo $_GET["marca_veiculo"] ?> >
@@ -78,7 +83,7 @@ Estado: <input type="boolean" name="estado_veiculo" value=<?php echo $_GET["esta
 <br>
 
 <p>registar_viagem()</p>
-<form action="index.php" method="get">
+<form action="view1.php" method="get">
 Id: <input type="id" name="id_viagem" value=<?php echo $_GET["id_viagem"] ?> >
 Data: <input type="date" name="matricula_veiculo" value=<?php echo $_GET["data_viagem"] ?> >
 Id_condutor: <input type="id" name="marca_veiculo" value=<?php echo $_GET["id_condutor"] ?> >
@@ -92,23 +97,15 @@ Destino: <input type="longitude" name="long_veiculo" value=<?php echo $_GET["des
 
 <h1>Consultar</h1>
 <p>consultar_condutor()</p>
-<form action="index.php" method="get">
+<form action="view1.php" method="get">
 Id: <input type="id" name="id_condutor" value=<?php echo $_GET["id_condutor"] ?> >
 <input type="submit"> <?php echo $result1;?>
 <br>
 <br>
 
 <p>consultar_veiculo()</p>
-<form action="index.php" method="get">
+<form action="view1.php" method="get">
 Id: <input type="id" name="id_veiculo" value=<?php echo $_GET["id_veiculo"] ?> >
-<input type="submit"> <?php echo $result1;?>
-</form>
-<br>
-<br>
-
-<p>consultar_viagem()</p>
-<form action="index.php" method="get">
-Id: <input type="id" name="id_viagem" value=<?php echo $_GET["id_viagem"] ?> >
 <input type="submit"> <?php echo $result1;?>
 </form>
 <br>
