@@ -24,7 +24,7 @@ if (0 > version_compare(PHP_VERSION, '5')) {
  *
  * @author firstname and lastname of author, <author@example.org>
  */
-require_once('class.Pessoa.php');
+require_once('./Pessoa.php');
 
 /**
  * include Veiculo
@@ -173,12 +173,13 @@ class Condutor
      * @param  gestor_id
      * @return void
      */
-    public function __construct($nome, $apelido, $email, $turno)
+    public function __construct($nome, $apelido)
     {
-        $this->nome = $nome;
-        $this->apelido= $apelido;
-        $this->email = $email;
-        $this->turno=$turno;
+        parent::__construct($nome, $apelido);
+//        $this->nome = $nome;
+//        $this->apelido= $apelido;
+//        $this->email = $email;
+//        $this->turno=$turno;
     }
 
     /**
@@ -195,5 +196,9 @@ class Condutor
     }
 
 }/* end of class Condutor */
+
+//echo 'teste';
+//$cond=new Condutor("teste","teste");
+//var_dump($cond);
 
 ?>

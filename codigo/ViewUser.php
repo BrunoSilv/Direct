@@ -65,13 +65,6 @@ $num=$_GET["operacaox"];
 	     $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$localuser."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
 	     $contents=file_get_contents($url);
 	     $results=json_decode($contents);
-             echo "<pre>";
-//             foreach($results as $key=>$value){
-//                 var_dump($value);
-//                 foreach($value as $key1=>$value1){
-//                   var_dump($value1);  
-//                 }
-//             }
               var_dump($results->results[0]->geometry->location->lat);
              var_dump($results->results[0]->geometry->location->lng); 
              
@@ -146,8 +139,8 @@ $num=$_GET["operacaox"];
 ?>
 
 Local:<input type="text" name="localuser" value=<?php echo $_GET["localuser"] ?> >
-Lat:<input type="text" name="latuser" value=<?php echo $_GET["localuser"] ?>>;
-Long:<input type="text" name="longuser" value=<?php echo $_GET["localuser"] ?>>;
+Lat:<input type="text" name="latuser" value=<?php echo $_GET["latuser"] ?>>;
+Long:<input type="text" name="longuser" value=<?php echo $_GET["longuser"] ?>>;
 
 
 <br></br>

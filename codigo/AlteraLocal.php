@@ -6,6 +6,7 @@
                         IdCarro: <input type="id" name="id" value=<?php echo $_GET["id"] ?> >
                         Lat: <input type="lat" name="lat" value=<?php echo $_GET["lat"] ?> >
                         Long: <input type="long" name="long" value=<?php echo $_GET["long"] ?> >
+                        Local: <input type="local" name="local" value=<?php echo $_GET["local"] ?> >
                         <input type="submit"> 
                         <br>
                         <br>
@@ -31,7 +32,9 @@ require_once "../lib/nusoap.php";
     $id= $_GET["id"];
                         $lat=$_GET["lat"];
                         $long=$_GET["long"];
-                        $resultcarro = $client->call('Admin.novalocal', array('token'=>$token,'email'=>$email,'id' => $id, 'lat' => $lat, 'long' => $long));
+                        $local=$_GET["local"];
+                        echo $local;
+                        $resultcarro = $client->call('Admin.novalocal', array('token'=>$token,'email'=>$email,'id' => $id, 'lat' => $lat, 'long' => $long,'local' => $local));
                        echo "<br></br>";
                        print_r($resultcarro);
                        

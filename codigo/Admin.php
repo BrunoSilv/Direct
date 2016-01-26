@@ -175,7 +175,7 @@ class Admin  {
         $horastrabalho=0;
         $query = "insert into condutor (nome,apelido,horas_trabalho,turno,email) values ('" . $nomecondutor . "','" . $apelido . "','" . $horastrabalho . "','" . $turno . "','".$email."');";
         //$result = mysqli_fetch_assoc(mysqli_query($conn, $query));
-       $query="INSERT INTO `dbws1`.`condutor` (`nome`, `apelido`, `horas_trabalho`, `turno`, `email`) VALUES ('".$nomecondutor."', '".$apelido."', '".$horastrabalho."', '".$tipocarta."', '".$emailcondutor."');";
+       $query="INSERT INTO `dbws1`.`condutor` (`nome`, `apelido`, `horas_trabalho`, `turno`, `email`) VALUES ('".$nomecondutor."', '".$apelido."', '".$horastrabalho."', '".$turno."', '".$emailcondutor."');";
        $result=mysqli_query($conn, $query);
          if ($result) {
             return "Registou";
@@ -231,16 +231,17 @@ class Admin  {
         
     }
     
-    public static function validateUser($email){
-        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
-        if($conn==0){
-            die ("falha na conexão à BD");
-        }
-
+    private static function validateUser($email,$token){
+        $conn = Admin::connection();
+        
         $query =  "select token from user where email='" . $email . "';";
         $result = mysqli_fetch_assoc(mysqli_query($conn, $query));
         mysqli_close($conn);
-        return ($result[token]);
+         if($token==$result[token]){
+            return $token;
+        }else{
+            return "Nao validou";
+        }
     }
     
     public static function testa($nome){
@@ -256,20 +257,23 @@ class Admin  {
         return ($result[email]);
     }
     
-    public static function novalocal($token,$email,$id,$lat,$long){
+    public static function novalocal($token,$email,$id,$lat,$long,$local){
         
-        $s= Admin::validate($token, $email);
+        $s=Admin::validate($token, $email);
         
         if($s==$token){
             
-            $conn= Admin::connection();
-        $query="UPDATE `dbws1`.`veiculo` SET `lat`='".$lat."', `long`='".$long."' WHERE `id`='".$id."';";
+            $conn=Admin::connection();
+            $query="UPDATE `dbws1`.`veiculo` SET `localidade`='".$local."', `lat`='".$lat."', `long`='".$long."' WHERE `id`='".$id."';";
         $result = mysqli_query($conn, $query);
-        return $result;
+        if($result){
+        return "Alterado com sucesso!";
+        }else{
+            return "Falhou";
         }
+       
         
-        return "Falhou";
-        
+    }
     }
 
     /**
@@ -358,23 +362,97 @@ class Admin  {
      * @author  <author@example.org>
      * @return String
      */
-    public static function reserva_veiculo($email,$matricula,$destino) {
-        $estado='Pendente';
-        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
-        if($conn==0){
-            die ("falha na conexão à BD");
-        }
-        $query = "INSERT INTO `dbws1`.`viagem` (`matricula`, `data`, `destino`, `estado`) VALUES ('".$matricula."', '".$date."', '".$destino."', 'Pendente');";
-        $result = mysqli_query($conn, $query);
-        mysqli_close($conn);
-        
-        $result1="A sua viagem está pendente, faça pagamento!";
-       
-        return ($result1);
-        
-        
-        
+    public static function reserva_viagem($email,$token,$id,$locali,$localfin){
+//        echo "teste1";
+        $valida=Admin::validateUser($email,$token);
+        if($valida==$token){
+            $conn=Admin::connection();
+            $queryteste="select estado from veiculo where id=".$id.";";
+            $estcarroatual= mysqli_fetch_assoc(mysqli_query($conn,$queryteste));
+            
+           // echo $estcarroatual[estado];
+            
+            if($estcarroatual[estado]=="Livre"){
+                
+            
+            
+//         echo "Sua token".$valida;
+            
+            
+            $query1="select matricula from veiculo where id='".$id."';";
+//            echo $query1;
+            $result= mysqli_fetch_assoc(mysqli_query($conn,$query1));
+            $matricula=$result[matricula];
+//            echo $matricula;
+            $query2="select nomecondutor from veiculo where id='".$id."' ";
+//            echo $query2;
+            $result3= mysqli_fetch_assoc(mysqli_query($conn,$query2));
+            $nomecondutor=$result3[nomecondutor];
+//            echo $nomecondutor;
+//            echo $localfin;
+//            echo $locali;
+//            echo $id;
+            $estado='Pendente';
+            $preco= Admin::calculapreco($locali,$localfin);
+//            echo "<br>";
+//            echo $preco;
+//            echo "<br>";
+                $result = "";
+    $chars = "abcdefghijklmnopqrstuvwxyz$_?!-0123456789";
+    $charArray = str_split($chars);
+    for($i = 0; $i < 10; $i++){
+	    $randItem = array_rand($charArray);
+	    $resultrand .= "".$charArray[$randItem];
     }
+   
+    
+    
+            $result = mysqli_query($conn, $query);
+            $query= "INSERT INTO `dbws1`.`viagem` (`matricula`, `nomecondutor`, `ini`, `fim`, `user`, `estado`, `preco`,`token`) VALUES ('".$matricula."', '".$nomecondutor."', '".$locali."', '".$localfin."', '".$email."', '".$estado."', '".$preco."', '".$resultrand."');";
+            
+        $result = mysqli_query($conn, $query);
+        
+        $atualizaestadocondutor= "UPDATE `dbws1`.`veiculo` SET `estado`='Ocupado' WHERE `id`='".$id."';";
+        $resultestado = mysqli_query($conn, $atualizaestadocondutor);
+        
+        $ultima="select preco from viagem where token='".$resultrand."';";
+        $retu = mysqli_fetch_assoc(mysqli_query($conn, $ultima));
+ 
+       mysqli_close($conn);
+        return $resultrand;
+        }
+        }
+        if($estcarroatual[estado]=='Ocupado'){
+        
+            return "OCUPADO!!!";
+        }
+        
+       
+        return "nao validou";
+    }
+    
+     public static function calculapreco($locali,$localfin){
+         
+         $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$locali."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
+	     $contents=file_get_contents($url);
+	     $results=json_decode($contents);
+           
+             $lati=$results->results[0]->geometry->location->lat;
+             
+             
+             $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$localfin."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
+	     $contents=file_get_contents($url);
+	     $results=json_decode($contents);
+          $latf=$results->results[0]->geometry->location->lat;
+              
+          $lat=$lati-$latf;
+          if($lat>0){
+              return $lat*10;
+          }else{
+              return -($lat*10);
+          }
+         
+     }
 
     /**
      * method registar_veiculo: regista um novo veiculo
@@ -392,17 +470,25 @@ class Admin  {
         }else{
             return 'veiculo nao pode ser registado';
         }*/
-        $idcc=25;
-        $nomecondutor= Admin::findNameCondutor($idcc);
+        //$idcc=64;
+        $autent=Admin::validate($token, $email);
+        if($autent==$token){
+        $nomecondutor= Admin::findNameCondutor($idc);
          $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
         if($conn==0){
             die ("falha na conexão à BD");
         }
         
         $query ="INSERT INTO `dbws1`.`veiculo` (`nomecondutor`, `localidade`, `estado`, `matricula`, `lat`, `long`, `capacidade`,`img`) VALUES ('" . $nomecondutor . "', '" . $local . "', '" . $estado . "', '" . $matricula . "', '" . $lat . "', '" . $long . "', '" . $cap . "', '" . $img . "');";
-        $result = mysqli_fetch_assoc(mysqli_query($conn, $query));
-        
-        return "teste";  
+        $result = mysqli_query($conn, $query);
+        if($result){
+            
+            return "Registado com sucesso";
+        }else {
+            return "Sem sucesso!";
+        }
+        }
+          
     }
     
       public static function findNameCondutor($idc){
@@ -521,14 +607,13 @@ class Admin  {
         $resultado=Admin::validate($token,$email);
        if($token==$resultado){
         $conn = Admin::connection();
-        $query = "select * from veiculo where estado='Livre';";
+        $query = "select * from veiculo;";
         $result = mysqli_query($conn, $query);
         
         while ($row = mysqli_fetch_assoc($result)) {
             //$veiculos[]=array('idveiculo'=> $row['idveiculo'], 'matricula' =>$row['matricula'], 'marca'=>$row['marca'],'capacidade'=>$row['capacidade'],'kms'=>$row['kms']);
             $veiculo[] = array('id' => $row['id'], 'nomecondutor' => $row['nomecondutor'], 'localidade' => $row['localidade'], 'estado' => $row['estado'], 'matricula' => $row['matricula'], 'lat' => $row['lat'], 'long' => $row['long'], 'capacidade' => $row['capacidade'],'img'=> $row['img']);
         }
-
         mysqli_close($conn);
         return $veiculo;
        }
@@ -570,14 +655,28 @@ class Admin  {
         if($conn==0){
             die ("falha na conexão à BD");
         }
-        $var=5.0;
+        $var=1.2;
         $latsuperior=$lat+$var;
         $latinferior=$lat-$var;
-        $lonsuperior=$lon+$var;
-        $loninferior=$lon-$var;
+        $lonsuperior=$long+$var;
+        $loninferior=$long-$var;
         
+//        echo $lat;
+//        echo "<br>";
+//        echo $long;
+//        echo "<br>";
+//        echo $latsuperior;
+//        echo "<br>";
+//        echo $latinferior;
+//        echo "<br>";
+//        echo $lonsuperior;
+//        echo "<br>";
+//        echo $loninferior;
+//        echo "<br>";
+//        echo $var;
         
-        $query = "select * from veiculo where estado='Livre' and lat<'".$latsuperior."' and lat>'".$latinferior."' and long<'".$lonsuperior."' and long>'".$loninferior."' ;";
+        $query = "select * from veiculo where estado='Ocupado' and lat<'".$latsuperior."' and lat>'".$latinferior."' and veiculo.long<'".$lonsuperior."' and veiculo.long>'".$loninferior."' ;";
+//        echo $query;
         $result = mysqli_query($conn, $query);
         
         while ($row = mysqli_fetch_assoc($result)) {
@@ -591,8 +690,8 @@ class Admin  {
     
     
     public static function testeme($string){
-       //$novocondutor= new Condutor("Pedro", "galohca", "", "");
-     //  $result=$novocondutor->teste("Pedro");
+       $novocondutor= new Condutor("Pedro", "galohca", "", "");
+      $result=$novocondutor->teste("Pedro");
   
         return "peedrito";
         
@@ -625,7 +724,7 @@ $ws->registerMethod('Admin.getGestorByEmail');
 $ws->registerMethod('Admin.listAll');
 $ws->registerMethod('Admin.get_email');
 $ws->registerMethod('Admin.regista_veiculo');
-$ws->registerMethod('Admin.reserva_veiculo');
+$ws->registerMethod('Admin.reserva_viagem');
 $ws->registerMethod('Admin.registarUser');
 $ws->registerMethod('Admin.listAllCars');
 $ws->registerMethod('Admin.validateUser');
@@ -796,8 +895,8 @@ $ws->server->register('Admin.testeme', // method name
     'regista um novo veiculo'            // documentation
 );
 
-$ws->server->register('Admin.reserva_veiculo', // method name
-    array('email' => 'xsd:string', 'matricula' => 'xsd:string','destino' => 'xsd:string'), // input parameters
+$ws->server->register('Admin.reserva_viagem', // method name
+    array('email' => 'xsd:string','token' => 'xsd:string', 'id' => 'xsd:string','locali' => 'xsd:string','localf' => 'xsd:string',), // input parameters
     array('return' => 'xsd:string'), // output parameters
     'urn:projectWS1', // namespace
     'urn:projectWS1wsdl#getUserQuery', // soapaction
@@ -807,7 +906,7 @@ $ws->server->register('Admin.reserva_veiculo', // method name
 );
 
 $ws->server->register('Admin.novalocal', // method name
-    array('token'=>'xsd:string','email'=>'xsd:string','id' => 'xsd:string', 'lat' => 'xsd:string','long' => 'xsd:string'), // input parameters
+    array('token'=>'xsd:string','email'=>'xsd:string','id' => 'xsd:string', 'lat' => 'xsd:string','long' => 'xsd:string','local' => 'xsd:string'), // input parameters
     array('return' => 'xsd:string'), // output parameters
     'urn:projectWS1', // namespace
     'urn:projectWS1wsdl#getUserQuery', // soapaction
@@ -831,7 +930,12 @@ $ws->processRequest();
 
 /* end of class gestor */
 //echo 'teste';
-//$result=$ws->listAllCars();
+//$result=$ws->ListAllCarsUser(40.0,-8.0);
+//echo "<pre>";
 //var_dump($result);
+//echo "</pre>";
 
+//$result=$ws->reserva_viagem("pg@gmail.com","4d6b69d312979e68b44df235d837997494eaaa26", "49", "Porto", "Lisboa");
+//
+//echo "teste";
 ?>

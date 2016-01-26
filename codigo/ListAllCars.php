@@ -1,5 +1,5 @@
 
-<h1>Listar Todos os Carros Livres da Base de dados</h1>
+<h1>Listar Todos os Carros da Base de dados</h1>
                     <p>ListAllCars()</p>
                     <form action="ListAllCars.php" method="get">
                         Email: <input type="email" name="email" value=<?php echo $_GET["email"] ?> >
@@ -23,13 +23,20 @@ $token = $_GET["token"];
 //$teste= $client->call('Admin.validate', array('token' => $token, 'email' => $email));
 //echo $teste;
 
-if($token!=""){
-$results = $client->call('Admin.listAllCars', array('token' => $token, 'email' => $email));
+if(isset($token)){
+
+$result = $result=$client->call('Admin.listAllCars',array('token' => $token, 'email' => $email));
 echo "<pre>";
-print_r(($results));
+print_r($result);
 echo "</pre>";
     
 }
+ $err = $client->getError();
+            if ($err) {
+                // Display the error
+               echo '<h2>Constructor error</h2><pre>' . $err . '</pre>';
+               // At this point, you know the call that follows will fail
+           }
 
 ?>
 

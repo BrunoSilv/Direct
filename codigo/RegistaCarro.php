@@ -5,12 +5,10 @@
                     <p>registar_carro()</p>
                     <form action="RegistaCarro.php" method="get">
                         Matricula: <input type="matricula" name="matricula" value=<?php echo $_GET["matricula"] ?> >
-                        idCondutor: <input type="nomec" name="nomec" value=<?php echo $_GET["nomec"] ?> >
+                        idCondutor: <input type="id" name="id" value=<?php echo $_GET["id"] ?> >
                         estado:<input type="estado" name="estado" value=<?php echo $_GET["estado"] ?>>
                         localizaçao: <input type="local" name="local" value=<?php echo $_GET["local"] ?> >
                         capacidade: <input type="cap" name="cap" value=<?php echo $_GET["cap"] ?> >
-                        lat: <input type="lat" name="lat" value=<?php echo $_GET["lat"] ?> >
-                        long: <input type="long" name="long" value=<?php echo $_GET["long"] ?> >
                         linkimg: <input type="img" name="img" value=<?php echo $_GET["img"] ?> >
                         <input type="submit"> 
                         <br>
@@ -30,21 +28,29 @@ require_once "../lib/nusoap.php";
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
- $id=13;
- $result = $client->call('Admin.findNameCondutor',array('id'=>$id));
- print_r($result);
+// $id=24;
+// $result = $client->call('Admin.findNameCondutor',array('id'=>$id));
+// print_r($result);
  
  if(isset($token)){
+     $local = $_GET["local"];
+             $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$local."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
+	     $contents=file_get_contents($url);
+	     $results=json_decode($contents);
+//              var_dump($results->results[0]->geometry->location->lat);
+//             var_dump($results->results[0]->geometry->location->lng); 
+             
+             $latuserapi=$results->results[0]->geometry->location->lat;
+             $longuserapi=$results->results[0]->geometry->location->lng;
      
                         $matricula = $_GET["matricula"];
-                        $nomecondutor = $_GET["nomec"];
                         $estado = $_GET["estado"];
                         $local = $_GET["local"];
-                       $lat = $_GET["lat"];
-                       $long = $_GET["long"];
+                       
                         $cap = $_GET["cap"];
                        $img= $_GET["img"];
-                        $resultcarro = $client->call('Admin.regista_veiculo', array('token'=>$token,'email'=>$email,'matricula' => $matricula, 'nomecondutor' => $nomecondutor, 'estado' => $estado, 'local' => $local, 'lat' => $lat, 'long' => $long, 'cap' => $cap,'img'=>$img));
+                       $id= $_GET["id"];
+                        $resultcarro = $client->call('Admin.regista_veiculo', array('token'=>$token,'email'=>$email,'matricula' => $matricula, 'id' => $id, 'estado' => $estado, 'local' => $local, 'lat' => $latuserapi, 'long' => $longuserapi, 'cap' => $cap,'img'=>$img));
                        echo "<br></br>";
                        print_r($resultcarro);
                        

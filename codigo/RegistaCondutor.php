@@ -32,10 +32,10 @@
                         $nomecondutor = $_GET["nomecondutor"];
                         $apelidocondutor = $_GET["apelidocondutor"];
                         $horario = $_GET["horariocondutor"];
-                        $cartavalidade = $_GET["cartacondutor"];
+                        
                         $horario = $_GET["horario"];
                         $emailcondutor = $_GET["emailcondutor"];
-                        $resultcondutor = $client->call('Admin.regista_condutor', array('token'=>$token,'email'=>$email,'emailcondutor'=>$emailcondutor,'nomecondutor' => $nomecondutor, 'apelidocondutor' => $apelidocondutor, 'validade' => $cartavalidade,'horario' => $horario));
+                        $resultcondutor = $client->call('Admin.regista_condutor', array('token'=>$token,'email'=>$email,'emailcondutor'=>$emailcondutor,'nomecondutor' => $nomecondutor, 'apelidocondutor' => $apelidocondutor,'horario' => $horario));
                         echo "<br></br>";
                         echo $resultcondutor;
                         echo "<br></br>";

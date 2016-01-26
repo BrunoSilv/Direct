@@ -4,7 +4,8 @@
     <body>
       <h1>MENU()</h1>  
       <form action="MenuUser.php" method="get">
-            <a href=ListAllCars.php>ListAllCars.php</a>
+          <a href=UserSearch.php.php>Pesquisar()</a>
+            <a href=RegistarUser.php>Registar()</a>
             <br></br>
 
 <?php

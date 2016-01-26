@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <body>
-      <h1>MENU()</h1>  
+      <h1>MENU ADMIN()</h1>  
         <form action="TesteAdmin.php" method="get">
             <a href=ListAllCars.php>ListAllCars.php</a>
             <br></br>
