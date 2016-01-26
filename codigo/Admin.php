@@ -602,6 +602,24 @@ class Admin  {
         return $gestor;
     }
     
+     public function PagaUser($email,$token,$tokenvi) {
+         $resultado=Admin::validateUser($email,$token);
+         if($token==$resultado){
+             $conn = Admin::connection();
+             $query="UPDATE `dbws1`.`viagem` SET `estado`='Pago' WHERE `token`='".$tokenvi."';";
+             $result1 = mysqli_query($conn, $query);
+             if($result1){
+                 return "Pago com sucesso!";
+             }else{
+                 return "Sem Sucesso!";
+             }
+                       
+         }
+         return "Sem Sucesso!!!!";
+     }
+    
+    
+    
     public function listAllCars($token,$email) {
         
         $resultado=Admin::validate($token,$email);
@@ -688,6 +706,26 @@ class Admin  {
         return $veiculo;
     }
     
+    public function HistoricUser($email,$token){
+      
+        $resultado = Admin::validateUser($email, $token);
+        if($token==$resultado){
+            $conn= Admin::connection();
+            $query ="select * from viagem where user='".$email."';";
+            
+            $result = mysqli_query($conn, $query);
+            while ($row = mysqli_fetch_assoc($result)) {
+            $veiculo[] = array('id' => $row['id'], 'matricula' => $row['matricula'], 'nomecondutor' => $row['nomecondutor'], 'ini' => $row['ini'], 'fim' => $row['fim'], 'user' => $row['user'], 'estado' => $row['estado'], 'preco' => $row['preco'], 'token' => $row['token']); 
+            }
+            
+             mysqli_close($conn);
+       
+            return $veiculo;
+        }
+        return "Nao validou";
+    }
+
+
     
     public static function testeme($string){
        $novocondutor= new Condutor("Pedro", "galohca", "", "");
@@ -732,6 +770,8 @@ $ws->registerMethod('Admin.ListAllCarsUser');
 $ws->registerMethod('Admin.testeme');
 $ws->registerMethod('Admin.novalocal');
 $ws->registerMethod('Admin.alterainfo');
+$ws->registerMethod('Admin.PagaUser');
+$ws->registerMethod('Admin.HistoricUser');
 
 
 
@@ -926,16 +966,29 @@ $ws->server->register('Admin.alterainfo', // method name
 );
 
 
+$ws->server->register('Admin.PagaUser', // method name
+    array('email' => 'xsd:string', 'token' => 'xsd:string','tokenvi' => 'xsd:string'), // input parameters
+    array('return' => 'xsd:string'), // output parameters
+    'urn:projectWS1', // namespace
+    'urn:projectWS1wsdl#getUserQuery', // soapaction
+    'rpc', // style
+    'encoded', // use
+    'muda o estado da viagem para pago'            // documentation
+);
+
+$ws->server->register('Admin.HistoricUser', // method name
+    array('email' => 'xsd:string', 'token' => 'xsd:string'), // input parameters
+    array('return' => 'tns:query'), // output parameters
+    'urn:projectWS1', // namespace
+    'urn:projectWS1wsdl#getUserQuery', // soapaction
+    'rpc', // style
+    'encoded', // use
+    'muda o estado da viagem para pago'            // documentation
+);
+
+
 $ws->processRequest();
 
 /* end of class gestor */
-//echo 'teste';
-//$result=$ws->ListAllCarsUser(40.0,-8.0);
-//echo "<pre>";
-//var_dump($result);
-//echo "</pre>";
 
-//$result=$ws->reserva_viagem("pg@gmail.com","4d6b69d312979e68b44df235d837997494eaaa26", "49", "Porto", "Lisboa");
-//
-//echo "teste";
 ?>

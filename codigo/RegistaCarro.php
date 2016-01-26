@@ -23,22 +23,14 @@ require_once "../lib/nusoap.php";
  
  $token=$_GET["token"];
  $email=$_GET["email"];
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-// $id=24;
-// $result = $client->call('Admin.findNameCondutor',array('id'=>$id));
-// print_r($result);
+
  
  if(isset($token)){
      $local = $_GET["local"];
              $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$local."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
 	     $contents=file_get_contents($url);
 	     $results=json_decode($contents);
-//              var_dump($results->results[0]->geometry->location->lat);
-//             var_dump($results->results[0]->geometry->location->lng); 
+
              
              $latuserapi=$results->results[0]->geometry->location->lat;
              $longuserapi=$results->results[0]->geometry->location->lng;

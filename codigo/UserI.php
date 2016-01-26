@@ -9,6 +9,9 @@
             <br></br>
              <a href=CompraUser.php>Comprar Viagem()</a>
             <br></br>
+            <a href=PagaUser.php>Pagar uma Viagem()</a>
+            <br></br>
+            <a href=HistoricoUser.php>Historico de viagens de um user()</a>
 <?php
 
              

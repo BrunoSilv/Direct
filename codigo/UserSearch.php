@@ -12,16 +12,10 @@ $localuser=$_GET["localuser"];
 	     $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$localuser."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
 	     $contents=file_get_contents($url);
 	     $results=json_decode($contents);
-             // var_dump($results->results[0]->geometry->location->lat);
-             //var_dump($results->results[0]->geometry->location->lng); 
-             
              $latuserapi=$results->results[0]->geometry->location->lat;
              $longuserapi=$results->results[0]->geometry->location->lng;
   }
   
-//   echo $latuserapi;
-//             echo $longuserapi;
-//              echo "</pre>";
               
               $result1= $client->call('Admin.ListAllCarsUser',array('latuserapi'=>$latuserapi,'longuserapi'=>$longuserapi));
                 echo "<pre>";
