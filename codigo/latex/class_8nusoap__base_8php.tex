@@ -1,0 +1,83 @@
+\hypertarget{class_8nusoap__base_8php}{}\section{lib/class.nusoap\+\_\+base.\+php File Reference}
+\label{class_8nusoap__base_8php}\index{lib/class.\+nusoap\+\_\+base.\+php@{lib/class.\+nusoap\+\_\+base.\+php}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnusoap__base}{nusoap\+\_\+base}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_8nusoap__base_8php_ae9aac88f9bf83be961dd47d1b78b90d3}{timestamp\+\_\+to\+\_\+iso8601} (\$timestamp, \$utc=true)
+\item 
+\hyperlink{class_8nusoap__base_8php_a7458f4fe2e94892e63804807994fb5b9}{iso8601\+\_\+to\+\_\+timestamp} (\$datestr)
+\item 
+\hyperlink{class_8nusoap__base_8php_a0405bf74776f57039c31a3f01fd48a29}{usleep\+Windows} (\$usec)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_8nusoap__base_8php_a8581b61f0ccce82123a43934d044f729}{\$\+G\+L\+O\+B\+A\+L\+S} \mbox{[}\textquotesingle{}\+\_\+transient\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}static\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{classnusoap__base}{nusoap\+\_\+base}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}global\+Debug\+Level\textquotesingle{}\mbox{]} = 9
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{class_8nusoap__base_8php_a7458f4fe2e94892e63804807994fb5b9}{}\index{class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}!iso8601\+\_\+to\+\_\+timestamp@{iso8601\+\_\+to\+\_\+timestamp}}
+\index{iso8601\+\_\+to\+\_\+timestamp@{iso8601\+\_\+to\+\_\+timestamp}!class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}}
+\subsubsection[{iso8601\+\_\+to\+\_\+timestamp(\$datestr)}]{\setlength{\rightskip}{0pt plus 5cm}iso8601\+\_\+to\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{}]{\$datestr}
+\end{DoxyParamCaption}
+)}\label{class_8nusoap__base_8php_a7458f4fe2e94892e63804807994fb5b9}
+convert I\+S\+O 8601 compliant date string to unix timestamp
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$datestr} & I\+S\+O 8601 compliant date string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Unix timestamp (int) or false  public 
+\end{DoxyReturn}
+\hypertarget{class_8nusoap__base_8php_ae9aac88f9bf83be961dd47d1b78b90d3}{}\index{class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}!timestamp\+\_\+to\+\_\+iso8601@{timestamp\+\_\+to\+\_\+iso8601}}
+\index{timestamp\+\_\+to\+\_\+iso8601@{timestamp\+\_\+to\+\_\+iso8601}!class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}}
+\subsubsection[{timestamp\+\_\+to\+\_\+iso8601(\$timestamp, \$utc=true)}]{\setlength{\rightskip}{0pt plus 5cm}timestamp\+\_\+to\+\_\+iso8601 (
+\begin{DoxyParamCaption}
+\item[{}]{\$timestamp, }
+\item[{}]{\$utc = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{class_8nusoap__base_8php_ae9aac88f9bf83be961dd47d1b78b90d3}
+convert unix timestamp to I\+S\+O 8601 compliant date string
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timestamp} & Unix time stamp \\
+\hline
+boolean & {\em \$utc} & Whether the time stamp is U\+T\+C or local \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed I\+S\+O 8601 date string or false  public 
+\end{DoxyReturn}
+\hypertarget{class_8nusoap__base_8php_a0405bf74776f57039c31a3f01fd48a29}{}\index{class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}!usleep\+Windows@{usleep\+Windows}}
+\index{usleep\+Windows@{usleep\+Windows}!class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}}
+\subsubsection[{usleep\+Windows(\$usec)}]{\setlength{\rightskip}{0pt plus 5cm}usleep\+Windows (
+\begin{DoxyParamCaption}
+\item[{}]{\$usec}
+\end{DoxyParamCaption}
+)}\label{class_8nusoap__base_8php_a0405bf74776f57039c31a3f01fd48a29}
+sleeps some number of microseconds
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$usec} & the number of microseconds to sleep  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000001}{Deprecated}]\end{DoxyRefDesc}
+
+
+\subsection{Variable Documentation}
+\hypertarget{class_8nusoap__base_8php_a8581b61f0ccce82123a43934d044f729}{}\index{class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}!\$\+G\+L\+O\+B\+A\+L\+S@{\$\+G\+L\+O\+B\+A\+L\+S}}
+\index{\$\+G\+L\+O\+B\+A\+L\+S@{\$\+G\+L\+O\+B\+A\+L\+S}!class.\+nusoap\+\_\+base.\+php@{class.\+nusoap\+\_\+base.\+php}}
+\subsubsection[{\$\+G\+L\+O\+B\+A\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}\$G\+L\+O\+B\+A\+L\+S\mbox{[}\textquotesingle{}\+\_\+transient\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}static\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}{\bf nusoap\+\_\+base}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}global\+Debug\+Level\textquotesingle{}\mbox{]} = 9}\label{class_8nusoap__base_8php_a8581b61f0ccce82123a43934d044f729}

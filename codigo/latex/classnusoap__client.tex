@@ -1,0 +1,1358 @@
+\hypertarget{classnusoap__client}{}\section{nusoap\+\_\+client Class Reference}
+\label{classnusoap__client}\index{nusoap\+\_\+client@{nusoap\+\_\+client}}
+Inheritance diagram for nusoap\+\_\+client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classnusoap__client}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}{nusoap\+\_\+client} (\$endpoint, \$\hyperlink{classwsdl}{wsdl}=false, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$port\+Name= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call} (\$operation, \$params=array(), \$namespace=\textquotesingle{}http\+://tempuri.\+org\textquotesingle{}, \$soap\+Action=\textquotesingle{}\textquotesingle{}, \$headers=false, \$rpc\+Params=null, \$style=\textquotesingle{}rpc\textquotesingle{}, \$use=\textquotesingle{}encoded\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_a87e102c284606feef544e3633de91d42}{check\+W\+S\+D\+L} ()
+\item 
+\hyperlink{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}{load\+W\+S\+D\+L} ()
+\item 
+\hyperlink{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}{get\+Operation\+Data} (\$operation)
+\item 
+\hyperlink{classnusoap__client_aece60a5a6bd359481071516aa7024b56}{send} (\$msg, \$soapaction= \textquotesingle{}\textquotesingle{}, \$timeout=0, \$response\+\_\+timeout=30)
+\item 
+\hyperlink{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}{parse\+Response} (\$headers, \$data)
+\item 
+\hyperlink{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{set\+Curl\+Option} (\$option, \$value)
+\item 
+\hyperlink{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}{set\+Endpoint} (\$endpoint)
+\item 
+\hyperlink{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}{set\+Headers} (\$headers)
+\item 
+\hyperlink{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers} ()
+\item 
+\hyperlink{classnusoap__client_a614834f1605e407376028e8c82298c82}{get\+Header} ()
+\item 
+\hyperlink{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}{set\+H\+T\+T\+P\+Proxy} (\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_ada213133d177c1c9c07435d65e89e735}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())
+\item 
+\hyperlink{classnusoap__client_a9528927202777242800c394fadc03191}{set\+H\+T\+T\+P\+Encoding} (\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}{set\+Use\+C\+U\+R\+L} (\$use)
+\item 
+\hyperlink{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}{use\+H\+T\+T\+P\+Persistent\+Connection} ()
+\item 
+\hyperlink{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}{get\+Default\+Rpc\+Params} ()
+\item 
+\hyperlink{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}{set\+Default\+Rpc\+Params} (\$rpc\+Params)
+\item 
+\hyperlink{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}{get\+Proxy} ()
+\item 
+\hyperlink{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}{\+\_\+get\+Proxy\+Class\+Code} (\$r)
+\item 
+\hyperlink{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}{get\+Proxy\+Class\+Code} ()
+\item 
+\hyperlink{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}{get\+H\+T\+T\+P\+Body} (\$soapmsg)
+\item 
+\hyperlink{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}{get\+H\+T\+T\+P\+Content\+Type} ()
+\item 
+\hyperlink{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}{get\+H\+T\+T\+P\+Content\+Type\+Charset} ()
+\item 
+\hyperlink{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}{decode\+U\+T\+F8} (\$bool)
+\item 
+\hyperlink{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}{set\+Cookie} (\$name, \$value)
+\item 
+\hyperlink{classnusoap__client_a374b645410526cbbb498b140242a00ba}{get\+Cookies} ()
+\item 
+\hyperlink{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}{check\+Cookies} ()
+\item 
+\hyperlink{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}{Update\+Cookies} (\$cookies)
+\item 
+\hyperlink{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}{nusoap\+\_\+client} (\$endpoint, \$\hyperlink{classwsdl}{wsdl}=false, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$port\+Name= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call} (\$operation, \$params=array(), \$namespace=\textquotesingle{}http\+://tempuri.\+org\textquotesingle{}, \$soap\+Action=\textquotesingle{}\textquotesingle{}, \$headers=false, \$rpc\+Params=null, \$style=\textquotesingle{}rpc\textquotesingle{}, \$use=\textquotesingle{}encoded\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_a87e102c284606feef544e3633de91d42}{check\+W\+S\+D\+L} ()
+\item 
+\hyperlink{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}{load\+W\+S\+D\+L} ()
+\item 
+\hyperlink{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}{get\+Operation\+Data} (\$operation)
+\item 
+\hyperlink{classnusoap__client_aece60a5a6bd359481071516aa7024b56}{send} (\$msg, \$soapaction= \textquotesingle{}\textquotesingle{}, \$timeout=0, \$response\+\_\+timeout=30)
+\item 
+\hyperlink{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}{parse\+Response} (\$headers, \$data)
+\item 
+\hyperlink{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{set\+Curl\+Option} (\$option, \$value)
+\item 
+\hyperlink{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}{set\+Endpoint} (\$endpoint)
+\item 
+\hyperlink{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}{set\+Headers} (\$headers)
+\item 
+\hyperlink{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}{get\+Headers} ()
+\item 
+\hyperlink{classnusoap__client_a614834f1605e407376028e8c82298c82}{get\+Header} ()
+\item 
+\hyperlink{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}{set\+H\+T\+T\+P\+Proxy} (\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_ada213133d177c1c9c07435d65e89e735}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())
+\item 
+\hyperlink{classnusoap__client_a9528927202777242800c394fadc03191}{set\+H\+T\+T\+P\+Encoding} (\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})
+\item 
+\hyperlink{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}{set\+Use\+C\+U\+R\+L} (\$use)
+\item 
+\hyperlink{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}{use\+H\+T\+T\+P\+Persistent\+Connection} ()
+\item 
+\hyperlink{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}{get\+Default\+Rpc\+Params} ()
+\item 
+\hyperlink{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}{set\+Default\+Rpc\+Params} (\$rpc\+Params)
+\item 
+\hyperlink{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}{get\+Proxy} ()
+\item 
+\hyperlink{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}{\+\_\+get\+Proxy\+Class\+Code} (\$r)
+\item 
+\hyperlink{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}{get\+Proxy\+Class\+Code} ()
+\item 
+\hyperlink{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}{get\+H\+T\+T\+P\+Body} (\$soapmsg)
+\item 
+\hyperlink{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}{get\+H\+T\+T\+P\+Content\+Type} ()
+\item 
+\hyperlink{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}{get\+H\+T\+T\+P\+Content\+Type\+Charset} ()
+\item 
+\hyperlink{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}{decode\+U\+T\+F8} (\$bool)
+\item 
+\hyperlink{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}{set\+Cookie} (\$name, \$value)
+\item 
+\hyperlink{classnusoap__client_a374b645410526cbbb498b140242a00ba}{get\+Cookies} ()
+\item 
+\hyperlink{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}{check\+Cookies} ()
+\item 
+\hyperlink{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}{Update\+Cookies} (\$cookies)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnusoap__client_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_ae81871b02c5845eb3a1071eb24e1f29c}{\$authtype} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_adcbe9a77644bad97ed599d1651bd2719}{\$cert\+Request} = array()
+\item 
+\hyperlink{classnusoap__client_a245d2deb868c1cc1a23b10c48c6d0754}{\$request\+Headers} = false
+\item 
+\hyperlink{classnusoap__client_a02f80cf3a7fe7cf42c97b821c167b934}{\$response\+Headers} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a0c1b0ae471226114a6ec9ef70ac5350d}{\$response\+Header} = N\+U\+L\+L
+\item 
+\hyperlink{classnusoap__client_ac5a31edb787609a3143dec9bfa8063ea}{\$document} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_afb5204f7604df2f50a0058cb0e024875}{\$endpoint}
+\item 
+\hyperlink{classnusoap__client_afdcf6cf88adc9e9f3cf412605b74ce47}{\$force\+Endpoint} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a54407bcc777ac313a172561a8ff976c6}{\$proxyhost} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_ac396538deee1152f84f9ddabac2c2366}{\$proxyport} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_aaa30711a40f8f7bae4cd7060414e0fe1}{\$proxyusername} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a98c0d3b74811ee643f7d1fce47f1b281}{\$proxypassword} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_ab68542a377115148d260f92d945c21ec}{\$port\+Name} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a1e2ee3fea6dbb8374da999a9df7d024d}{\$xml\+\_\+encoding} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a85ab29df53fb1ff64e0aecd9698b51fe}{\$http\+\_\+encoding} = false
+\item 
+\hyperlink{classnusoap__client_a84320a9bf3e591d7ae20dfcb0dfe6a0d}{\$timeout} = 0
+\item 
+\hyperlink{classnusoap__client_a17a3280264a8b9bb5ed32729d654739c}{\$response\+\_\+timeout} = 30
+\item 
+\hyperlink{classnusoap__client_a579908f25c2a105b23afaa84730b0a63}{\$endpoint\+Type} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a638b1c5f7dc55a3d0286136de6d56eab}{\$persistent\+Connection} = false
+\item 
+\hyperlink{classnusoap__client_ac78680bfe85d7e93ebe0d9260e104602}{\$default\+Rpc\+Params} = false
+\item 
+\hyperlink{classnusoap__client_abb35c8495a232b510389fa6d7b15d38a}{\$request} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_af4b6fb1bbc77ccc05f10da3b16935b99}{\$response} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_ab1e953a498fa4370be7a8806cea56031}{\$response\+Data} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_aef9f7eafd54f6e36423347bed723c67e}{\$cookies} = array()
+\item 
+\hyperlink{classnusoap__client_a15fe586a802bc22337e3fe874d6da038}{\$decode\+\_\+utf8} = true
+\item 
+\hyperlink{classnusoap__client_a3f662373ff81db09eed5649d07f1931c}{\$operations} = array()
+\item 
+\hyperlink{classnusoap__client_a6f996237d5484e4538b2adf56de893e6}{\$curl\+\_\+options} = array()
+\item 
+\hyperlink{classnusoap__client_adf5d4b85487da9bd3d51527272af5196}{\$binding\+Type} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__client_a372c0672391a16e4902e172ea3a0ae63}{\$use\+\_\+curl} = false
+\item 
+\hyperlink{classnusoap__client_a365691ed834f59a9a513180136e7a847}{\$fault}
+\item 
+\hyperlink{classnusoap__client_a07e7ee58f39f98cdd8b2bd2b40ff72d7}{\$faultcode}
+\item 
+\hyperlink{classnusoap__client_acc1a7d86f9bd39e5717add56fbcdfaaa}{\$faultstring}
+\item 
+\hyperlink{classnusoap__client_a7683364ae0ad0e22863a0f20f0626453}{\$faultdetail}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{[}nu\mbox{]}soapclient higher level class for easy usage.
+
+usage\+:
+
+// instantiate client with server info \$soapclient = new \hyperlink{classnusoap__client}{nusoap\+\_\+client( string path \mbox{[} ,mixed wsdl\mbox{]} )};
+
+// call method, get results echo \$soapclient-\/$>$call( string methodname \mbox{[} ,array parameters\mbox{]} );
+
+// bye bye client unset(\$soapclient);
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{class_8soapclient_8php}{class.\+soapclient.\+php},v 1.\+69 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public
+
+\mbox{[}nu\mbox{]}soapclient higher level class for easy usage.
+
+usage\+:
+
+// instantiate client with server info \$soapclient = new \hyperlink{classnusoap__client}{nusoap\+\_\+client( string path \mbox{[} ,mixed wsdl\mbox{]} )};
+
+// call method, get results echo \$soapclient-\/$>$call( string methodname \mbox{[} ,array parameters\mbox{]} );
+
+// bye bye client unset(\$soapclient);
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{nusoap_8php}{nusoap.\+php},v 1.\+123 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public 
+
+\subsection{Member Function Documentation}
+\hypertarget{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\+\_\+get\+Proxy\+Class\+Code@{\+\_\+get\+Proxy\+Class\+Code}}
+\index{\+\_\+get\+Proxy\+Class\+Code@{\+\_\+get\+Proxy\+Class\+Code}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\+\_\+get\+Proxy\+Class\+Code(\$r)}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+Proxy\+Class\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$r}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}
+dynamically creates proxy class code
+
+\begin{DoxyReturn}{Returns}
+string P\+H\+P/\+Nu\+S\+O\+A\+P code for the proxy class  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\+\_\+get\+Proxy\+Class\+Code@{\+\_\+get\+Proxy\+Class\+Code}}
+\index{\+\_\+get\+Proxy\+Class\+Code@{\+\_\+get\+Proxy\+Class\+Code}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\+\_\+get\+Proxy\+Class\+Code(\$r)}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+get\+Proxy\+Class\+Code (
+\begin{DoxyParamCaption}
+\item[{}]{\$r}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a2b49882c792a4deb80ec35ca75f1fee6}
+dynamically creates proxy class code
+
+\begin{DoxyReturn}{Returns}
+string P\+H\+P/\+Nu\+S\+O\+A\+P code for the proxy class  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!call@{call}}
+\index{call@{call}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{call(\$operation, \$params=array(), \$namespace=\textquotesingle{}http\+://tempuri.\+org\textquotesingle{}, \$soap\+Action=\textquotesingle{}\textquotesingle{}, \$headers=false, \$rpc\+Params=null, \$style=\textquotesingle{}rpc\textquotesingle{}, \$use=\textquotesingle{}encoded\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}call (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$params = {\ttfamily array()}, }
+\item[{}]{\$namespace = {\ttfamily \textquotesingle{}http\+://tempuri.org\textquotesingle{}}, }
+\item[{}]{\$soap\+Action = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$headers = {\ttfamily false}, }
+\item[{}]{\$rpc\+Params = {\ttfamily null}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}
+calls method, returns P\+H\+P native type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & S\+O\+A\+P server U\+R\+L or path \\
+\hline
+mixed & {\em \$params} & An array, associative or simple, of the parameters for the method call, or a string that is the X\+M\+L for the call. For rpc style, this call will wrap the X\+M\+L in a tag named after the method, as well as the S\+O\+A\+P Envelope and Body. For document style, this will only wrap with the Envelope and Body. I\+M\+P\+O\+R\+T\+A\+N\+T\+: when using an array with document style, in which case there is really one parameter, the root of the fragment used in the call, which encloses what programmers normally think of parameters. A parameter array {\itshape must} include the wrapper. \\
+\hline
+string & {\em \$namespace} & optional method namespace (W\+S\+D\+L can override) \\
+\hline
+string & {\em \$soap\+Action} & optional S\+O\+A\+P\+Action value (W\+S\+D\+L can override) \\
+\hline
+mixed & {\em \$headers} & optional string of X\+M\+L with S\+O\+A\+P header content, or array of soapval objects for S\+O\+A\+P headers, or associative array \\
+\hline
+boolean & {\em \$rpc\+Params} & optional (no longer used) \\
+\hline
+string & {\em \$style} & optional (rpc$\vert$document) the style to use when serializing parameters (W\+S\+D\+L can override) \\
+\hline
+string & {\em \$use} & optional (encoded$\vert$literal) the use when serializing parameters (W\+S\+D\+L can override) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed response from S\+O\+A\+P call, normally an associative array mirroring the structure of the X\+M\+L response, false for certain fatal errors  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!call@{call}}
+\index{call@{call}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{call(\$operation, \$params=array(), \$namespace=\textquotesingle{}http\+://tempuri.\+org\textquotesingle{}, \$soap\+Action=\textquotesingle{}\textquotesingle{}, \$headers=false, \$rpc\+Params=null, \$style=\textquotesingle{}rpc\textquotesingle{}, \$use=\textquotesingle{}encoded\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}call (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$params = {\ttfamily array()}, }
+\item[{}]{\$namespace = {\ttfamily \textquotesingle{}http\+://tempuri.org\textquotesingle{}}, }
+\item[{}]{\$soap\+Action = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$headers = {\ttfamily false}, }
+\item[{}]{\$rpc\+Params = {\ttfamily null}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}
+calls method, returns P\+H\+P native type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & S\+O\+A\+P server U\+R\+L or path \\
+\hline
+mixed & {\em \$params} & An array, associative or simple, of the parameters for the method call, or a string that is the X\+M\+L for the call. For rpc style, this call will wrap the X\+M\+L in a tag named after the method, as well as the S\+O\+A\+P Envelope and Body. For document style, this will only wrap with the Envelope and Body. I\+M\+P\+O\+R\+T\+A\+N\+T\+: when using an array with document style, in which case there is really one parameter, the root of the fragment used in the call, which encloses what programmers normally think of parameters. A parameter array {\itshape must} include the wrapper. \\
+\hline
+string & {\em \$namespace} & optional method namespace (W\+S\+D\+L can override) \\
+\hline
+string & {\em \$soap\+Action} & optional S\+O\+A\+P\+Action value (W\+S\+D\+L can override) \\
+\hline
+mixed & {\em \$headers} & optional string of X\+M\+L with S\+O\+A\+P header content, or array of soapval objects for S\+O\+A\+P headers, or associative array \\
+\hline
+boolean & {\em \$rpc\+Params} & optional (no longer used) \\
+\hline
+string & {\em \$style} & optional (rpc$\vert$document) the style to use when serializing parameters (W\+S\+D\+L can override) \\
+\hline
+string & {\em \$use} & optional (encoded$\vert$literal) the use when serializing parameters (W\+S\+D\+L can override) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed response from S\+O\+A\+P call, normally an associative array mirroring the structure of the X\+M\+L response, false for certain fatal errors  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!check\+Cookies@{check\+Cookies}}
+\index{check\+Cookies@{check\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{check\+Cookies()}]{\setlength{\rightskip}{0pt plus 5cm}check\+Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}
+checks all Cookies and delete those which are expired
+
+\begin{DoxyReturn}{Returns}
+boolean always return true  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!check\+Cookies@{check\+Cookies}}
+\index{check\+Cookies@{check\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{check\+Cookies()}]{\setlength{\rightskip}{0pt plus 5cm}check\+Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a6a8794beffec4a05daa7559ab233875e}
+checks all Cookies and delete those which are expired
+
+\begin{DoxyReturn}{Returns}
+boolean always return true  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a87e102c284606feef544e3633de91d42}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!check\+W\+S\+D\+L@{check\+W\+S\+D\+L}}
+\index{check\+W\+S\+D\+L@{check\+W\+S\+D\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{check\+W\+S\+D\+L()}]{\setlength{\rightskip}{0pt plus 5cm}check\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a87e102c284606feef544e3633de91d42}
+check W\+S\+D\+L passed as an instance or pulled from an endpoint
+
+private \hypertarget{classnusoap__client_a87e102c284606feef544e3633de91d42}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!check\+W\+S\+D\+L@{check\+W\+S\+D\+L}}
+\index{check\+W\+S\+D\+L@{check\+W\+S\+D\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{check\+W\+S\+D\+L()}]{\setlength{\rightskip}{0pt plus 5cm}check\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a87e102c284606feef544e3633de91d42}
+check W\+S\+D\+L passed as an instance or pulled from an endpoint
+
+private \hypertarget{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!decode\+U\+T\+F8@{decode\+U\+T\+F8}}
+\index{decode\+U\+T\+F8@{decode\+U\+T\+F8}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{decode\+U\+T\+F8(\$bool)}]{\setlength{\rightskip}{0pt plus 5cm}decode\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$bool}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}
+\hypertarget{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!decode\+U\+T\+F8@{decode\+U\+T\+F8}}
+\index{decode\+U\+T\+F8@{decode\+U\+T\+F8}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{decode\+U\+T\+F8(\$bool)}]{\setlength{\rightskip}{0pt plus 5cm}decode\+U\+T\+F8 (
+\begin{DoxyParamCaption}
+\item[{}]{\$bool}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a8ebcfd008049181e64a5046eb8c168b9}
+\hypertarget{classnusoap__client_a374b645410526cbbb498b140242a00ba}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Cookies@{get\+Cookies}}
+\index{get\+Cookies@{get\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Cookies()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a374b645410526cbbb498b140242a00ba}
+gets all Cookies
+
+\begin{DoxyReturn}{Returns}
+array with all internal cookies  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a374b645410526cbbb498b140242a00ba}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Cookies@{get\+Cookies}}
+\index{get\+Cookies@{get\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Cookies()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cookies (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a374b645410526cbbb498b140242a00ba}
+gets all Cookies
+
+\begin{DoxyReturn}{Returns}
+array with all internal cookies  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Default\+Rpc\+Params@{get\+Default\+Rpc\+Params}}
+\index{get\+Default\+Rpc\+Params@{get\+Default\+Rpc\+Params}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Default\+Rpc\+Params()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Rpc\+Params (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}
+gets the default R\+P\+C parameter setting. If true, default is that call params are like R\+P\+C even for document style. Each \hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call()} can override this value.
+
+This is no longer used.
+
+\begin{DoxyReturn}{Returns}
+boolean  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000008}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Default\+Rpc\+Params@{get\+Default\+Rpc\+Params}}
+\index{get\+Default\+Rpc\+Params@{get\+Default\+Rpc\+Params}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Default\+Rpc\+Params()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Default\+Rpc\+Params (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a95ae30619429aa7d1c93f21e33300419}
+gets the default R\+P\+C parameter setting. If true, default is that call params are like R\+P\+C even for document style. Each \hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call()} can override this value.
+
+This is no longer used.
+
+\begin{DoxyReturn}{Returns}
+boolean  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000025}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__client_a614834f1605e407376028e8c82298c82}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Header()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a614834f1605e407376028e8c82298c82}
+get the S\+O\+A\+P response Header (parsed)
+
+\begin{DoxyReturn}{Returns}
+mixed  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a614834f1605e407376028e8c82298c82}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Header@{get\+Header}}
+\index{get\+Header@{get\+Header}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Header()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a614834f1605e407376028e8c82298c82}
+get the S\+O\+A\+P response Header (parsed)
+
+\begin{DoxyReturn}{Returns}
+mixed  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Headers@{get\+Headers}}
+\index{get\+Headers@{get\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Headers()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}
+get the S\+O\+A\+P response headers (namespace resolution incomplete)
+
+\begin{DoxyReturn}{Returns}
+string  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Headers@{get\+Headers}}
+\index{get\+Headers@{get\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Headers()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a157e0005d82edaa21cbea07fdc5c62da}
+get the S\+O\+A\+P response headers (namespace resolution incomplete)
+
+\begin{DoxyReturn}{Returns}
+string  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}}
+\index{get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Body(\$soapmsg)}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Body (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapmsg}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}
+gets the H\+T\+T\+P body for the current request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapmsg} & The S\+O\+A\+P payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The H\+T\+T\+P body, which includes the S\+O\+A\+P payload  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}}
+\index{get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Body(\$soapmsg)}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Body (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapmsg}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ab1e22b0858bdbe61d2d711ff442c0e78}
+gets the H\+T\+T\+P body for the current request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapmsg} & The S\+O\+A\+P payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The H\+T\+T\+P body, which includes the S\+O\+A\+P payload  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}}
+\index{get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}
+gets the H\+T\+T\+P content type for the current request.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type for the current request.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}}
+\index{get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a2bed19ef2d537dee244535339cd6026a}
+gets the H\+T\+T\+P content type for the current request.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type for the current request.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}}
+\index{get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type\+Charset()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type\+Charset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}
+gets the H\+T\+T\+P content type charset for the current request. returns false for non-\/text content types.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type charset for the current request.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}}
+\index{get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type\+Charset()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type\+Charset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9051db33a9b7e50315d9222ef1c52ce9}
+gets the H\+T\+T\+P content type charset for the current request. returns false for non-\/text content types.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type charset for the current request.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Operation\+Data@{get\+Operation\+Data}}
+\index{get\+Operation\+Data@{get\+Operation\+Data}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Operation\+Data(\$operation)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}
+get available data pertaining to an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array array of data pertaining to the operation  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Operation\+Data@{get\+Operation\+Data}}
+\index{get\+Operation\+Data@{get\+Operation\+Data}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Operation\+Data(\$operation)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ad66fb2de1dae9b9597bed83de4f343a7}
+get available data pertaining to an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array array of data pertaining to the operation  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Proxy@{get\+Proxy}}
+\index{get\+Proxy@{get\+Proxy}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Proxy()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Proxy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}
+dynamically creates an instance of a proxy class, allowing user to directly call methods from wsdl
+
+\begin{DoxyReturn}{Returns}
+object soap\+\_\+proxy object  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Proxy@{get\+Proxy}}
+\index{get\+Proxy@{get\+Proxy}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Proxy()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Proxy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a839ac5be1fce2af15c73aef02a49a8af}
+dynamically creates an instance of a proxy class, allowing user to directly call methods from wsdl
+
+\begin{DoxyReturn}{Returns}
+object soap\+\_\+proxy object  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Proxy\+Class\+Code@{get\+Proxy\+Class\+Code}}
+\index{get\+Proxy\+Class\+Code@{get\+Proxy\+Class\+Code}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Proxy\+Class\+Code()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Proxy\+Class\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}
+dynamically creates proxy class code
+
+\begin{DoxyReturn}{Returns}
+string P\+H\+P/\+Nu\+S\+O\+A\+P code for the proxy class  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!get\+Proxy\+Class\+Code@{get\+Proxy\+Class\+Code}}
+\index{get\+Proxy\+Class\+Code@{get\+Proxy\+Class\+Code}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{get\+Proxy\+Class\+Code()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Proxy\+Class\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a5fbf58b6ba27a02544885d4fc801d328}
+dynamically creates proxy class code
+
+\begin{DoxyReturn}{Returns}
+string P\+H\+P/\+Nu\+S\+O\+A\+P code for the proxy class  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!load\+W\+S\+D\+L@{load\+W\+S\+D\+L}}
+\index{load\+W\+S\+D\+L@{load\+W\+S\+D\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{load\+W\+S\+D\+L()}]{\setlength{\rightskip}{0pt plus 5cm}load\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}
+instantiate wsdl object and parse wsdl file
+
+public \hypertarget{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!load\+W\+S\+D\+L@{load\+W\+S\+D\+L}}
+\index{load\+W\+S\+D\+L@{load\+W\+S\+D\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{load\+W\+S\+D\+L()}]{\setlength{\rightskip}{0pt plus 5cm}load\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a1286e71c7b97874e11b2b0caf7694e8a}
+instantiate wsdl object and parse wsdl file
+
+public \hypertarget{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\index{nusoap\+\_\+client@{nusoap\+\_\+client}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{nusoap\+\_\+client(\$endpoint, \$wsdl=false, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$port\+Name= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nusoap\+\_\+client} (
+\begin{DoxyParamCaption}
+\item[{}]{\$endpoint, }
+\item[{}]{\$wsdl = {\ttfamily false}, }
+\item[{}]{\$proxyhost = {\ttfamily false}, }
+\item[{}]{\$proxyport = {\ttfamily false}, }
+\item[{}]{\$proxyusername = {\ttfamily false}, }
+\item[{}]{\$proxypassword = {\ttfamily false}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$port\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$endpoint} & S\+O\+A\+P server or W\+S\+D\+L U\+R\+L (string), or wsdl instance (object) \\
+\hline
+mixed & {\em \$wsdl} & optional, set to \textquotesingle{}wsdl\textquotesingle{} or true if using W\+S\+D\+L \\
+\hline
+string & {\em \$proxyhost} & optional \\
+\hline
+string & {\em \$proxyport} & optional \\
+\hline
+string & {\em \$proxyusername} & optional \\
+\hline
+string & {\em \$proxypassword} & optional \\
+\hline
+integer & {\em \$timeout} & set the connection timeout \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set the response timeout \\
+\hline
+string & {\em \$port\+Name} & optional port\+Name in W\+S\+D\+L document  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\index{nusoap\+\_\+client@{nusoap\+\_\+client}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{nusoap\+\_\+client(\$endpoint, \$wsdl=false, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$port\+Name= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nusoap\+\_\+client} (
+\begin{DoxyParamCaption}
+\item[{}]{\$endpoint, }
+\item[{}]{\$wsdl = {\ttfamily false}, }
+\item[{}]{\$proxyhost = {\ttfamily false}, }
+\item[{}]{\$proxyport = {\ttfamily false}, }
+\item[{}]{\$proxyusername = {\ttfamily false}, }
+\item[{}]{\$proxypassword = {\ttfamily false}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$port\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ae2c5b2115e9315e43f0368d1b13f44c3}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$endpoint} & S\+O\+A\+P server or W\+S\+D\+L U\+R\+L (string), or wsdl instance (object) \\
+\hline
+mixed & {\em \$wsdl} & optional, set to \textquotesingle{}wsdl\textquotesingle{} or true if using W\+S\+D\+L \\
+\hline
+string & {\em \$proxyhost} & optional \\
+\hline
+string & {\em \$proxyport} & optional \\
+\hline
+string & {\em \$proxyusername} & optional \\
+\hline
+string & {\em \$proxypassword} & optional \\
+\hline
+integer & {\em \$timeout} & set the connection timeout \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set the response timeout \\
+\hline
+string & {\em \$port\+Name} & optional port\+Name in W\+S\+D\+L document  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!parse\+Response@{parse\+Response}}
+\index{parse\+Response@{parse\+Response}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{parse\+Response(\$headers, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Response (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}
+processes S\+O\+A\+P message returned from server
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & The H\+T\+T\+P headers \\
+\hline
+string & {\em \$data} & unprocessed response data from server \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed value of the message, decoded into a P\+H\+P type  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!parse\+Response@{parse\+Response}}
+\index{parse\+Response@{parse\+Response}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{parse\+Response(\$headers, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Response (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_aca1ed2155629bfc242ddea3636ac24c1}
+processes S\+O\+A\+P message returned from server
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & The H\+T\+T\+P headers \\
+\hline
+string & {\em \$data} & unprocessed response data from server \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed value of the message, decoded into a P\+H\+P type  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_aece60a5a6bd359481071516aa7024b56}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!send@{send}}
+\index{send@{send}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{send(\$msg, \$soapaction= \textquotesingle{}\textquotesingle{}, \$timeout=0, \$response\+\_\+timeout=30)}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg, }
+\item[{}]{\$soapaction = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_aece60a5a6bd359481071516aa7024b56}
+send the S\+O\+A\+P message
+
+Note\+: if the operation has multiple return values the return value of this method will be an array of those values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & a S\+O\+A\+Px4 soapmsg object \\
+\hline
+string & {\em \$soapaction} & S\+O\+A\+P\+Action value \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed native P\+H\+P types.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_aece60a5a6bd359481071516aa7024b56}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!send@{send}}
+\index{send@{send}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{send(\$msg, \$soapaction= \textquotesingle{}\textquotesingle{}, \$timeout=0, \$response\+\_\+timeout=30)}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg, }
+\item[{}]{\$soapaction = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_aece60a5a6bd359481071516aa7024b56}
+send the S\+O\+A\+P message
+
+Note\+: if the operation has multiple return values the return value of this method will be an array of those values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & a S\+O\+A\+Px4 soapmsg object \\
+\hline
+string & {\em \$soapaction} & S\+O\+A\+P\+Action value \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed native P\+H\+P types.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Cookie@{set\+Cookie}}
+\index{set\+Cookie@{set\+Cookie}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Cookie(\$name, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}
+adds a new Cookie into \$this-\/$>$cookies array
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Cookie Name \\
+\hline
+string & {\em \$value} & Cookie Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if cookie-\/set was successful returns true, else false  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Cookie@{set\+Cookie}}
+\index{set\+Cookie@{set\+Cookie}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Cookie(\$name, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a3f05f631ff936a033cae038052d9e7f9}
+adds a new Cookie into \$this-\/$>$cookies array
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Cookie Name \\
+\hline
+string & {\em \$value} & Cookie Value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if cookie-\/set was successful returns true, else false  public 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ada213133d177c1c9c07435d65e89e735}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ada213133d177c1c9c07435d65e89e735}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ada213133d177c1c9c07435d65e89e735}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ada213133d177c1c9c07435d65e89e735}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Curl\+Option@{set\+Curl\+Option}}
+\index{set\+Curl\+Option@{set\+Curl\+Option}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Curl\+Option(\$option, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Curl\+Option (
+\begin{DoxyParamCaption}
+\item[{}]{\$option, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}
+sets user-\/specified c\+U\+R\+L options
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$option} & The c\+U\+R\+L option (always integer?) \\
+\hline
+mixed & {\em \$value} & The c\+U\+R\+L option value  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Curl\+Option@{set\+Curl\+Option}}
+\index{set\+Curl\+Option@{set\+Curl\+Option}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Curl\+Option(\$option, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Curl\+Option (
+\begin{DoxyParamCaption}
+\item[{}]{\$option, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}
+sets user-\/specified c\+U\+R\+L options
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$option} & The c\+U\+R\+L option (always integer?) \\
+\hline
+mixed & {\em \$value} & The c\+U\+R\+L option value  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Default\+Rpc\+Params@{set\+Default\+Rpc\+Params}}
+\index{set\+Default\+Rpc\+Params@{set\+Default\+Rpc\+Params}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Default\+Rpc\+Params(\$rpc\+Params)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Default\+Rpc\+Params (
+\begin{DoxyParamCaption}
+\item[{}]{\$rpc\+Params}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}
+sets the default R\+P\+C parameter setting. If true, default is that call params are like R\+P\+C even for document style Each \hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call()} can override this value.
+
+This is no longer used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$rpc\+Params} & public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000009}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Default\+Rpc\+Params@{set\+Default\+Rpc\+Params}}
+\index{set\+Default\+Rpc\+Params@{set\+Default\+Rpc\+Params}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Default\+Rpc\+Params(\$rpc\+Params)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Default\+Rpc\+Params (
+\begin{DoxyParamCaption}
+\item[{}]{\$rpc\+Params}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9d7b3609d1db3eb5f2d3cf92510e4e6b}
+sets the default R\+P\+C parameter setting. If true, default is that call params are like R\+P\+C even for document style Each \hyperlink{classnusoap__client_a806d1d83f45454caf9c6c361c0a4b0ad}{call()} can override this value.
+
+This is no longer used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$rpc\+Params} & public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000026}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Endpoint@{set\+Endpoint}}
+\index{set\+Endpoint@{set\+Endpoint}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Endpoint(\$endpoint)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Endpoint (
+\begin{DoxyParamCaption}
+\item[{}]{\$endpoint}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}
+sets the S\+O\+A\+P endpoint, which can override W\+S\+D\+L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$endpoint} & The endpoint U\+R\+L to use, or empty string or false to prevent override  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Endpoint@{set\+Endpoint}}
+\index{set\+Endpoint@{set\+Endpoint}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Endpoint(\$endpoint)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Endpoint (
+\begin{DoxyParamCaption}
+\item[{}]{\$endpoint}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_abab265adeddb116a65a24dc0fa1eafb2}
+sets the S\+O\+A\+P endpoint, which can override W\+S\+D\+L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$endpoint} & The endpoint U\+R\+L to use, or empty string or false to prevent override  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Headers@{set\+Headers}}
+\index{set\+Headers@{set\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Headers(\$headers)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Headers (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}
+set the S\+O\+A\+P headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$headers} & String of X\+M\+L with S\+O\+A\+P header content, or array of soapval objects for S\+O\+A\+P headers  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Headers@{set\+Headers}}
+\index{set\+Headers@{set\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Headers(\$headers)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Headers (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ac1f59fefc1b33175a734321e13b42253}
+set the S\+O\+A\+P headers
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$headers} & String of X\+M\+L with S\+O\+A\+P header content, or array of soapval objects for S\+O\+A\+P headers  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a9528927202777242800c394fadc03191}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+H\+T\+T\+P\+Encoding@{set\+H\+T\+T\+P\+Encoding}}
+\index{set\+H\+T\+T\+P\+Encoding@{set\+H\+T\+T\+P\+Encoding}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+H\+T\+T\+P\+Encoding(\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+H\+T\+T\+P\+Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$enc = {\ttfamily \textquotesingle{}gzip}, }
+\item[{deflate\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9528927202777242800c394fadc03191}
+use H\+T\+T\+P encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$enc} & H\+T\+T\+P encoding  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a9528927202777242800c394fadc03191}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+H\+T\+T\+P\+Encoding@{set\+H\+T\+T\+P\+Encoding}}
+\index{set\+H\+T\+T\+P\+Encoding@{set\+H\+T\+T\+P\+Encoding}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+H\+T\+T\+P\+Encoding(\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+H\+T\+T\+P\+Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$enc = {\ttfamily \textquotesingle{}gzip}, }
+\item[{deflate\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a9528927202777242800c394fadc03191}
+use H\+T\+T\+P encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$enc} & H\+T\+T\+P encoding  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+H\+T\+T\+P\+Proxy@{set\+H\+T\+T\+P\+Proxy}}
+\index{set\+H\+T\+T\+P\+Proxy@{set\+H\+T\+T\+P\+Proxy}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+H\+T\+T\+P\+Proxy(\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+H\+T\+T\+P\+Proxy (
+\begin{DoxyParamCaption}
+\item[{}]{\$proxyhost, }
+\item[{}]{\$proxyport, }
+\item[{}]{\$proxyusername = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxypassword = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}
+set proxy info here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$proxyhost} & \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+H\+T\+T\+P\+Proxy@{set\+H\+T\+T\+P\+Proxy}}
+\index{set\+H\+T\+T\+P\+Proxy@{set\+H\+T\+T\+P\+Proxy}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+H\+T\+T\+P\+Proxy(\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+H\+T\+T\+P\+Proxy (
+\begin{DoxyParamCaption}
+\item[{}]{\$proxyhost, }
+\item[{}]{\$proxyport, }
+\item[{}]{\$proxyusername = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxypassword = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a52152e7ae9c46863424bbafacf6a7f71}
+set proxy info here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$proxyhost} & \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Use\+C\+U\+R\+L@{set\+Use\+C\+U\+R\+L}}
+\index{set\+Use\+C\+U\+R\+L@{set\+Use\+C\+U\+R\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Use\+C\+U\+R\+L(\$use)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Use\+C\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$use}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}
+Set whether to try to use c\+U\+R\+L connections if possible
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$use} & Whether to try to use c\+U\+R\+L  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!set\+Use\+C\+U\+R\+L@{set\+Use\+C\+U\+R\+L}}
+\index{set\+Use\+C\+U\+R\+L@{set\+Use\+C\+U\+R\+L}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{set\+Use\+C\+U\+R\+L(\$use)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Use\+C\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$use}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ae0907a30339d32d93ebc4ba9c436d4de}
+Set whether to try to use c\+U\+R\+L connections if possible
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$use} & Whether to try to use c\+U\+R\+L  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!Update\+Cookies@{Update\+Cookies}}
+\index{Update\+Cookies@{Update\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{Update\+Cookies(\$cookies)}]{\setlength{\rightskip}{0pt plus 5cm}Update\+Cookies (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookies}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}
+updates the current cookies with a new set
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookies} & new cookies with which to update current ones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean always return true  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!Update\+Cookies@{Update\+Cookies}}
+\index{Update\+Cookies@{Update\+Cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{Update\+Cookies(\$cookies)}]{\setlength{\rightskip}{0pt plus 5cm}Update\+Cookies (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookies}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_ad71447ce0ee50309eea6ce0e12a88e02}
+updates the current cookies with a new set
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookies} & new cookies with which to update current ones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean always return true  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!use\+H\+T\+T\+P\+Persistent\+Connection@{use\+H\+T\+T\+P\+Persistent\+Connection}}
+\index{use\+H\+T\+T\+P\+Persistent\+Connection@{use\+H\+T\+T\+P\+Persistent\+Connection}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{use\+H\+T\+T\+P\+Persistent\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}use\+H\+T\+T\+P\+Persistent\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}
+use H\+T\+T\+P persistent connections if possible
+
+public \hypertarget{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!use\+H\+T\+T\+P\+Persistent\+Connection@{use\+H\+T\+T\+P\+Persistent\+Connection}}
+\index{use\+H\+T\+T\+P\+Persistent\+Connection@{use\+H\+T\+T\+P\+Persistent\+Connection}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{use\+H\+T\+T\+P\+Persistent\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}use\+H\+T\+T\+P\+Persistent\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__client_a6558d144faf99ccc9ef4621ffd56bd75}
+use H\+T\+T\+P persistent connections if possible
+
+public 
+
+\subsection{Field Documentation}
+\hypertarget{classnusoap__client_ae81871b02c5845eb3a1071eb24e1f29c}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$authtype@{\$authtype}}
+\index{\$authtype@{\$authtype}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$authtype}]{\setlength{\rightskip}{0pt plus 5cm}\$authtype = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_ae81871b02c5845eb3a1071eb24e1f29c}
+\hypertarget{classnusoap__client_adf5d4b85487da9bd3d51527272af5196}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$binding\+Type@{\$binding\+Type}}
+\index{\$binding\+Type@{\$binding\+Type}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$binding\+Type}]{\setlength{\rightskip}{0pt plus 5cm}\$binding\+Type = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_adf5d4b85487da9bd3d51527272af5196}
+\hypertarget{classnusoap__client_adcbe9a77644bad97ed599d1651bd2719}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$cert\+Request@{\$cert\+Request}}
+\index{\$cert\+Request@{\$cert\+Request}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$cert\+Request}]{\setlength{\rightskip}{0pt plus 5cm}\$cert\+Request = array()}\label{classnusoap__client_adcbe9a77644bad97ed599d1651bd2719}
+\hypertarget{classnusoap__client_aef9f7eafd54f6e36423347bed723c67e}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$cookies@{\$cookies}}
+\index{\$cookies@{\$cookies}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$cookies}]{\setlength{\rightskip}{0pt plus 5cm}\$cookies = array()}\label{classnusoap__client_aef9f7eafd54f6e36423347bed723c67e}
+\hypertarget{classnusoap__client_a6f996237d5484e4538b2adf56de893e6}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$curl\+\_\+options@{\$curl\+\_\+options}}
+\index{\$curl\+\_\+options@{\$curl\+\_\+options}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$curl\+\_\+options}]{\setlength{\rightskip}{0pt plus 5cm}\$curl\+\_\+options = array()}\label{classnusoap__client_a6f996237d5484e4538b2adf56de893e6}
+\hypertarget{classnusoap__client_a15fe586a802bc22337e3fe874d6da038}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$decode\+\_\+utf8@{\$decode\+\_\+utf8}}
+\index{\$decode\+\_\+utf8@{\$decode\+\_\+utf8}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$decode\+\_\+utf8}]{\setlength{\rightskip}{0pt plus 5cm}\$decode\+\_\+utf8 = true}\label{classnusoap__client_a15fe586a802bc22337e3fe874d6da038}
+\hypertarget{classnusoap__client_ac78680bfe85d7e93ebe0d9260e104602}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$default\+Rpc\+Params@{\$default\+Rpc\+Params}}
+\index{\$default\+Rpc\+Params@{\$default\+Rpc\+Params}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$default\+Rpc\+Params}]{\setlength{\rightskip}{0pt plus 5cm}\$default\+Rpc\+Params = false}\label{classnusoap__client_ac78680bfe85d7e93ebe0d9260e104602}
+\hypertarget{classnusoap__client_ac5a31edb787609a3143dec9bfa8063ea}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$document@{\$document}}
+\index{\$document@{\$document}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$document}]{\setlength{\rightskip}{0pt plus 5cm}\$document = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_ac5a31edb787609a3143dec9bfa8063ea}
+\hypertarget{classnusoap__client_afb5204f7604df2f50a0058cb0e024875}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$endpoint@{\$endpoint}}
+\index{\$endpoint@{\$endpoint}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$endpoint}]{\setlength{\rightskip}{0pt plus 5cm}\$endpoint}\label{classnusoap__client_afb5204f7604df2f50a0058cb0e024875}
+\hypertarget{classnusoap__client_a579908f25c2a105b23afaa84730b0a63}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$endpoint\+Type@{\$endpoint\+Type}}
+\index{\$endpoint\+Type@{\$endpoint\+Type}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$endpoint\+Type}]{\setlength{\rightskip}{0pt plus 5cm}\$endpoint\+Type = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a579908f25c2a105b23afaa84730b0a63}
+\hypertarget{classnusoap__client_a365691ed834f59a9a513180136e7a847}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$fault@{\$fault}}
+\index{\$fault@{\$fault}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$fault}]{\setlength{\rightskip}{0pt plus 5cm}\$fault}\label{classnusoap__client_a365691ed834f59a9a513180136e7a847}
+\hypertarget{classnusoap__client_a07e7ee58f39f98cdd8b2bd2b40ff72d7}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$faultcode@{\$faultcode}}
+\index{\$faultcode@{\$faultcode}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$faultcode}]{\setlength{\rightskip}{0pt plus 5cm}\$faultcode}\label{classnusoap__client_a07e7ee58f39f98cdd8b2bd2b40ff72d7}
+\hypertarget{classnusoap__client_a7683364ae0ad0e22863a0f20f0626453}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$faultdetail@{\$faultdetail}}
+\index{\$faultdetail@{\$faultdetail}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$faultdetail}]{\setlength{\rightskip}{0pt plus 5cm}\$faultdetail}\label{classnusoap__client_a7683364ae0ad0e22863a0f20f0626453}
+\hypertarget{classnusoap__client_acc1a7d86f9bd39e5717add56fbcdfaaa}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$faultstring@{\$faultstring}}
+\index{\$faultstring@{\$faultstring}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$faultstring}]{\setlength{\rightskip}{0pt plus 5cm}\$faultstring}\label{classnusoap__client_acc1a7d86f9bd39e5717add56fbcdfaaa}
+\hypertarget{classnusoap__client_afdcf6cf88adc9e9f3cf412605b74ce47}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$force\+Endpoint@{\$force\+Endpoint}}
+\index{\$force\+Endpoint@{\$force\+Endpoint}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$force\+Endpoint}]{\setlength{\rightskip}{0pt plus 5cm}\$force\+Endpoint = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_afdcf6cf88adc9e9f3cf412605b74ce47}
+\hypertarget{classnusoap__client_a85ab29df53fb1ff64e0aecd9698b51fe}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$http\+\_\+encoding@{\$http\+\_\+encoding}}
+\index{\$http\+\_\+encoding@{\$http\+\_\+encoding}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$http\+\_\+encoding}]{\setlength{\rightskip}{0pt plus 5cm}\$http\+\_\+encoding = false}\label{classnusoap__client_a85ab29df53fb1ff64e0aecd9698b51fe}
+\hypertarget{classnusoap__client_a3f662373ff81db09eed5649d07f1931c}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$operations@{\$operations}}
+\index{\$operations@{\$operations}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$operations}]{\setlength{\rightskip}{0pt plus 5cm}\$operations = array()}\label{classnusoap__client_a3f662373ff81db09eed5649d07f1931c}
+\hypertarget{classnusoap__client_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$password@{\$password}}
+\index{\$password@{\$password}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$password}]{\setlength{\rightskip}{0pt plus 5cm}\$password = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+\hypertarget{classnusoap__client_a638b1c5f7dc55a3d0286136de6d56eab}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$persistent\+Connection@{\$persistent\+Connection}}
+\index{\$persistent\+Connection@{\$persistent\+Connection}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$persistent\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}\$persistent\+Connection = false}\label{classnusoap__client_a638b1c5f7dc55a3d0286136de6d56eab}
+\hypertarget{classnusoap__client_ab68542a377115148d260f92d945c21ec}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$port\+Name@{\$port\+Name}}
+\index{\$port\+Name@{\$port\+Name}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$port\+Name}]{\setlength{\rightskip}{0pt plus 5cm}\$port\+Name = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_ab68542a377115148d260f92d945c21ec}
+\hypertarget{classnusoap__client_a54407bcc777ac313a172561a8ff976c6}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$proxyhost@{\$proxyhost}}
+\index{\$proxyhost@{\$proxyhost}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$proxyhost}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyhost = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a54407bcc777ac313a172561a8ff976c6}
+\hypertarget{classnusoap__client_a98c0d3b74811ee643f7d1fce47f1b281}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$proxypassword@{\$proxypassword}}
+\index{\$proxypassword@{\$proxypassword}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$proxypassword}]{\setlength{\rightskip}{0pt plus 5cm}\$proxypassword = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a98c0d3b74811ee643f7d1fce47f1b281}
+\hypertarget{classnusoap__client_ac396538deee1152f84f9ddabac2c2366}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$proxyport@{\$proxyport}}
+\index{\$proxyport@{\$proxyport}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$proxyport}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyport = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_ac396538deee1152f84f9ddabac2c2366}
+\hypertarget{classnusoap__client_aaa30711a40f8f7bae4cd7060414e0fe1}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$proxyusername@{\$proxyusername}}
+\index{\$proxyusername@{\$proxyusername}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$proxyusername}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyusername = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_aaa30711a40f8f7bae4cd7060414e0fe1}
+\hypertarget{classnusoap__client_abb35c8495a232b510389fa6d7b15d38a}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$request@{\$request}}
+\index{\$request@{\$request}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$request}]{\setlength{\rightskip}{0pt plus 5cm}\$request = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_abb35c8495a232b510389fa6d7b15d38a}
+\hypertarget{classnusoap__client_a245d2deb868c1cc1a23b10c48c6d0754}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$request\+Headers@{\$request\+Headers}}
+\index{\$request\+Headers@{\$request\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$request\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}\$request\+Headers = false}\label{classnusoap__client_a245d2deb868c1cc1a23b10c48c6d0754}
+\hypertarget{classnusoap__client_af4b6fb1bbc77ccc05f10da3b16935b99}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$response@{\$response}}
+\index{\$response@{\$response}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$response}]{\setlength{\rightskip}{0pt plus 5cm}\$response = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_af4b6fb1bbc77ccc05f10da3b16935b99}
+\hypertarget{classnusoap__client_a17a3280264a8b9bb5ed32729d654739c}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$response\+\_\+timeout@{\$response\+\_\+timeout}}
+\index{\$response\+\_\+timeout@{\$response\+\_\+timeout}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$response\+\_\+timeout}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+\_\+timeout = 30}\label{classnusoap__client_a17a3280264a8b9bb5ed32729d654739c}
+\hypertarget{classnusoap__client_ab1e953a498fa4370be7a8806cea56031}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$response\+Data@{\$response\+Data}}
+\index{\$response\+Data@{\$response\+Data}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$response\+Data}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+Data = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_ab1e953a498fa4370be7a8806cea56031}
+\hypertarget{classnusoap__client_a0c1b0ae471226114a6ec9ef70ac5350d}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$response\+Header@{\$response\+Header}}
+\index{\$response\+Header@{\$response\+Header}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$response\+Header}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+Header = N\+U\+L\+L}\label{classnusoap__client_a0c1b0ae471226114a6ec9ef70ac5350d}
+\hypertarget{classnusoap__client_a02f80cf3a7fe7cf42c97b821c167b934}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$response\+Headers@{\$response\+Headers}}
+\index{\$response\+Headers@{\$response\+Headers}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$response\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+Headers = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a02f80cf3a7fe7cf42c97b821c167b934}
+\hypertarget{classnusoap__client_a84320a9bf3e591d7ae20dfcb0dfe6a0d}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$timeout@{\$timeout}}
+\index{\$timeout@{\$timeout}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$timeout}]{\setlength{\rightskip}{0pt plus 5cm}\$timeout = 0}\label{classnusoap__client_a84320a9bf3e591d7ae20dfcb0dfe6a0d}
+\hypertarget{classnusoap__client_a372c0672391a16e4902e172ea3a0ae63}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$use\+\_\+curl@{\$use\+\_\+curl}}
+\index{\$use\+\_\+curl@{\$use\+\_\+curl}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$use\+\_\+curl}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+\_\+curl = false}\label{classnusoap__client_a372c0672391a16e4902e172ea3a0ae63}
+\hypertarget{classnusoap__client_a0eb82aa5f81cf845de4b36cd653c42cf}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$username@{\$username}}
+\index{\$username@{\$username}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$username}]{\setlength{\rightskip}{0pt plus 5cm}\$username = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a0eb82aa5f81cf845de4b36cd653c42cf}
+\hypertarget{classnusoap__client_a1e2ee3fea6dbb8374da999a9df7d024d}{}\index{nusoap\+\_\+client@{nusoap\+\_\+client}!\$xml\+\_\+encoding@{\$xml\+\_\+encoding}}
+\index{\$xml\+\_\+encoding@{\$xml\+\_\+encoding}!nusoap\+\_\+client@{nusoap\+\_\+client}}
+\subsubsection[{\$xml\+\_\+encoding}]{\setlength{\rightskip}{0pt plus 5cm}\$xml\+\_\+encoding = \textquotesingle{}\textquotesingle{}}\label{classnusoap__client_a1e2ee3fea6dbb8374da999a9df7d024d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{class_8soapclient_8php}{class.\+soapclient.\+php}\item 
+lib/\hyperlink{nusoap_8php}{nusoap.\+php}\end{DoxyCompactItemize}

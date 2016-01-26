@@ -1,0 +1,1430 @@
+\hypertarget{classwsdl}{}\section{wsdl Class Reference}
+\label{classwsdl}\index{wsdl@{wsdl}}
+Inheritance diagram for wsdl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwsdl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwsdl_a5b4366809907087aa8d55a24472b310e}{wsdl} (\$\hyperlink{classwsdl}{wsdl}= \textquotesingle{}\textquotesingle{}, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$curl\+\_\+options=null, \$use\+\_\+curl=false)
+\item 
+\hyperlink{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}{fetch\+W\+S\+D\+L} (\$\hyperlink{classwsdl}{wsdl})
+\item 
+\hyperlink{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}{parse\+W\+S\+D\+L} (\$\hyperlink{classwsdl}{wsdl}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}{start\+\_\+element} (\$parser, \$name, \$attrs)
+\item 
+\hyperlink{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}{end\+\_\+element} (\$parser, \$name)
+\item 
+\hyperlink{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}{character\+\_\+data} (\$parser, \$data)
+\item 
+\hyperlink{classwsdl_ada213133d177c1c9c07435d65e89e735}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())
+\item 
+\hyperlink{classwsdl_ae6385888eeb57e98ef81323b05842341}{get\+Binding\+Data} (\$binding)
+\item 
+\hyperlink{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}{get\+Operations} (\$port\+Name= \textquotesingle{}\textquotesingle{}, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a38f29f3212405560a4bcf188ad632e1f}{get\+Operation\+Data} (\$operation, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}{get\+Operation\+Data\+For\+Soap\+Action} (\$soap\+Action, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}{get\+Type\+Def} (\$type, \$ns)
+\item 
+\hyperlink{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}{web\+Description} ()
+\item 
+\hyperlink{classwsdl_a25fcce1ac19624739857406748ba332a}{serialize} (\$\hyperlink{classnusoap__base_ac652bd9010bd39b0f2854f7ded3f6f33}{debug}=0)
+\item 
+\hyperlink{classwsdl_a5ba30e743ac8f337a13eb915c4128904}{parameters\+Match\+Wrapped} (\$type, \&\$parameters)
+\item 
+\hyperlink{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}{serialize\+R\+P\+C\+Parameters} (\$operation, \$direction, \$parameters, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_afed507a7c4d2b216e27515ca9181361c}{serialize\+Parameters} (\$operation, \$direction, \$parameters)
+\item 
+\hyperlink{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}{serialize\+Type} (\$name, \$type, \$value, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false, \$unqualified=false)
+\item 
+\hyperlink{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}{serialize\+Complex\+Type\+Attributes} (\$type\+Def, \$value, \$ns, \$uq\+Type)
+\item 
+\hyperlink{classwsdl_a9abd63b860271a2010c4d35b5c607b45}{serialize\+Complex\+Type\+Elements} (\$type\+Def, \$value, \$ns, \$uq\+Type, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false)
+\item 
+\hyperlink{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}{add\+Complex\+Type} (\$name, \$type\+Class=\textquotesingle{}complex\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}array\textquotesingle{}, \$compositor=\textquotesingle{}\textquotesingle{}, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$elements=array(), \$attrs=array(), \$array\+Type=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a31228a55d8cdb602e32f481406e7455c}{add\+Simple\+Type} (\$name, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$type\+Class=\textquotesingle{}simple\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}scalar\textquotesingle{}, \$enumeration=array())
+\item 
+\hyperlink{classwsdl_a7341d393047f63fdcb50dd44d2eff448}{add\+Element} (\$attrs)
+\item 
+\hyperlink{classwsdl_a629076bad717a1ef68261afe210001fc}{add\+Operation} (\$name, \$in=false, \$out=false, \$namespace=false, \$soapaction=false, \$style= \textquotesingle{}rpc\textquotesingle{}, \$use= \textquotesingle{}encoded\textquotesingle{}, \$documentation= \textquotesingle{}\textquotesingle{}, \$encoding\+Style= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a5b4366809907087aa8d55a24472b310e}{wsdl} (\$\hyperlink{classwsdl}{wsdl}= \textquotesingle{}\textquotesingle{}, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$curl\+\_\+options=null, \$use\+\_\+curl=false)
+\item 
+\hyperlink{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}{fetch\+W\+S\+D\+L} (\$\hyperlink{classwsdl}{wsdl})
+\item 
+\hyperlink{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}{parse\+W\+S\+D\+L} (\$\hyperlink{classwsdl}{wsdl}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}{start\+\_\+element} (\$parser, \$name, \$attrs)
+\item 
+\hyperlink{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}{end\+\_\+element} (\$parser, \$name)
+\item 
+\hyperlink{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}{character\+\_\+data} (\$parser, \$data)
+\item 
+\hyperlink{classwsdl_ada213133d177c1c9c07435d65e89e735}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())
+\item 
+\hyperlink{classwsdl_ae6385888eeb57e98ef81323b05842341}{get\+Binding\+Data} (\$binding)
+\item 
+\hyperlink{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}{get\+Operations} (\$port\+Name= \textquotesingle{}\textquotesingle{}, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a38f29f3212405560a4bcf188ad632e1f}{get\+Operation\+Data} (\$operation, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}{get\+Operation\+Data\+For\+Soap\+Action} (\$soap\+Action, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}{get\+Type\+Def} (\$type, \$ns)
+\item 
+\hyperlink{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}{web\+Description} ()
+\item 
+\hyperlink{classwsdl_a25fcce1ac19624739857406748ba332a}{serialize} (\$\hyperlink{classnusoap__base_ac652bd9010bd39b0f2854f7ded3f6f33}{debug}=0)
+\item 
+\hyperlink{classwsdl_a5ba30e743ac8f337a13eb915c4128904}{parameters\+Match\+Wrapped} (\$type, \&\$parameters)
+\item 
+\hyperlink{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}{serialize\+R\+P\+C\+Parameters} (\$operation, \$direction, \$parameters, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})
+\item 
+\hyperlink{classwsdl_afed507a7c4d2b216e27515ca9181361c}{serialize\+Parameters} (\$operation, \$direction, \$parameters)
+\item 
+\hyperlink{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}{serialize\+Type} (\$name, \$type, \$value, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false, \$unqualified=false)
+\item 
+\hyperlink{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}{serialize\+Complex\+Type\+Attributes} (\$type\+Def, \$value, \$ns, \$uq\+Type)
+\item 
+\hyperlink{classwsdl_a9abd63b860271a2010c4d35b5c607b45}{serialize\+Complex\+Type\+Elements} (\$type\+Def, \$value, \$ns, \$uq\+Type, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false)
+\item 
+\hyperlink{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}{add\+Complex\+Type} (\$name, \$type\+Class=\textquotesingle{}complex\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}array\textquotesingle{}, \$compositor=\textquotesingle{}\textquotesingle{}, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$elements=array(), \$attrs=array(), \$array\+Type=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classwsdl_a31228a55d8cdb602e32f481406e7455c}{add\+Simple\+Type} (\$name, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$type\+Class=\textquotesingle{}simple\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}scalar\textquotesingle{}, \$enumeration=array())
+\item 
+\hyperlink{classwsdl_a7341d393047f63fdcb50dd44d2eff448}{add\+Element} (\$attrs)
+\item 
+\hyperlink{classwsdl_a629076bad717a1ef68261afe210001fc}{add\+Operation} (\$name, \$in=false, \$out=false, \$namespace=false, \$soapaction=false, \$style= \textquotesingle{}rpc\textquotesingle{}, \$use= \textquotesingle{}encoded\textquotesingle{}, \$documentation= \textquotesingle{}\textquotesingle{}, \$encoding\+Style= \textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classwsdl_a8b3fb8293ad64e3dc0b814fedf24c5dd}{\$wsdl}
+\item 
+\hyperlink{classwsdl_a99067204780ca14c213a3e15987b7cc1}{\$schemas} = array()
+\item 
+\hyperlink{classwsdl_af4af684ea50a30d657aeb9682ff0caeb}{\$current\+Schema}
+\item 
+\hyperlink{classwsdl_abf17cb2dba2ed17cb28aa5f37deb5293}{\$message} = array()
+\item 
+\hyperlink{classwsdl_acf1dbaf5ad35f659428a61193928b78d}{\$complex\+Types} = array()
+\item 
+\hyperlink{classwsdl_a21a183f927a6d243fe6b4ba3a6c4d4c8}{\$messages} = array()
+\item 
+\hyperlink{classwsdl_a04d4e6f80c471063bb6b64c6090c59a2}{\$current\+Message}
+\item 
+\hyperlink{classwsdl_a44b02f3838b36b3aad2401f0f02d3b76}{\$current\+Operation}
+\item 
+\hyperlink{classwsdl_aa0affbd30e12dfe2e3d61b716f38cbeb}{\$port\+Types} = array()
+\item 
+\hyperlink{classwsdl_a87aea97635203239413d2a45c66037e4}{\$current\+Port\+Type}
+\item 
+\hyperlink{classwsdl_adacdcea57647569304169243ff32cd10}{\$bindings} = array()
+\item 
+\hyperlink{classwsdl_a473fc9ff0b89502bb265577b54a973c3}{\$current\+Binding}
+\item 
+\hyperlink{classwsdl_ae5d9eb7d80081176e92db51fbecf2448}{\$ports} = array()
+\item 
+\hyperlink{classwsdl_a43463e704b29e9e592607bfe91a11bd6}{\$current\+Port}
+\item 
+\hyperlink{classwsdl_ae44d696522c0c90798bbfe652bc67f0c}{\$op\+Data} = array()
+\item 
+\hyperlink{classwsdl_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_a2c75122f8f6ee14d52c3504f74ab3be9}{\$documentation} = false
+\item 
+\hyperlink{classwsdl_afb5204f7604df2f50a0058cb0e024875}{\$endpoint} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_a268adb9a1f963c9f862f1158e9cfbffd}{\$import} = array()
+\item 
+\hyperlink{classwsdl_a147a766daa03d52576c7345fea31c945}{\$parser}
+\item 
+\hyperlink{classwsdl_a6e88dcb746884d18f6c89eb9b9c14a42}{\$position} = 0
+\item 
+\hyperlink{classwsdl_a0abb04e6a8a04e161eb4657f54848b18}{\$depth} = 0
+\item 
+\hyperlink{classwsdl_aaaa53c3e91636edd41a46e767abb3347}{\$depth\+\_\+array} = array()
+\item 
+\hyperlink{classwsdl_a54407bcc777ac313a172561a8ff976c6}{\$proxyhost} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_ac396538deee1152f84f9ddabac2c2366}{\$proxyport} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_aaa30711a40f8f7bae4cd7060414e0fe1}{\$proxyusername} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_a98c0d3b74811ee643f7d1fce47f1b281}{\$proxypassword} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_a84320a9bf3e591d7ae20dfcb0dfe6a0d}{\$timeout} = 0
+\item 
+\hyperlink{classwsdl_a17a3280264a8b9bb5ed32729d654739c}{\$response\+\_\+timeout} = 30
+\item 
+\hyperlink{classwsdl_a6f996237d5484e4538b2adf56de893e6}{\$curl\+\_\+options} = array()
+\item 
+\hyperlink{classwsdl_a372c0672391a16e4902e172ea3a0ae63}{\$use\+\_\+curl} = false
+\item 
+\hyperlink{classwsdl_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_ae81871b02c5845eb3a1071eb24e1f29c}{\$authtype} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classwsdl_adcbe9a77644bad97ed599d1651bd2719}{\$cert\+Request} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+parses a W\+S\+D\+L file, allows access to it\textquotesingle{}s data, other utility methods. also builds W\+S\+D\+L structures programmatically.
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{class_8wsdl_8php}{class.\+wsdl.\+php},v 1.\+76 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public
+
+parses a W\+S\+D\+L file, allows access to it\textquotesingle{}s data, other utility methods. also builds W\+S\+D\+L structures programmatically.
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{nusoap_8php}{nusoap.\+php},v 1.\+123 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public 
+
+\subsection{Member Function Documentation}
+\hypertarget{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}{}\index{wsdl@{wsdl}!add\+Complex\+Type@{add\+Complex\+Type}}
+\index{add\+Complex\+Type@{add\+Complex\+Type}!wsdl@{wsdl}}
+\subsubsection[{add\+Complex\+Type(\$name, \$type\+Class=\textquotesingle{}complex\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}array\textquotesingle{}, \$compositor=\textquotesingle{}\textquotesingle{}, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$elements=array(), \$attrs=array(), \$array\+Type=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}add\+Complex\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$type\+Class = {\ttfamily \textquotesingle{}complexType\textquotesingle{}}, }
+\item[{}]{\$php\+Type = {\ttfamily \textquotesingle{}array\textquotesingle{}}, }
+\item[{}]{\$compositor = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$restriction\+Base = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$elements = {\ttfamily array()}, }
+\item[{}]{\$attrs = {\ttfamily array()}, }
+\item[{}]{\$array\+Type = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}
+adds an X\+M\+L Schema complex type to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$type\+Class} & (complex\+Type$\vert$simple\+Type$\vert$attribute) \\
+\hline
+string & {\em \$php\+Type} & currently supported are array and struct (php assoc array) \\
+\hline
+string & {\em \$compositor} & (all$\vert$sequence$\vert$choice) \\
+\hline
+string & {\em \$restriction\+Base} & namespace\+:name (\href{http://schemas.xmlsoap.org/soap/encoding/:Array}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\+:\+Array}) \\
+\hline
+array & {\em \$elements} & e.\+g. array ( name =$>$ array(name=$>$\textquotesingle{}\textquotesingle{},type=$>$\textquotesingle{}\textquotesingle{}) ) \\
+\hline
+array & {\em \$attrs} & e.\+g. array(array(\textquotesingle{}ref\textquotesingle{}=$>$\textquotesingle{}S\+O\+A\+P-\/\+E\+N\+C\+:array\+Type\textquotesingle{},\textquotesingle{}wsdl\+:array\+Type\textquotesingle{}=$>$\textquotesingle{}xsd\+:string\mbox{[}\mbox{]}\textquotesingle{})) \\
+\hline
+string & {\em \$array\+Type} & as namespace\+:name (xsd\+:string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}{}\index{wsdl@{wsdl}!add\+Complex\+Type@{add\+Complex\+Type}}
+\index{add\+Complex\+Type@{add\+Complex\+Type}!wsdl@{wsdl}}
+\subsubsection[{add\+Complex\+Type(\$name, \$type\+Class=\textquotesingle{}complex\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}array\textquotesingle{}, \$compositor=\textquotesingle{}\textquotesingle{}, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$elements=array(), \$attrs=array(), \$array\+Type=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}add\+Complex\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$type\+Class = {\ttfamily \textquotesingle{}complexType\textquotesingle{}}, }
+\item[{}]{\$php\+Type = {\ttfamily \textquotesingle{}array\textquotesingle{}}, }
+\item[{}]{\$compositor = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$restriction\+Base = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$elements = {\ttfamily array()}, }
+\item[{}]{\$attrs = {\ttfamily array()}, }
+\item[{}]{\$array\+Type = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a8086789ccd44f879ab77ba98dfa08aa2}
+adds an X\+M\+L Schema complex type to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$type\+Class} & (complex\+Type$\vert$simple\+Type$\vert$attribute) \\
+\hline
+string & {\em \$php\+Type} & currently supported are array and struct (php assoc array) \\
+\hline
+string & {\em \$compositor} & (all$\vert$sequence$\vert$choice) \\
+\hline
+string & {\em \$restriction\+Base} & namespace\+:name (\href{http://schemas.xmlsoap.org/soap/encoding/:Array}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\+:\+Array}) \\
+\hline
+array & {\em \$elements} & e.\+g. array ( name =$>$ array(name=$>$\textquotesingle{}\textquotesingle{},type=$>$\textquotesingle{}\textquotesingle{}) ) \\
+\hline
+array & {\em \$attrs} & e.\+g. array(array(\textquotesingle{}ref\textquotesingle{}=$>$\textquotesingle{}S\+O\+A\+P-\/\+E\+N\+C\+:array\+Type\textquotesingle{},\textquotesingle{}wsdl\+:array\+Type\textquotesingle{}=$>$\textquotesingle{}xsd\+:string\mbox{[}\mbox{]}\textquotesingle{})) \\
+\hline
+string & {\em \$array\+Type} & as namespace\+:name (xsd\+:string) \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a7341d393047f63fdcb50dd44d2eff448}{}\index{wsdl@{wsdl}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!wsdl@{wsdl}}
+\subsubsection[{add\+Element(\$attrs)}]{\setlength{\rightskip}{0pt plus 5cm}add\+Element (
+\begin{DoxyParamCaption}
+\item[{}]{\$attrs}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a7341d393047f63fdcb50dd44d2eff448}
+adds an element to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & attributes that must include name and type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a7341d393047f63fdcb50dd44d2eff448}{}\index{wsdl@{wsdl}!add\+Element@{add\+Element}}
+\index{add\+Element@{add\+Element}!wsdl@{wsdl}}
+\subsubsection[{add\+Element(\$attrs)}]{\setlength{\rightskip}{0pt plus 5cm}add\+Element (
+\begin{DoxyParamCaption}
+\item[{}]{\$attrs}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a7341d393047f63fdcb50dd44d2eff448}
+adds an element to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attrs} & attributes that must include name and type \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a629076bad717a1ef68261afe210001fc}{}\index{wsdl@{wsdl}!add\+Operation@{add\+Operation}}
+\index{add\+Operation@{add\+Operation}!wsdl@{wsdl}}
+\subsubsection[{add\+Operation(\$name, \$in=false, \$out=false, \$namespace=false, \$soapaction=false, \$style= \textquotesingle{}rpc\textquotesingle{}, \$use= \textquotesingle{}encoded\textquotesingle{}, \$documentation= \textquotesingle{}\textquotesingle{}, \$encoding\+Style= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}add\+Operation (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$in = {\ttfamily false}, }
+\item[{}]{\$out = {\ttfamily false}, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$soapaction = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$documentation = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a629076bad717a1ef68261afe210001fc}
+register an operation with the server
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & operation (method) name \\
+\hline
+array & {\em \$in} & assoc array of input values\+: key = param name, value = param type \\
+\hline
+array & {\em \$out} & assoc array of output values\+: key = param name, value = param type \\
+\hline
+string & {\em \$namespace} & optional The namespace for the operation \\
+\hline
+string & {\em \$soapaction} & optional The soapaction for the operation \\
+\hline
+string & {\em \$style} & (rpc$\vert$document) optional The style for the operation Note\+: when \textquotesingle{}document\textquotesingle{} is specified, parameter and return wrappers are created for you automatically \\
+\hline
+string & {\em \$use} & (encoded$\vert$literal) optional The use for the parameters (cannot mix right now) \\
+\hline
+string & {\em \$documentation} & optional The description to include in the W\+S\+D\+L \\
+\hline
+string & {\em \$encoding\+Style} & optional (usually \textquotesingle{}\href{http://schemas.xmlsoap.org/soap/encoding/'}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\textquotesingle{}} for encoded)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a629076bad717a1ef68261afe210001fc}{}\index{wsdl@{wsdl}!add\+Operation@{add\+Operation}}
+\index{add\+Operation@{add\+Operation}!wsdl@{wsdl}}
+\subsubsection[{add\+Operation(\$name, \$in=false, \$out=false, \$namespace=false, \$soapaction=false, \$style= \textquotesingle{}rpc\textquotesingle{}, \$use= \textquotesingle{}encoded\textquotesingle{}, \$documentation= \textquotesingle{}\textquotesingle{}, \$encoding\+Style= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}add\+Operation (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$in = {\ttfamily false}, }
+\item[{}]{\$out = {\ttfamily false}, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$soapaction = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$documentation = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a629076bad717a1ef68261afe210001fc}
+register an operation with the server
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & operation (method) name \\
+\hline
+array & {\em \$in} & assoc array of input values\+: key = param name, value = param type \\
+\hline
+array & {\em \$out} & assoc array of output values\+: key = param name, value = param type \\
+\hline
+string & {\em \$namespace} & optional The namespace for the operation \\
+\hline
+string & {\em \$soapaction} & optional The soapaction for the operation \\
+\hline
+string & {\em \$style} & (rpc$\vert$document) optional The style for the operation Note\+: when \textquotesingle{}document\textquotesingle{} is specified, parameter and return wrappers are created for you automatically \\
+\hline
+string & {\em \$use} & (encoded$\vert$literal) optional The use for the parameters (cannot mix right now) \\
+\hline
+string & {\em \$documentation} & optional The description to include in the W\+S\+D\+L \\
+\hline
+string & {\em \$encoding\+Style} & optional (usually \textquotesingle{}\href{http://schemas.xmlsoap.org/soap/encoding/'}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\textquotesingle{}} for encoded)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a31228a55d8cdb602e32f481406e7455c}{}\index{wsdl@{wsdl}!add\+Simple\+Type@{add\+Simple\+Type}}
+\index{add\+Simple\+Type@{add\+Simple\+Type}!wsdl@{wsdl}}
+\subsubsection[{add\+Simple\+Type(\$name, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$type\+Class=\textquotesingle{}simple\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}scalar\textquotesingle{}, \$enumeration=array())}]{\setlength{\rightskip}{0pt plus 5cm}add\+Simple\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$restriction\+Base = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$type\+Class = {\ttfamily \textquotesingle{}simpleType\textquotesingle{}}, }
+\item[{}]{\$php\+Type = {\ttfamily \textquotesingle{}scalar\textquotesingle{}}, }
+\item[{}]{\$enumeration = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a31228a55d8cdb602e32f481406e7455c}
+adds an X\+M\+L Schema simple type to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$restriction\+Base} & namespace\+:name (\href{http://schemas.xmlsoap.org/soap/encoding/:Array}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\+:\+Array}) \\
+\hline
+string & {\em \$type\+Class} & (should always be simple\+Type) \\
+\hline
+string & {\em \$php\+Type} & (should always be scalar) \\
+\hline
+array & {\em \$enumeration} & array of values \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a31228a55d8cdb602e32f481406e7455c}{}\index{wsdl@{wsdl}!add\+Simple\+Type@{add\+Simple\+Type}}
+\index{add\+Simple\+Type@{add\+Simple\+Type}!wsdl@{wsdl}}
+\subsubsection[{add\+Simple\+Type(\$name, \$restriction\+Base=\textquotesingle{}\textquotesingle{}, \$type\+Class=\textquotesingle{}simple\+Type\textquotesingle{}, \$php\+Type=\textquotesingle{}scalar\textquotesingle{}, \$enumeration=array())}]{\setlength{\rightskip}{0pt plus 5cm}add\+Simple\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$restriction\+Base = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$type\+Class = {\ttfamily \textquotesingle{}simpleType\textquotesingle{}}, }
+\item[{}]{\$php\+Type = {\ttfamily \textquotesingle{}scalar\textquotesingle{}}, }
+\item[{}]{\$enumeration = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a31228a55d8cdb602e32f481406e7455c}
+adds an X\+M\+L Schema simple type to the W\+S\+D\+L types
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$restriction\+Base} & namespace\+:name (\href{http://schemas.xmlsoap.org/soap/encoding/:Array}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\+:\+Array}) \\
+\hline
+string & {\em \$type\+Class} & (should always be simple\+Type) \\
+\hline
+string & {\em \$php\+Type} & (should always be scalar) \\
+\hline
+array & {\em \$enumeration} & array of values \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}  public 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}{}\index{wsdl@{wsdl}!character\+\_\+data@{character\+\_\+data}}
+\index{character\+\_\+data@{character\+\_\+data}!wsdl@{wsdl}}
+\subsubsection[{character\+\_\+data(\$parser, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}character\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}
+element content handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$data} & element content  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}{}\index{wsdl@{wsdl}!character\+\_\+data@{character\+\_\+data}}
+\index{character\+\_\+data@{character\+\_\+data}!wsdl@{wsdl}}
+\subsubsection[{character\+\_\+data(\$parser, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}character\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a592a4f9b601cc33f15de0ad7a9c49ae5}
+element content handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$data} & element content  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}{}\index{wsdl@{wsdl}!end\+\_\+element@{end\+\_\+element}}
+\index{end\+\_\+element@{end\+\_\+element}!wsdl@{wsdl}}
+\subsubsection[{end\+\_\+element(\$parser, \$name)}]{\setlength{\rightskip}{0pt plus 5cm}end\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}
+end-\/element handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$name} & element name  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}{}\index{wsdl@{wsdl}!end\+\_\+element@{end\+\_\+element}}
+\index{end\+\_\+element@{end\+\_\+element}!wsdl@{wsdl}}
+\subsubsection[{end\+\_\+element(\$parser, \$name)}]{\setlength{\rightskip}{0pt plus 5cm}end\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ad45367c512cbc2d4679d1a49db3802f2}
+end-\/element handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$name} & element name  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}{}\index{wsdl@{wsdl}!fetch\+W\+S\+D\+L@{fetch\+W\+S\+D\+L}}
+\index{fetch\+W\+S\+D\+L@{fetch\+W\+S\+D\+L}!wsdl@{wsdl}}
+\subsubsection[{fetch\+W\+S\+D\+L(\$wsdl)}]{\setlength{\rightskip}{0pt plus 5cm}fetch\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}
+fetches the W\+S\+D\+L document and parses it
+
+public \hypertarget{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}{}\index{wsdl@{wsdl}!fetch\+W\+S\+D\+L@{fetch\+W\+S\+D\+L}}
+\index{fetch\+W\+S\+D\+L@{fetch\+W\+S\+D\+L}!wsdl@{wsdl}}
+\subsubsection[{fetch\+W\+S\+D\+L(\$wsdl)}]{\setlength{\rightskip}{0pt plus 5cm}fetch\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aa7cee5d5e5c547aa5bb471579bcc7a19}
+fetches the W\+S\+D\+L document and parses it
+
+public \hypertarget{classwsdl_ae6385888eeb57e98ef81323b05842341}{}\index{wsdl@{wsdl}!get\+Binding\+Data@{get\+Binding\+Data}}
+\index{get\+Binding\+Data@{get\+Binding\+Data}!wsdl@{wsdl}}
+\subsubsection[{get\+Binding\+Data(\$binding)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Binding\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$binding}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ae6385888eeb57e98ef81323b05842341}
+\hypertarget{classwsdl_ae6385888eeb57e98ef81323b05842341}{}\index{wsdl@{wsdl}!get\+Binding\+Data@{get\+Binding\+Data}}
+\index{get\+Binding\+Data@{get\+Binding\+Data}!wsdl@{wsdl}}
+\subsubsection[{get\+Binding\+Data(\$binding)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Binding\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$binding}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ae6385888eeb57e98ef81323b05842341}
+\hypertarget{classwsdl_a38f29f3212405560a4bcf188ad632e1f}{}\index{wsdl@{wsdl}!get\+Operation\+Data@{get\+Operation\+Data}}
+\index{get\+Operation\+Data@{get\+Operation\+Data}!wsdl@{wsdl}}
+\subsubsection[{get\+Operation\+Data(\$operation, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a38f29f3212405560a4bcf188ad632e1f}
+returns an associative array of data necessary for calling an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & name of operation \\
+\hline
+string & {\em \$binding\+Type} & type of binding eg\+: soap, soap12 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a38f29f3212405560a4bcf188ad632e1f}{}\index{wsdl@{wsdl}!get\+Operation\+Data@{get\+Operation\+Data}}
+\index{get\+Operation\+Data@{get\+Operation\+Data}!wsdl@{wsdl}}
+\subsubsection[{get\+Operation\+Data(\$operation, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a38f29f3212405560a4bcf188ad632e1f}
+returns an associative array of data necessary for calling an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & name of operation \\
+\hline
+string & {\em \$binding\+Type} & type of binding eg\+: soap, soap12 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}{}\index{wsdl@{wsdl}!get\+Operation\+Data\+For\+Soap\+Action@{get\+Operation\+Data\+For\+Soap\+Action}}
+\index{get\+Operation\+Data\+For\+Soap\+Action@{get\+Operation\+Data\+For\+Soap\+Action}!wsdl@{wsdl}}
+\subsubsection[{get\+Operation\+Data\+For\+Soap\+Action(\$soap\+Action, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data\+For\+Soap\+Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$soap\+Action, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}
+returns an associative array of data necessary for calling an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soap\+Action} & soap\+Action for operation \\
+\hline
+string & {\em \$binding\+Type} & type of binding eg\+: soap, soap12 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}{}\index{wsdl@{wsdl}!get\+Operation\+Data\+For\+Soap\+Action@{get\+Operation\+Data\+For\+Soap\+Action}}
+\index{get\+Operation\+Data\+For\+Soap\+Action@{get\+Operation\+Data\+For\+Soap\+Action}!wsdl@{wsdl}}
+\subsubsection[{get\+Operation\+Data\+For\+Soap\+Action(\$soap\+Action, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operation\+Data\+For\+Soap\+Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$soap\+Action, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5a538dc2c7da9f6f6d6880751318762b}
+returns an associative array of data necessary for calling an operation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soap\+Action} & soap\+Action for operation \\
+\hline
+string & {\em \$binding\+Type} & type of binding eg\+: soap, soap12 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}{}\index{wsdl@{wsdl}!get\+Operations@{get\+Operations}}
+\index{get\+Operations@{get\+Operations}!wsdl@{wsdl}}
+\subsubsection[{get\+Operations(\$port\+Name= \textquotesingle{}\textquotesingle{}, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operations (
+\begin{DoxyParamCaption}
+\item[{}]{\$port\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}
+returns an assoc array of operation names =$>$ operation data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$port\+Name} & W\+S\+D\+L port name \\
+\hline
+string & {\em \$binding\+Type} & eg\+: soap, smtp, dime (only soap and soap12 are currently supported) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}{}\index{wsdl@{wsdl}!get\+Operations@{get\+Operations}}
+\index{get\+Operations@{get\+Operations}!wsdl@{wsdl}}
+\subsubsection[{get\+Operations(\$port\+Name= \textquotesingle{}\textquotesingle{}, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operations (
+\begin{DoxyParamCaption}
+\item[{}]{\$port\+Name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aea628ff93cbcda102e27c3e5e77596ac}
+returns an assoc array of operation names =$>$ operation data
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$port\+Name} & W\+S\+D\+L port name \\
+\hline
+string & {\em \$binding\+Type} & eg\+: soap, smtp, dime (only soap and soap12 are currently supported) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}{}\index{wsdl@{wsdl}!get\+Type\+Def@{get\+Type\+Def}}
+\index{get\+Type\+Def@{get\+Type\+Def}!wsdl@{wsdl}}
+\subsubsection[{get\+Type\+Def(\$type, \$ns)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Type\+Def (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$ns}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}
+returns an array of information about a given type returns false if no type exists by the given name
+
+type\+Def = array( \textquotesingle{}elements\textquotesingle{} =$>$ array(), // refs to elements array \textquotesingle{}restriction\+Base\textquotesingle{} =$>$ \textquotesingle{}\textquotesingle{}, \textquotesingle{}php\+Type\textquotesingle{} =$>$ \textquotesingle{}\textquotesingle{}, \textquotesingle{}order\textquotesingle{} =$>$ \textquotesingle{}(sequence$\vert$all)\textquotesingle{}, \textquotesingle{}attrs\textquotesingle{} =$>$ array() // refs to attributes array )
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type \\
+\hline
+string & {\em \$ns} & namespace (not prefix) of the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed  public 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema} 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}{}\index{wsdl@{wsdl}!get\+Type\+Def@{get\+Type\+Def}}
+\index{get\+Type\+Def@{get\+Type\+Def}!wsdl@{wsdl}}
+\subsubsection[{get\+Type\+Def(\$type, \$ns)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Type\+Def (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$ns}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a327b3186f4e3c8b71431ce4a9db77e5a}
+returns an array of information about a given type returns false if no type exists by the given name
+
+type\+Def = array( \textquotesingle{}elements\textquotesingle{} =$>$ array(), // refs to elements array \textquotesingle{}restriction\+Base\textquotesingle{} =$>$ \textquotesingle{}\textquotesingle{}, \textquotesingle{}php\+Type\textquotesingle{} =$>$ \textquotesingle{}\textquotesingle{}, \textquotesingle{}order\textquotesingle{} =$>$ \textquotesingle{}(sequence$\vert$all)\textquotesingle{}, \textquotesingle{}attrs\textquotesingle{} =$>$ array() // refs to attributes array )
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type \\
+\hline
+string & {\em \$ns} & namespace (not prefix) of the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed  public 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema} 
+\end{DoxySeeAlso}
+\hypertarget{classwsdl_a5ba30e743ac8f337a13eb915c4128904}{}\index{wsdl@{wsdl}!parameters\+Match\+Wrapped@{parameters\+Match\+Wrapped}}
+\index{parameters\+Match\+Wrapped@{parameters\+Match\+Wrapped}!wsdl@{wsdl}}
+\subsubsection[{parameters\+Match\+Wrapped(\$type, \&\$parameters)}]{\setlength{\rightskip}{0pt plus 5cm}parameters\+Match\+Wrapped (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{\&}]{\$parameters}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5ba30e743ac8f337a13eb915c4128904}
+determine whether a set of parameters are unwrapped when they are expect to be wrapped, Microsoft-\/style.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type (element name) of the wrapper \\
+\hline
+array & {\em \$parameters} & the parameter values for the S\+O\+A\+P call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether they parameters are unwrapped (and should be wrapped)  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a5ba30e743ac8f337a13eb915c4128904}{}\index{wsdl@{wsdl}!parameters\+Match\+Wrapped@{parameters\+Match\+Wrapped}}
+\index{parameters\+Match\+Wrapped@{parameters\+Match\+Wrapped}!wsdl@{wsdl}}
+\subsubsection[{parameters\+Match\+Wrapped(\$type, \&\$parameters)}]{\setlength{\rightskip}{0pt plus 5cm}parameters\+Match\+Wrapped (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{\&}]{\$parameters}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5ba30e743ac8f337a13eb915c4128904}
+determine whether a set of parameters are unwrapped when they are expect to be wrapped, Microsoft-\/style.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the type (element name) of the wrapper \\
+\hline
+array & {\em \$parameters} & the parameter values for the S\+O\+A\+P call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether they parameters are unwrapped (and should be wrapped)  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}{}\index{wsdl@{wsdl}!parse\+W\+S\+D\+L@{parse\+W\+S\+D\+L}}
+\index{parse\+W\+S\+D\+L@{parse\+W\+S\+D\+L}!wsdl@{wsdl}}
+\subsubsection[{parse\+W\+S\+D\+L(\$wsdl= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}parse\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}
+parses the wsdl document
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wsdl} & path or U\+R\+L  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}{}\index{wsdl@{wsdl}!parse\+W\+S\+D\+L@{parse\+W\+S\+D\+L}}
+\index{parse\+W\+S\+D\+L@{parse\+W\+S\+D\+L}!wsdl@{wsdl}}
+\subsubsection[{parse\+W\+S\+D\+L(\$wsdl= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}parse\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_aef0643f32c7dca703065cc3eb3fd1dba}
+parses the wsdl document
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wsdl} & path or U\+R\+L  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a25fcce1ac19624739857406748ba332a}{}\index{wsdl@{wsdl}!serialize@{serialize}}
+\index{serialize@{serialize}!wsdl@{wsdl}}
+\subsubsection[{serialize(\$debug=0)}]{\setlength{\rightskip}{0pt plus 5cm}serialize (
+\begin{DoxyParamCaption}
+\item[{}]{\$debug = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a25fcce1ac19624739857406748ba332a}
+serialize the parsed wsdl
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$debug} & whether to put debug=1 in endpoint U\+R\+L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string serialization of W\+S\+D\+L  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a25fcce1ac19624739857406748ba332a}{}\index{wsdl@{wsdl}!serialize@{serialize}}
+\index{serialize@{serialize}!wsdl@{wsdl}}
+\subsubsection[{serialize(\$debug=0)}]{\setlength{\rightskip}{0pt plus 5cm}serialize (
+\begin{DoxyParamCaption}
+\item[{}]{\$debug = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a25fcce1ac19624739857406748ba332a}
+serialize the parsed wsdl
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$debug} & whether to put debug=1 in endpoint U\+R\+L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string serialization of W\+S\+D\+L  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}{}\index{wsdl@{wsdl}!serialize\+Complex\+Type\+Attributes@{serialize\+Complex\+Type\+Attributes}}
+\index{serialize\+Complex\+Type\+Attributes@{serialize\+Complex\+Type\+Attributes}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Complex\+Type\+Attributes(\$type\+Def, \$value, \$ns, \$uq\+Type)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Complex\+Type\+Attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$type\+Def, }
+\item[{}]{\$value, }
+\item[{}]{\$ns, }
+\item[{}]{\$uq\+Type}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}
+serializes the attributes for a complex\+Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$type\+Def} & our internal representation of an X\+M\+L schema type (or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$ns} & the namespace of the type \\
+\hline
+string & {\em \$uq\+Type} & the local part of the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}{}\index{wsdl@{wsdl}!serialize\+Complex\+Type\+Attributes@{serialize\+Complex\+Type\+Attributes}}
+\index{serialize\+Complex\+Type\+Attributes@{serialize\+Complex\+Type\+Attributes}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Complex\+Type\+Attributes(\$type\+Def, \$value, \$ns, \$uq\+Type)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Complex\+Type\+Attributes (
+\begin{DoxyParamCaption}
+\item[{}]{\$type\+Def, }
+\item[{}]{\$value, }
+\item[{}]{\$ns, }
+\item[{}]{\$uq\+Type}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a1bebf04c625f86d2c65c6a2fc4c69f52}
+serializes the attributes for a complex\+Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$type\+Def} & our internal representation of an X\+M\+L schema type (or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$ns} & the namespace of the type \\
+\hline
+string & {\em \$uq\+Type} & the local part of the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a9abd63b860271a2010c4d35b5c607b45}{}\index{wsdl@{wsdl}!serialize\+Complex\+Type\+Elements@{serialize\+Complex\+Type\+Elements}}
+\index{serialize\+Complex\+Type\+Elements@{serialize\+Complex\+Type\+Elements}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Complex\+Type\+Elements(\$type\+Def, \$value, \$ns, \$uq\+Type, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Complex\+Type\+Elements (
+\begin{DoxyParamCaption}
+\item[{}]{\$type\+Def, }
+\item[{}]{\$value, }
+\item[{}]{\$ns, }
+\item[{}]{\$uq\+Type, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a9abd63b860271a2010c4d35b5c607b45}
+serializes the elements for a complex\+Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$type\+Def} & our internal representation of an X\+M\+L schema type (or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$ns} & the namespace of the type \\
+\hline
+string & {\em \$uq\+Type} & the local part of the type \\
+\hline
+string & {\em \$use} & use for part (encoded$\vert$literal) \\
+\hline
+string & {\em \$encoding\+Style} & S\+O\+A\+P encoding style for the value (if different than the enclosing style) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a9abd63b860271a2010c4d35b5c607b45}{}\index{wsdl@{wsdl}!serialize\+Complex\+Type\+Elements@{serialize\+Complex\+Type\+Elements}}
+\index{serialize\+Complex\+Type\+Elements@{serialize\+Complex\+Type\+Elements}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Complex\+Type\+Elements(\$type\+Def, \$value, \$ns, \$uq\+Type, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Complex\+Type\+Elements (
+\begin{DoxyParamCaption}
+\item[{}]{\$type\+Def, }
+\item[{}]{\$value, }
+\item[{}]{\$ns, }
+\item[{}]{\$uq\+Type, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a9abd63b860271a2010c4d35b5c607b45}
+serializes the elements for a complex\+Type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$type\+Def} & our internal representation of an X\+M\+L schema type (or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$ns} & the namespace of the type \\
+\hline
+string & {\em \$uq\+Type} & the local part of the type \\
+\hline
+string & {\em \$use} & use for part (encoded$\vert$literal) \\
+\hline
+string & {\em \$encoding\+Style} & S\+O\+A\+P encoding style for the value (if different than the enclosing style) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_afed507a7c4d2b216e27515ca9181361c}{}\index{wsdl@{wsdl}!serialize\+Parameters@{serialize\+Parameters}}
+\index{serialize\+Parameters@{serialize\+Parameters}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Parameters(\$operation, \$direction, \$parameters)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$direction, }
+\item[{}]{\$parameters}
+\end{DoxyParamCaption}
+)}\label{classwsdl_afed507a7c4d2b216e27515ca9181361c}
+serialize a P\+H\+P value according to a W\+S\+D\+L message definition
+
+T\+O\+D\+O
+\begin{DoxyItemize}
+\item multi-\/ref serialization
+\item validate P\+H\+P values against type definitions, return errors if invalid
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+string & {\em \$direction} & (input$\vert$output) \\
+\hline
+mixed & {\em \$parameters} & parameter value(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed parameters serialized as X\+M\+L or false on error (e.\+g. operation not found)  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000010}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classwsdl_afed507a7c4d2b216e27515ca9181361c}{}\index{wsdl@{wsdl}!serialize\+Parameters@{serialize\+Parameters}}
+\index{serialize\+Parameters@{serialize\+Parameters}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Parameters(\$operation, \$direction, \$parameters)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$direction, }
+\item[{}]{\$parameters}
+\end{DoxyParamCaption}
+)}\label{classwsdl_afed507a7c4d2b216e27515ca9181361c}
+serialize a P\+H\+P value according to a W\+S\+D\+L message definition
+
+T\+O\+D\+O
+\begin{DoxyItemize}
+\item multi-\/ref serialization
+\item validate P\+H\+P values against type definitions, return errors if invalid
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+string & {\em \$direction} & (input$\vert$output) \\
+\hline
+mixed & {\em \$parameters} & parameter value(s) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed parameters serialized as X\+M\+L or false on error (e.\+g. operation not found)  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000023}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}{}\index{wsdl@{wsdl}!serialize\+R\+P\+C\+Parameters@{serialize\+R\+P\+C\+Parameters}}
+\index{serialize\+R\+P\+C\+Parameters@{serialize\+R\+P\+C\+Parameters}!wsdl@{wsdl}}
+\subsubsection[{serialize\+R\+P\+C\+Parameters(\$operation, \$direction, \$parameters, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+R\+P\+C\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$direction, }
+\item[{}]{\$parameters, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}
+serialize P\+H\+P values according to a W\+S\+D\+L message definition contrary to the method name, this is not limited to R\+P\+C
+
+T\+O\+D\+O
+\begin{DoxyItemize}
+\item multi-\/ref serialization
+\item validate P\+H\+P values against type definitions, return errors if invalid
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+string & {\em \$direction} & (input$\vert$output) \\
+\hline
+mixed & {\em \$parameters} & parameter value(s) \\
+\hline
+string & {\em \$binding\+Type} & (soap$\vert$soap12) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed parameters serialized as X\+M\+L or false on error (e.\+g. operation not found)  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}{}\index{wsdl@{wsdl}!serialize\+R\+P\+C\+Parameters@{serialize\+R\+P\+C\+Parameters}}
+\index{serialize\+R\+P\+C\+Parameters@{serialize\+R\+P\+C\+Parameters}!wsdl@{wsdl}}
+\subsubsection[{serialize\+R\+P\+C\+Parameters(\$operation, \$direction, \$parameters, \$binding\+Type= \textquotesingle{}soap\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+R\+P\+C\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$direction, }
+\item[{}]{\$parameters, }
+\item[{}]{\$binding\+Type = {\ttfamily \textquotesingle{}soap\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a20b71dab3c8c6bdad9abb9490a38a48f}
+serialize P\+H\+P values according to a W\+S\+D\+L message definition contrary to the method name, this is not limited to R\+P\+C
+
+T\+O\+D\+O
+\begin{DoxyItemize}
+\item multi-\/ref serialization
+\item validate P\+H\+P values against type definitions, return errors if invalid
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & operation name \\
+\hline
+string & {\em \$direction} & (input$\vert$output) \\
+\hline
+mixed & {\em \$parameters} & parameter value(s) \\
+\hline
+string & {\em \$binding\+Type} & (soap$\vert$soap12) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed parameters serialized as X\+M\+L or false on error (e.\+g. operation not found)  public 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}{}\index{wsdl@{wsdl}!serialize\+Type@{serialize\+Type}}
+\index{serialize\+Type@{serialize\+Type}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Type(\$name, \$type, \$value, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false, \$unqualified=false)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$type, }
+\item[{}]{\$value, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily false}, }
+\item[{}]{\$unqualified = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}
+serializes a P\+H\+P value according a given type definition
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & name of value (part or element) \\
+\hline
+string & {\em \$type} & X\+M\+L schema type of value (type or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$use} & use for part (encoded$\vert$literal) \\
+\hline
+string & {\em \$encoding\+Style} & S\+O\+A\+P encoding style for the value (if different than the enclosing style) \\
+\hline
+boolean & {\em \$unqualified} & a kludge for what should be X\+M\+L namespace form handling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}{}\index{wsdl@{wsdl}!serialize\+Type@{serialize\+Type}}
+\index{serialize\+Type@{serialize\+Type}!wsdl@{wsdl}}
+\subsubsection[{serialize\+Type(\$name, \$type, \$value, \$use=\textquotesingle{}encoded\textquotesingle{}, \$encoding\+Style=false, \$unqualified=false)}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$type, }
+\item[{}]{\$value, }
+\item[{}]{\$use = {\ttfamily \textquotesingle{}encoded\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily false}, }
+\item[{}]{\$unqualified = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a06a97e7bc4c0fe43b1193177d3266c30}
+serializes a P\+H\+P value according a given type definition
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & name of value (part or element) \\
+\hline
+string & {\em \$type} & X\+M\+L schema type of value (type or element) \\
+\hline
+mixed & {\em \$value} & a native P\+H\+P value (parameter value) \\
+\hline
+string & {\em \$use} & use for part (encoded$\vert$literal) \\
+\hline
+string & {\em \$encoding\+Style} & S\+O\+A\+P encoding style for the value (if different than the enclosing style) \\
+\hline
+boolean & {\em \$unqualified} & a kludge for what should be X\+M\+L namespace form handling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string value serialized as an X\+M\+L string  private 
+\end{DoxyReturn}
+\hypertarget{classwsdl_ada213133d177c1c9c07435d65e89e735}{}\index{wsdl@{wsdl}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!wsdl@{wsdl}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ada213133d177c1c9c07435d65e89e735}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, certpassword (optional), verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_ada213133d177c1c9c07435d65e89e735}{}\index{wsdl@{wsdl}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!wsdl@{wsdl}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_ada213133d177c1c9c07435d65e89e735}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, certpassword (optional), verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}{}\index{wsdl@{wsdl}!start\+\_\+element@{start\+\_\+element}}
+\index{start\+\_\+element@{start\+\_\+element}!wsdl@{wsdl}}
+\subsubsection[{start\+\_\+element(\$parser, \$name, \$attrs)}]{\setlength{\rightskip}{0pt plus 5cm}start\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$name, }
+\item[{}]{\$attrs}
+\end{DoxyParamCaption}
+)}\label{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}
+start-\/element handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$name} & element name \\
+\hline
+string & {\em \$attrs} & associative array of attributes  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}{}\index{wsdl@{wsdl}!start\+\_\+element@{start\+\_\+element}}
+\index{start\+\_\+element@{start\+\_\+element}!wsdl@{wsdl}}
+\subsubsection[{start\+\_\+element(\$parser, \$name, \$attrs)}]{\setlength{\rightskip}{0pt plus 5cm}start\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{}]{\$parser, }
+\item[{}]{\$name, }
+\item[{}]{\$attrs}
+\end{DoxyParamCaption}
+)}\label{classwsdl_abf9dc4b028eeac08eeca4c7309a950e2}
+start-\/element handler
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$parser} & X\+M\+L parser object \\
+\hline
+string & {\em \$name} & element name \\
+\hline
+string & {\em \$attrs} & associative array of attributes  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}{}\index{wsdl@{wsdl}!web\+Description@{web\+Description}}
+\index{web\+Description@{web\+Description}!wsdl@{wsdl}}
+\subsubsection[{web\+Description()}]{\setlength{\rightskip}{0pt plus 5cm}web\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}
+prints html description of services
+
+private \hypertarget{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}{}\index{wsdl@{wsdl}!web\+Description@{web\+Description}}
+\index{web\+Description@{web\+Description}!wsdl@{wsdl}}
+\subsubsection[{web\+Description()}]{\setlength{\rightskip}{0pt plus 5cm}web\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a43ffc8c82e99905b889fbeb93d4ca6eb}
+prints html description of services
+
+private \hypertarget{classwsdl_a5b4366809907087aa8d55a24472b310e}{}\index{wsdl@{wsdl}!wsdl@{wsdl}}
+\index{wsdl@{wsdl}!wsdl@{wsdl}}
+\subsubsection[{wsdl(\$wsdl= \textquotesingle{}\textquotesingle{}, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$curl\+\_\+options=null, \$use\+\_\+curl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wsdl} (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxyhost = {\ttfamily false}, }
+\item[{}]{\$proxyport = {\ttfamily false}, }
+\item[{}]{\$proxyusername = {\ttfamily false}, }
+\item[{}]{\$proxypassword = {\ttfamily false}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$curl\+\_\+options = {\ttfamily null}, }
+\item[{}]{\$use\+\_\+curl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5b4366809907087aa8d55a24472b310e}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wsdl} & W\+S\+D\+L document U\+R\+L \\
+\hline
+string & {\em \$proxyhost} & \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & \\
+\hline
+integer & {\em \$timeout} & set the connection timeout \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set the response timeout \\
+\hline
+array & {\em \$curl\+\_\+options} & user-\/specified c\+U\+R\+L options \\
+\hline
+boolean & {\em \$use\+\_\+curl} & try to use c\+U\+R\+L  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classwsdl_a5b4366809907087aa8d55a24472b310e}{}\index{wsdl@{wsdl}!wsdl@{wsdl}}
+\index{wsdl@{wsdl}!wsdl@{wsdl}}
+\subsubsection[{wsdl(\$wsdl= \textquotesingle{}\textquotesingle{}, \$proxyhost=false, \$proxyport=false, \$proxyusername=false, \$proxypassword=false, \$timeout=0, \$response\+\_\+timeout=30, \$curl\+\_\+options=null, \$use\+\_\+curl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf wsdl} (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxyhost = {\ttfamily false}, }
+\item[{}]{\$proxyport = {\ttfamily false}, }
+\item[{}]{\$proxyusername = {\ttfamily false}, }
+\item[{}]{\$proxypassword = {\ttfamily false}, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$curl\+\_\+options = {\ttfamily null}, }
+\item[{}]{\$use\+\_\+curl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classwsdl_a5b4366809907087aa8d55a24472b310e}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$wsdl} & W\+S\+D\+L document U\+R\+L \\
+\hline
+string & {\em \$proxyhost} & \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & \\
+\hline
+integer & {\em \$timeout} & set the connection timeout \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set the response timeout \\
+\hline
+array & {\em \$curl\+\_\+options} & user-\/specified c\+U\+R\+L options \\
+\hline
+boolean & {\em \$use\+\_\+curl} & try to use c\+U\+R\+L  public \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{classwsdl_ae81871b02c5845eb3a1071eb24e1f29c}{}\index{wsdl@{wsdl}!\$authtype@{\$authtype}}
+\index{\$authtype@{\$authtype}!wsdl@{wsdl}}
+\subsubsection[{\$authtype}]{\setlength{\rightskip}{0pt plus 5cm}\$authtype = \textquotesingle{}\textquotesingle{}}\label{classwsdl_ae81871b02c5845eb3a1071eb24e1f29c}
+\hypertarget{classwsdl_adacdcea57647569304169243ff32cd10}{}\index{wsdl@{wsdl}!\$bindings@{\$bindings}}
+\index{\$bindings@{\$bindings}!wsdl@{wsdl}}
+\subsubsection[{\$bindings}]{\setlength{\rightskip}{0pt plus 5cm}\$bindings = array()}\label{classwsdl_adacdcea57647569304169243ff32cd10}
+\hypertarget{classwsdl_adcbe9a77644bad97ed599d1651bd2719}{}\index{wsdl@{wsdl}!\$cert\+Request@{\$cert\+Request}}
+\index{\$cert\+Request@{\$cert\+Request}!wsdl@{wsdl}}
+\subsubsection[{\$cert\+Request}]{\setlength{\rightskip}{0pt plus 5cm}\$cert\+Request = array()}\label{classwsdl_adcbe9a77644bad97ed599d1651bd2719}
+\hypertarget{classwsdl_acf1dbaf5ad35f659428a61193928b78d}{}\index{wsdl@{wsdl}!\$complex\+Types@{\$complex\+Types}}
+\index{\$complex\+Types@{\$complex\+Types}!wsdl@{wsdl}}
+\subsubsection[{\$complex\+Types}]{\setlength{\rightskip}{0pt plus 5cm}\$complex\+Types = array()}\label{classwsdl_acf1dbaf5ad35f659428a61193928b78d}
+\hypertarget{classwsdl_a6f996237d5484e4538b2adf56de893e6}{}\index{wsdl@{wsdl}!\$curl\+\_\+options@{\$curl\+\_\+options}}
+\index{\$curl\+\_\+options@{\$curl\+\_\+options}!wsdl@{wsdl}}
+\subsubsection[{\$curl\+\_\+options}]{\setlength{\rightskip}{0pt plus 5cm}\$curl\+\_\+options = array()}\label{classwsdl_a6f996237d5484e4538b2adf56de893e6}
+\hypertarget{classwsdl_a473fc9ff0b89502bb265577b54a973c3}{}\index{wsdl@{wsdl}!\$current\+Binding@{\$current\+Binding}}
+\index{\$current\+Binding@{\$current\+Binding}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Binding}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Binding}\label{classwsdl_a473fc9ff0b89502bb265577b54a973c3}
+\hypertarget{classwsdl_a04d4e6f80c471063bb6b64c6090c59a2}{}\index{wsdl@{wsdl}!\$current\+Message@{\$current\+Message}}
+\index{\$current\+Message@{\$current\+Message}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Message}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Message}\label{classwsdl_a04d4e6f80c471063bb6b64c6090c59a2}
+\hypertarget{classwsdl_a44b02f3838b36b3aad2401f0f02d3b76}{}\index{wsdl@{wsdl}!\$current\+Operation@{\$current\+Operation}}
+\index{\$current\+Operation@{\$current\+Operation}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Operation}\label{classwsdl_a44b02f3838b36b3aad2401f0f02d3b76}
+\hypertarget{classwsdl_a43463e704b29e9e592607bfe91a11bd6}{}\index{wsdl@{wsdl}!\$current\+Port@{\$current\+Port}}
+\index{\$current\+Port@{\$current\+Port}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Port}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Port}\label{classwsdl_a43463e704b29e9e592607bfe91a11bd6}
+\hypertarget{classwsdl_a87aea97635203239413d2a45c66037e4}{}\index{wsdl@{wsdl}!\$current\+Port\+Type@{\$current\+Port\+Type}}
+\index{\$current\+Port\+Type@{\$current\+Port\+Type}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Port\+Type}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Port\+Type}\label{classwsdl_a87aea97635203239413d2a45c66037e4}
+\hypertarget{classwsdl_af4af684ea50a30d657aeb9682ff0caeb}{}\index{wsdl@{wsdl}!\$current\+Schema@{\$current\+Schema}}
+\index{\$current\+Schema@{\$current\+Schema}!wsdl@{wsdl}}
+\subsubsection[{\$current\+Schema}]{\setlength{\rightskip}{0pt plus 5cm}\$current\+Schema}\label{classwsdl_af4af684ea50a30d657aeb9682ff0caeb}
+\hypertarget{classwsdl_a0abb04e6a8a04e161eb4657f54848b18}{}\index{wsdl@{wsdl}!\$depth@{\$depth}}
+\index{\$depth@{\$depth}!wsdl@{wsdl}}
+\subsubsection[{\$depth}]{\setlength{\rightskip}{0pt plus 5cm}\$depth = 0}\label{classwsdl_a0abb04e6a8a04e161eb4657f54848b18}
+\hypertarget{classwsdl_aaaa53c3e91636edd41a46e767abb3347}{}\index{wsdl@{wsdl}!\$depth\+\_\+array@{\$depth\+\_\+array}}
+\index{\$depth\+\_\+array@{\$depth\+\_\+array}!wsdl@{wsdl}}
+\subsubsection[{\$depth\+\_\+array}]{\setlength{\rightskip}{0pt plus 5cm}\$depth\+\_\+array = array()}\label{classwsdl_aaaa53c3e91636edd41a46e767abb3347}
+\hypertarget{classwsdl_a2c75122f8f6ee14d52c3504f74ab3be9}{}\index{wsdl@{wsdl}!\$documentation@{\$documentation}}
+\index{\$documentation@{\$documentation}!wsdl@{wsdl}}
+\subsubsection[{\$documentation}]{\setlength{\rightskip}{0pt plus 5cm}\$documentation = false}\label{classwsdl_a2c75122f8f6ee14d52c3504f74ab3be9}
+\hypertarget{classwsdl_afb5204f7604df2f50a0058cb0e024875}{}\index{wsdl@{wsdl}!\$endpoint@{\$endpoint}}
+\index{\$endpoint@{\$endpoint}!wsdl@{wsdl}}
+\subsubsection[{\$endpoint}]{\setlength{\rightskip}{0pt plus 5cm}\$endpoint = \textquotesingle{}\textquotesingle{}}\label{classwsdl_afb5204f7604df2f50a0058cb0e024875}
+\hypertarget{classwsdl_a268adb9a1f963c9f862f1158e9cfbffd}{}\index{wsdl@{wsdl}!\$import@{\$import}}
+\index{\$import@{\$import}!wsdl@{wsdl}}
+\subsubsection[{\$import}]{\setlength{\rightskip}{0pt plus 5cm}\$import = array()}\label{classwsdl_a268adb9a1f963c9f862f1158e9cfbffd}
+\hypertarget{classwsdl_abf17cb2dba2ed17cb28aa5f37deb5293}{}\index{wsdl@{wsdl}!\$message@{\$message}}
+\index{\$message@{\$message}!wsdl@{wsdl}}
+\subsubsection[{\$message}]{\setlength{\rightskip}{0pt plus 5cm}\$message = array()}\label{classwsdl_abf17cb2dba2ed17cb28aa5f37deb5293}
+\hypertarget{classwsdl_a21a183f927a6d243fe6b4ba3a6c4d4c8}{}\index{wsdl@{wsdl}!\$messages@{\$messages}}
+\index{\$messages@{\$messages}!wsdl@{wsdl}}
+\subsubsection[{\$messages}]{\setlength{\rightskip}{0pt plus 5cm}\$messages = array()}\label{classwsdl_a21a183f927a6d243fe6b4ba3a6c4d4c8}
+\hypertarget{classwsdl_ae44d696522c0c90798bbfe652bc67f0c}{}\index{wsdl@{wsdl}!\$op\+Data@{\$op\+Data}}
+\index{\$op\+Data@{\$op\+Data}!wsdl@{wsdl}}
+\subsubsection[{\$op\+Data}]{\setlength{\rightskip}{0pt plus 5cm}\$op\+Data = array()}\label{classwsdl_ae44d696522c0c90798bbfe652bc67f0c}
+\hypertarget{classwsdl_a147a766daa03d52576c7345fea31c945}{}\index{wsdl@{wsdl}!\$parser@{\$parser}}
+\index{\$parser@{\$parser}!wsdl@{wsdl}}
+\subsubsection[{\$parser}]{\setlength{\rightskip}{0pt plus 5cm}\$parser}\label{classwsdl_a147a766daa03d52576c7345fea31c945}
+\hypertarget{classwsdl_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\index{wsdl@{wsdl}!\$password@{\$password}}
+\index{\$password@{\$password}!wsdl@{wsdl}}
+\subsubsection[{\$password}]{\setlength{\rightskip}{0pt plus 5cm}\$password = \textquotesingle{}\textquotesingle{}}\label{classwsdl_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+\hypertarget{classwsdl_ae5d9eb7d80081176e92db51fbecf2448}{}\index{wsdl@{wsdl}!\$ports@{\$ports}}
+\index{\$ports@{\$ports}!wsdl@{wsdl}}
+\subsubsection[{\$ports}]{\setlength{\rightskip}{0pt plus 5cm}\$ports = array()}\label{classwsdl_ae5d9eb7d80081176e92db51fbecf2448}
+\hypertarget{classwsdl_aa0affbd30e12dfe2e3d61b716f38cbeb}{}\index{wsdl@{wsdl}!\$port\+Types@{\$port\+Types}}
+\index{\$port\+Types@{\$port\+Types}!wsdl@{wsdl}}
+\subsubsection[{\$port\+Types}]{\setlength{\rightskip}{0pt plus 5cm}\$port\+Types = array()}\label{classwsdl_aa0affbd30e12dfe2e3d61b716f38cbeb}
+\hypertarget{classwsdl_a6e88dcb746884d18f6c89eb9b9c14a42}{}\index{wsdl@{wsdl}!\$position@{\$position}}
+\index{\$position@{\$position}!wsdl@{wsdl}}
+\subsubsection[{\$position}]{\setlength{\rightskip}{0pt plus 5cm}\$position = 0}\label{classwsdl_a6e88dcb746884d18f6c89eb9b9c14a42}
+\hypertarget{classwsdl_a54407bcc777ac313a172561a8ff976c6}{}\index{wsdl@{wsdl}!\$proxyhost@{\$proxyhost}}
+\index{\$proxyhost@{\$proxyhost}!wsdl@{wsdl}}
+\subsubsection[{\$proxyhost}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyhost = \textquotesingle{}\textquotesingle{}}\label{classwsdl_a54407bcc777ac313a172561a8ff976c6}
+\hypertarget{classwsdl_a98c0d3b74811ee643f7d1fce47f1b281}{}\index{wsdl@{wsdl}!\$proxypassword@{\$proxypassword}}
+\index{\$proxypassword@{\$proxypassword}!wsdl@{wsdl}}
+\subsubsection[{\$proxypassword}]{\setlength{\rightskip}{0pt plus 5cm}\$proxypassword = \textquotesingle{}\textquotesingle{}}\label{classwsdl_a98c0d3b74811ee643f7d1fce47f1b281}
+\hypertarget{classwsdl_ac396538deee1152f84f9ddabac2c2366}{}\index{wsdl@{wsdl}!\$proxyport@{\$proxyport}}
+\index{\$proxyport@{\$proxyport}!wsdl@{wsdl}}
+\subsubsection[{\$proxyport}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyport = \textquotesingle{}\textquotesingle{}}\label{classwsdl_ac396538deee1152f84f9ddabac2c2366}
+\hypertarget{classwsdl_aaa30711a40f8f7bae4cd7060414e0fe1}{}\index{wsdl@{wsdl}!\$proxyusername@{\$proxyusername}}
+\index{\$proxyusername@{\$proxyusername}!wsdl@{wsdl}}
+\subsubsection[{\$proxyusername}]{\setlength{\rightskip}{0pt plus 5cm}\$proxyusername = \textquotesingle{}\textquotesingle{}}\label{classwsdl_aaa30711a40f8f7bae4cd7060414e0fe1}
+\hypertarget{classwsdl_a17a3280264a8b9bb5ed32729d654739c}{}\index{wsdl@{wsdl}!\$response\+\_\+timeout@{\$response\+\_\+timeout}}
+\index{\$response\+\_\+timeout@{\$response\+\_\+timeout}!wsdl@{wsdl}}
+\subsubsection[{\$response\+\_\+timeout}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+\_\+timeout = 30}\label{classwsdl_a17a3280264a8b9bb5ed32729d654739c}
+\hypertarget{classwsdl_a99067204780ca14c213a3e15987b7cc1}{}\index{wsdl@{wsdl}!\$schemas@{\$schemas}}
+\index{\$schemas@{\$schemas}!wsdl@{wsdl}}
+\subsubsection[{\$schemas}]{\setlength{\rightskip}{0pt plus 5cm}\$schemas = array()}\label{classwsdl_a99067204780ca14c213a3e15987b7cc1}
+\hypertarget{classwsdl_a58391ea75f2d29d5d708d7050b641c33}{}\index{wsdl@{wsdl}!\$status@{\$status}}
+\index{\$status@{\$status}!wsdl@{wsdl}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \textquotesingle{}\textquotesingle{}}\label{classwsdl_a58391ea75f2d29d5d708d7050b641c33}
+\hypertarget{classwsdl_a84320a9bf3e591d7ae20dfcb0dfe6a0d}{}\index{wsdl@{wsdl}!\$timeout@{\$timeout}}
+\index{\$timeout@{\$timeout}!wsdl@{wsdl}}
+\subsubsection[{\$timeout}]{\setlength{\rightskip}{0pt plus 5cm}\$timeout = 0}\label{classwsdl_a84320a9bf3e591d7ae20dfcb0dfe6a0d}
+\hypertarget{classwsdl_a372c0672391a16e4902e172ea3a0ae63}{}\index{wsdl@{wsdl}!\$use\+\_\+curl@{\$use\+\_\+curl}}
+\index{\$use\+\_\+curl@{\$use\+\_\+curl}!wsdl@{wsdl}}
+\subsubsection[{\$use\+\_\+curl}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+\_\+curl = false}\label{classwsdl_a372c0672391a16e4902e172ea3a0ae63}
+\hypertarget{classwsdl_a0eb82aa5f81cf845de4b36cd653c42cf}{}\index{wsdl@{wsdl}!\$username@{\$username}}
+\index{\$username@{\$username}!wsdl@{wsdl}}
+\subsubsection[{\$username}]{\setlength{\rightskip}{0pt plus 5cm}\$username = \textquotesingle{}\textquotesingle{}}\label{classwsdl_a0eb82aa5f81cf845de4b36cd653c42cf}
+\hypertarget{classwsdl_a8b3fb8293ad64e3dc0b814fedf24c5dd}{}\index{wsdl@{wsdl}!\$wsdl@{\$wsdl}}
+\index{\$wsdl@{\$wsdl}!wsdl@{wsdl}}
+\subsubsection[{\$wsdl}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf wsdl}}\label{classwsdl_a8b3fb8293ad64e3dc0b814fedf24c5dd}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{class_8wsdl_8php}{class.\+wsdl.\+php}\item 
+lib/\hyperlink{nusoap_8php}{nusoap.\+php}\end{DoxyCompactItemize}

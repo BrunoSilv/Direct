@@ -1,0 +1,107 @@
+\hypertarget{nusoap_8php}{}\section{lib/nusoap.php File Reference}
+\label{nusoap_8php}\index{lib/nusoap.\+php@{lib/nusoap.\+php}}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classnusoap__base}{nusoap\+\_\+base}
+\item 
+class \hyperlink{classnusoap__fault}{nusoap\+\_\+fault}
+\item 
+class \hyperlink{classsoap__fault}{soap\+\_\+fault}
+\item 
+class \hyperlink{classnusoap__xmlschema}{nusoap\+\_\+xmlschema}
+\item 
+class \hyperlink{class_x_m_l_schema}{X\+M\+L\+Schema}
+\item 
+class \hyperlink{classsoapval}{soapval}
+\item 
+class \hyperlink{classsoap__transport__http}{soap\+\_\+transport\+\_\+http}
+\item 
+class \hyperlink{classnusoap__server}{nusoap\+\_\+server}
+\item 
+class \hyperlink{classsoap__server}{soap\+\_\+server}
+\item 
+class \hyperlink{classwsdl}{wsdl}
+\item 
+class \hyperlink{classnusoap__parser}{nusoap\+\_\+parser}
+\item 
+class \hyperlink{classsoap__parser}{soap\+\_\+parser}
+\item 
+class \hyperlink{classnusoap__client}{nusoap\+\_\+client}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nusoap_8php_ae9aac88f9bf83be961dd47d1b78b90d3}{timestamp\+\_\+to\+\_\+iso8601} (\$timestamp, \$utc=true)
+\item 
+\hyperlink{nusoap_8php_a7458f4fe2e94892e63804807994fb5b9}{iso8601\+\_\+to\+\_\+timestamp} (\$datestr)
+\item 
+\hyperlink{nusoap_8php_a0405bf74776f57039c31a3f01fd48a29}{usleep\+Windows} (\$usec)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nusoap_8php_a8581b61f0ccce82123a43934d044f729}{\$\+G\+L\+O\+B\+A\+L\+S} \mbox{[}\textquotesingle{}\+\_\+transient\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}static\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}\hyperlink{classnusoap__base}{nusoap\+\_\+base}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}global\+Debug\+Level\textquotesingle{}\mbox{]} = 9
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{nusoap_8php_a7458f4fe2e94892e63804807994fb5b9}{}\index{nusoap.\+php@{nusoap.\+php}!iso8601\+\_\+to\+\_\+timestamp@{iso8601\+\_\+to\+\_\+timestamp}}
+\index{iso8601\+\_\+to\+\_\+timestamp@{iso8601\+\_\+to\+\_\+timestamp}!nusoap.\+php@{nusoap.\+php}}
+\subsubsection[{iso8601\+\_\+to\+\_\+timestamp(\$datestr)}]{\setlength{\rightskip}{0pt plus 5cm}iso8601\+\_\+to\+\_\+timestamp (
+\begin{DoxyParamCaption}
+\item[{}]{\$datestr}
+\end{DoxyParamCaption}
+)}\label{nusoap_8php_a7458f4fe2e94892e63804807994fb5b9}
+convert I\+S\+O 8601 compliant date string to unix timestamp
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$datestr} & I\+S\+O 8601 compliant date string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed Unix timestamp (int) or false  public 
+\end{DoxyReturn}
+\hypertarget{nusoap_8php_ae9aac88f9bf83be961dd47d1b78b90d3}{}\index{nusoap.\+php@{nusoap.\+php}!timestamp\+\_\+to\+\_\+iso8601@{timestamp\+\_\+to\+\_\+iso8601}}
+\index{timestamp\+\_\+to\+\_\+iso8601@{timestamp\+\_\+to\+\_\+iso8601}!nusoap.\+php@{nusoap.\+php}}
+\subsubsection[{timestamp\+\_\+to\+\_\+iso8601(\$timestamp, \$utc=true)}]{\setlength{\rightskip}{0pt plus 5cm}timestamp\+\_\+to\+\_\+iso8601 (
+\begin{DoxyParamCaption}
+\item[{}]{\$timestamp, }
+\item[{}]{\$utc = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\label{nusoap_8php_ae9aac88f9bf83be961dd47d1b78b90d3}
+convert unix timestamp to I\+S\+O 8601 compliant date string
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timestamp} & Unix time stamp \\
+\hline
+boolean & {\em \$utc} & Whether the time stamp is U\+T\+C or local \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed I\+S\+O 8601 date string or false  public 
+\end{DoxyReturn}
+\hypertarget{nusoap_8php_a0405bf74776f57039c31a3f01fd48a29}{}\index{nusoap.\+php@{nusoap.\+php}!usleep\+Windows@{usleep\+Windows}}
+\index{usleep\+Windows@{usleep\+Windows}!nusoap.\+php@{nusoap.\+php}}
+\subsubsection[{usleep\+Windows(\$usec)}]{\setlength{\rightskip}{0pt plus 5cm}usleep\+Windows (
+\begin{DoxyParamCaption}
+\item[{}]{\$usec}
+\end{DoxyParamCaption}
+)}\label{nusoap_8php_a0405bf74776f57039c31a3f01fd48a29}
+sleeps some number of microseconds
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$usec} & the number of microseconds to sleep  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000014}{Deprecated}]\end{DoxyRefDesc}
+For backwards compatiblity, define soapclient unless the P\+H\+P S\+O\+A\+P extension is loaded.
+
+\subsection{Variable Documentation}
+\hypertarget{nusoap_8php_a8581b61f0ccce82123a43934d044f729}{}\index{nusoap.\+php@{nusoap.\+php}!\$\+G\+L\+O\+B\+A\+L\+S@{\$\+G\+L\+O\+B\+A\+L\+S}}
+\index{\$\+G\+L\+O\+B\+A\+L\+S@{\$\+G\+L\+O\+B\+A\+L\+S}!nusoap.\+php@{nusoap.\+php}}
+\subsubsection[{\$\+G\+L\+O\+B\+A\+L\+S}]{\setlength{\rightskip}{0pt plus 5cm}\$G\+L\+O\+B\+A\+L\+S\mbox{[}\textquotesingle{}\+\_\+transient\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}static\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}{\bf nusoap\+\_\+base}\textquotesingle{}\mbox{]}\mbox{[}\textquotesingle{}global\+Debug\+Level\textquotesingle{}\mbox{]} = 9}\label{nusoap_8php_a8581b61f0ccce82123a43934d044f729}

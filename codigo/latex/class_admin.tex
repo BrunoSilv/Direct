@@ -1,0 +1,592 @@
+\hypertarget{class_admin}{}\section{Admin Class Reference}
+\label{class_admin}\index{Admin@{Admin}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_admin_a234abd82474052805896aa1f3233a290}{\+\_\+\+\_\+construct} (\$nome, \$email, \$apelido=null)
+\item 
+\hyperlink{class_admin_ad747dd6dabb752d40ca8de78066cd40a}{actualiza\+\_\+inf\+\_\+condutor} (\$campo, \$novo, \$id)
+\item 
+\hyperlink{class_admin_a4e414743ef417898d5f60abe36c0943b}{actualiza\+\_\+localizacao} (\$lat, \$lon, \$hora, \$viagem\+\_\+id)
+\item 
+\hyperlink{class_admin_af76abee22772fe2860a5525c1b34a515}{get\+\_\+email} ()
+\item 
+\hyperlink{class_admin_a2dd5254b4f43ec19fcb59a139151922d}{set\+\_\+email} (\$email)
+\item 
+\hyperlink{class_admin_aaaf8e4d301da473bee9c562006ea8365}{regista\+\_\+veiculo} (\$token, \$email, \$matricula, \$idc, \$estado, \$local, \$lat, \$long, \$cap, \$img)
+\item 
+\hyperlink{class_admin_ac68e01e7272e94db31620ec08a713cd5}{update\+Empresa} (\$email, \$nova\+Empresa)
+\item 
+\hyperlink{class_admin_a36f36c993f4da045e541d3b8818a2734}{list\+All} ()
+\item 
+\hyperlink{class_admin_a085b2fbfd6ba829e1885a9420865e6af}{Paga\+User} (\$email, \$token, \$tokenvi)
+\item 
+\hyperlink{class_admin_ac44008f88899519293e89b36e4d3acc3}{list\+All\+Cars} (\$token, \$email)
+\item 
+\hyperlink{class_admin_a095a288cff96d3cf09569c174f5e0dc0}{List\+All\+Cars\+User} (\$lat, \$long)
+\item 
+\hyperlink{class_admin_a8984e73a0069f1818c85a35dd09c80ec}{Historic\+User} (\$email, \$token)
+\item 
+\hyperlink{class_admin_ab93521bcae8c90f705635a5788ce1def}{register\+Method} (\$name\+Method)
+\item 
+\hyperlink{class_admin_a3c934047380a0debb627d77d51bb85c8}{process\+Request} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_admin_a68962f36927336274fe54d7076d1ee65}{registar} (\$nome, \$email)
+\item 
+static \hyperlink{class_admin_a793f81c7f4842a47d71b49984456f0f0}{registar\+User} (\$nome, \$email)
+\item 
+static \hyperlink{class_admin_a20706ee21acd9a973da99faa4112d20e}{regista\+\_\+condutor} (\$token, \$email, \$emailcondutor, \$nomecondutor, \$apelido, \$turno)
+\item 
+static \hyperlink{class_admin_a9a175cd84abaa45d80f05a09d7625351}{get\+I\+D} (\$email)
+\item 
+static \hyperlink{class_admin_a0efe0bcf80f6f5b41ac81b80cfb72c65}{testa} (\$nome)
+\item 
+static \hyperlink{class_admin_aba9752327ae42d3df79fb1437c9130bf}{novalocal} (\$token, \$email, \$id, \$lat, \$long, \$local)
+\item 
+static \hyperlink{class_admin_aceb249eefaec6a62c277546eb03d422f}{reserva\+\_\+viagem} (\$email, \$token, \$id, \$locali, \$localfin)
+\item 
+static \hyperlink{class_admin_a68588496a7dd88d68f01e8d274ff7612}{calculapreco} (\$locali, \$localfin)
+\item 
+static \hyperlink{class_admin_aaa785fca3a94cc63758a406ba5f4f0fd}{find\+Name\+Condutor} (\$idc)
+\item 
+static \hyperlink{class_admin_adaf659eb7f80210f9c14e20905fda1f3}{connection} ()
+\item 
+static \hyperlink{class_admin_a600505aca24b215f39f1d07e706fb9c0}{get\+Gestor\+By\+Email} (\$email)
+\item 
+static \hyperlink{class_admin_a11dc47c3bf86372319143d9d83467b03}{get\+Localizacao\+Quadrado} (\$lat, \$lon, \$variacao)
+\item 
+static \hyperlink{class_admin_a55f96b9a8b3f885fd6db6f7bf9d483ce}{alterainfo} (\$token, \$email, \$tabela, \$campo, \$valor, \$id)
+\item 
+static \hyperlink{class_admin_a64557a7cc0eccd0c96f3d9efa4f3dd87}{testeme} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_admin_ad634f418b20382e2802f80532d76d3cd}{\$email} = null
+\item 
+\hyperlink{class_admin_ad135cc8a47e55f0829949cf62214170f}{\$server} = N\+U\+L\+L
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_admin_a234abd82474052805896aa1f3233a290}{}\index{Admin@{Admin}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Admin@{Admin}}
+\subsubsection[{\+\_\+\+\_\+construct(\$nome, \$email, \$apelido=null)}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$nome, }
+\item[{}]{\$email, }
+\item[{}]{\$apelido = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_admin_a234abd82474052805896aa1f3233a290}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_admin_ad747dd6dabb752d40ca8de78066cd40a}{}\index{Admin@{Admin}!actualiza\+\_\+inf\+\_\+condutor@{actualiza\+\_\+inf\+\_\+condutor}}
+\index{actualiza\+\_\+inf\+\_\+condutor@{actualiza\+\_\+inf\+\_\+condutor}!Admin@{Admin}}
+\subsubsection[{actualiza\+\_\+inf\+\_\+condutor(\$campo, \$novo, \$id)}]{\setlength{\rightskip}{0pt plus 5cm}actualiza\+\_\+inf\+\_\+condutor (
+\begin{DoxyParamCaption}
+\item[{}]{\$campo, }
+\item[{}]{\$novo, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{class_admin_ad747dd6dabb752d40ca8de78066cd40a}
+Short description of method actualiza\+\_\+inf\+\_\+condutor\+: atualiza campo do condutor
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_admin_a4e414743ef417898d5f60abe36c0943b}{}\index{Admin@{Admin}!actualiza\+\_\+localizacao@{actualiza\+\_\+localizacao}}
+\index{actualiza\+\_\+localizacao@{actualiza\+\_\+localizacao}!Admin@{Admin}}
+\subsubsection[{actualiza\+\_\+localizacao(\$lat, \$lon, \$hora, \$viagem\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}actualiza\+\_\+localizacao (
+\begin{DoxyParamCaption}
+\item[{}]{\$lat, }
+\item[{}]{\$lon, }
+\item[{}]{\$hora, }
+\item[{}]{\$viagem\+\_\+id}
+\end{DoxyParamCaption}
+)}\label{class_admin_a4e414743ef417898d5f60abe36c0943b}
+Short description of method actualiza\+\_\+inf\+\_\+veiculo
+
+public \begin{DoxyAuthor}{Author}
+, \href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void Short description of method actualiza\+\_\+localizacao
+\end{DoxyReturn}
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_admin_a55f96b9a8b3f885fd6db6f7bf9d483ce}{}\index{Admin@{Admin}!alterainfo@{alterainfo}}
+\index{alterainfo@{alterainfo}!Admin@{Admin}}
+\subsubsection[{alterainfo(\$token, \$email, \$tabela, \$campo, \$valor, \$id)}]{\setlength{\rightskip}{0pt plus 5cm}static alterainfo (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$email, }
+\item[{}]{\$tabela, }
+\item[{}]{\$campo, }
+\item[{}]{\$valor, }
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a55f96b9a8b3f885fd6db6f7bf9d483ce}
+method alterainfo \+: altera uma info qualquer de uma dada tabela com um dado valor 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & email do gestor \\
+\hline
+string & {\em \$email} & token do gestor \\
+\hline
+string & {\em \$tabela} & id do sujeito a alterar \\
+\hline
+string & {\em \$campo} & tabela onde está o campo a alterar \\
+\hline
+string & {\em \$valor} & campo a alterar \\
+\hline
+string & {\em \$id} & valor novo a colocar  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_a68588496a7dd88d68f01e8d274ff7612}{}\index{Admin@{Admin}!calculapreco@{calculapreco}}
+\index{calculapreco@{calculapreco}!Admin@{Admin}}
+\subsubsection[{calculapreco(\$locali, \$localfin)}]{\setlength{\rightskip}{0pt plus 5cm}static calculapreco (
+\begin{DoxyParamCaption}
+\item[{}]{\$locali, }
+\item[{}]{\$localfin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a68588496a7dd88d68f01e8d274ff7612}
+method calculapreco\+: calcula o preco para uma diferença de latitudes 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locali} & de onde se encontra a pessoa \\
+\hline
+string & {\em \$localfin} & local de destino  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+float correspondente ao preço final da viagem 
+\end{DoxyReturn}
+\hypertarget{class_admin_adaf659eb7f80210f9c14e20905fda1f3}{}\index{Admin@{Admin}!connection@{connection}}
+\index{connection@{connection}!Admin@{Admin}}
+\subsubsection[{connection()}]{\setlength{\rightskip}{0pt plus 5cm}static connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_adaf659eb7f80210f9c14e20905fda1f3}
+method connection\+: establece uma ligação à bd
+
+\begin{DoxyReturn}{Returns}
+String corresponde à ligação feita à bd 
+\end{DoxyReturn}
+\hypertarget{class_admin_aaa785fca3a94cc63758a406ba5f4f0fd}{}\index{Admin@{Admin}!find\+Name\+Condutor@{find\+Name\+Condutor}}
+\index{find\+Name\+Condutor@{find\+Name\+Condutor}!Admin@{Admin}}
+\subsubsection[{find\+Name\+Condutor(\$idc)}]{\setlength{\rightskip}{0pt plus 5cm}static find\+Name\+Condutor (
+\begin{DoxyParamCaption}
+\item[{}]{\$idc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_aaa785fca3a94cc63758a406ba5f4f0fd}
+\hypertarget{class_admin_af76abee22772fe2860a5525c1b34a515}{}\index{Admin@{Admin}!get\+\_\+email@{get\+\_\+email}}
+\index{get\+\_\+email@{get\+\_\+email}!Admin@{Admin}}
+\subsubsection[{get\+\_\+email()}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+email (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_admin_af76abee22772fe2860a5525c1b34a515}
+Short description of method pesquisa\+\_\+veiculos
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void Short description of method get\+\_\+email
+\end{DoxyReturn}
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_a600505aca24b215f39f1d07e706fb9c0}{}\index{Admin@{Admin}!get\+Gestor\+By\+Email@{get\+Gestor\+By\+Email}}
+\index{get\+Gestor\+By\+Email@{get\+Gestor\+By\+Email}!Admin@{Admin}}
+\subsubsection[{get\+Gestor\+By\+Email(\$email)}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Gestor\+By\+Email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a600505aca24b215f39f1d07e706fb9c0}
+method get\+Gestor\+By\+Email\+: retorna o gestor atraves do email
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_admin_a9a175cd84abaa45d80f05a09d7625351}{}\index{Admin@{Admin}!get\+I\+D@{get\+I\+D}}
+\index{get\+I\+D@{get\+I\+D}!Admin@{Admin}}
+\subsubsection[{get\+I\+D(\$email)}]{\setlength{\rightskip}{0pt plus 5cm}static get\+I\+D (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a9a175cd84abaa45d80f05a09d7625351}
+method get\+Id\+: retorna o I\+D do gestor através do email
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+int (Retorna 0 se o email e o token não coincidirem com o gestor e 1 se coincidir) 
+\end{DoxyReturn}
+\hypertarget{class_admin_a11dc47c3bf86372319143d9d83467b03}{}\index{Admin@{Admin}!get\+Localizacao\+Quadrado@{get\+Localizacao\+Quadrado}}
+\index{get\+Localizacao\+Quadrado@{get\+Localizacao\+Quadrado}!Admin@{Admin}}
+\subsubsection[{get\+Localizacao\+Quadrado(\$lat, \$lon, \$variacao)}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Localizacao\+Quadrado (
+\begin{DoxyParamCaption}
+\item[{}]{\$lat, }
+\item[{}]{\$lon, }
+\item[{}]{\$variacao}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a11dc47c3bf86372319143d9d83467b03}
+method get\+Localizacao\+Quadrado\+: retorna os veiculos livres
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_admin_a8984e73a0069f1818c85a35dd09c80ec}{}\index{Admin@{Admin}!Historic\+User@{Historic\+User}}
+\index{Historic\+User@{Historic\+User}!Admin@{Admin}}
+\subsubsection[{Historic\+User(\$email, \$token)}]{\setlength{\rightskip}{0pt plus 5cm}Historic\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$token}
+\end{DoxyParamCaption}
+)}\label{class_admin_a8984e73a0069f1818c85a35dd09c80ec}
+\hypertarget{class_admin_a36f36c993f4da045e541d3b8818a2734}{}\index{Admin@{Admin}!list\+All@{list\+All}}
+\index{list\+All@{list\+All}!Admin@{Admin}}
+\subsubsection[{list\+All()}]{\setlength{\rightskip}{0pt plus 5cm}list\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_admin_a36f36c993f4da045e541d3b8818a2734}
+\hypertarget{class_admin_ac44008f88899519293e89b36e4d3acc3}{}\index{Admin@{Admin}!list\+All\+Cars@{list\+All\+Cars}}
+\index{list\+All\+Cars@{list\+All\+Cars}!Admin@{Admin}}
+\subsubsection[{list\+All\+Cars(\$token, \$email)}]{\setlength{\rightskip}{0pt plus 5cm}list\+All\+Cars (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)}\label{class_admin_ac44008f88899519293e89b36e4d3acc3}
+method list\+All\+Cars\+: Lista todos os carros da Bd 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & email do gestor \\
+\hline
+string & {\em \$email} & token do admin  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\hypertarget{class_admin_a095a288cff96d3cf09569c174f5e0dc0}{}\index{Admin@{Admin}!List\+All\+Cars\+User@{List\+All\+Cars\+User}}
+\index{List\+All\+Cars\+User@{List\+All\+Cars\+User}!Admin@{Admin}}
+\subsubsection[{List\+All\+Cars\+User(\$lat, \$long)}]{\setlength{\rightskip}{0pt plus 5cm}List\+All\+Cars\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$lat, }
+\item[{}]{\$long}
+\end{DoxyParamCaption}
+)}\label{class_admin_a095a288cff96d3cf09569c174f5e0dc0}
+\hypertarget{class_admin_aba9752327ae42d3df79fb1437c9130bf}{}\index{Admin@{Admin}!novalocal@{novalocal}}
+\index{novalocal@{novalocal}!Admin@{Admin}}
+\subsubsection[{novalocal(\$token, \$email, \$id, \$lat, \$long, \$local)}]{\setlength{\rightskip}{0pt plus 5cm}static novalocal (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$email, }
+\item[{}]{\$id, }
+\item[{}]{\$lat, }
+\item[{}]{\$long, }
+\item[{}]{\$local}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_aba9752327ae42d3df79fb1437c9130bf}
+method novalocal\+: altera a localização de um veiculo 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & \\
+\hline
+string & {\em \$email} & \\
+\hline
+string & {\em \$id} & \\
+\hline
+string & {\em \$lat} & \\
+\hline
+string & {\em \$long} & \\
+\hline
+string & {\em \$local} & public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+string retorna se foi alterado com sucesso ou nao 
+\end{DoxyReturn}
+\hypertarget{class_admin_a085b2fbfd6ba829e1885a9420865e6af}{}\index{Admin@{Admin}!Paga\+User@{Paga\+User}}
+\index{Paga\+User@{Paga\+User}!Admin@{Admin}}
+\subsubsection[{Paga\+User(\$email, \$token, \$tokenvi)}]{\setlength{\rightskip}{0pt plus 5cm}Paga\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$token, }
+\item[{}]{\$tokenvi}
+\end{DoxyParamCaption}
+)}\label{class_admin_a085b2fbfd6ba829e1885a9420865e6af}
+method Paga\+User\+: confirma o pagamento e altera o estado da viagem 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & email do user \\
+\hline
+string & {\em \$token} & token do user \\
+\hline
+string & {\em \$tokenvi} & token da viagem a pagar  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_a3c934047380a0debb627d77d51bb85c8}{}\index{Admin@{Admin}!process\+Request@{process\+Request}}
+\index{process\+Request@{process\+Request}!Admin@{Admin}}
+\subsubsection[{process\+Request()}]{\setlength{\rightskip}{0pt plus 5cm}process\+Request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_admin_a3c934047380a0debb627d77d51bb85c8}
+\hypertarget{class_admin_a20706ee21acd9a973da99faa4112d20e}{}\index{Admin@{Admin}!regista\+\_\+condutor@{regista\+\_\+condutor}}
+\index{regista\+\_\+condutor@{regista\+\_\+condutor}!Admin@{Admin}}
+\subsubsection[{regista\+\_\+condutor(\$token, \$email, \$emailcondutor, \$nomecondutor, \$apelido, \$turno)}]{\setlength{\rightskip}{0pt plus 5cm}static regista\+\_\+condutor (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$email, }
+\item[{}]{\$emailcondutor, }
+\item[{}]{\$nomecondutor, }
+\item[{}]{\$apelido, }
+\item[{}]{\$turno}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a20706ee21acd9a973da99faa4112d20e}
+method regista\+\_\+condutor\+: regista um novo condutor 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & token do admin para ser validada \\
+\hline
+string & {\em \$email} & email do admin para ser validada \\
+\hline
+string & {\em \$emailcondutor} & \\
+\hline
+string & {\em \$nomecondutor} & \\
+\hline
+ & {\em string} & apelido \\
+\hline
+ & {\em string} & turno  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_aaaf8e4d301da473bee9c562006ea8365}{}\index{Admin@{Admin}!regista\+\_\+veiculo@{regista\+\_\+veiculo}}
+\index{regista\+\_\+veiculo@{regista\+\_\+veiculo}!Admin@{Admin}}
+\subsubsection[{regista\+\_\+veiculo(\$token, \$email, \$matricula, \$idc, \$estado, \$local, \$lat, \$long, \$cap, \$img)}]{\setlength{\rightskip}{0pt plus 5cm}regista\+\_\+veiculo (
+\begin{DoxyParamCaption}
+\item[{}]{\$token, }
+\item[{}]{\$email, }
+\item[{}]{\$matricula, }
+\item[{}]{\$idc, }
+\item[{}]{\$estado, }
+\item[{}]{\$local, }
+\item[{}]{\$lat, }
+\item[{}]{\$long, }
+\item[{}]{\$cap, }
+\item[{}]{\$img}
+\end{DoxyParamCaption}
+)}\label{class_admin_aaaf8e4d301da473bee9c562006ea8365}
+method regista\+\_\+veiculo\+: regista um novo veiculo associando-\/o a um condutor ja criado na bd 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & email do gestor \\
+\hline
+string & {\em \$token} & token do gestor \\
+\hline
+string & {\em \$idc} & id do condutor a associar \\
+\hline
+string & {\em \$estado} & estado atual do carro \\
+\hline
+string & {\em \$local} & localidade onde se encontra o carro \\
+\hline
+float & {\em \$lat} & latitude do carro \\
+\hline
+float & {\em \$long} & longitude do carro \\
+\hline
+int & {\em \$cap} & capacidade do carro \\
+\hline
+string & {\em \$img} & url ou link para uma possivel imagem  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_a68962f36927336274fe54d7076d1ee65}{}\index{Admin@{Admin}!registar@{registar}}
+\index{registar@{registar}!Admin@{Admin}}
+\subsubsection[{registar(\$nome, \$email)}]{\setlength{\rightskip}{0pt plus 5cm}static registar (
+\begin{DoxyParamCaption}
+\item[{}]{\$nome, }
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a68962f36927336274fe54d7076d1ee65}
+method consulta\+\_\+inf\+\_\+condutor
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String Short description of method historico\+\_\+veiculo
+\end{DoxyReturn}
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String method registar\+: regista um novo gestor e retorna o token
+\end{DoxyReturn}
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_a793f81c7f4842a47d71b49984456f0f0}{}\index{Admin@{Admin}!registar\+User@{registar\+User}}
+\index{registar\+User@{registar\+User}!Admin@{Admin}}
+\subsubsection[{registar\+User(\$nome, \$email)}]{\setlength{\rightskip}{0pt plus 5cm}static registar\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$nome, }
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a793f81c7f4842a47d71b49984456f0f0}
+method registar\+User\+: regista um novo user e retorna o token
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+\hypertarget{class_admin_ab93521bcae8c90f705635a5788ce1def}{}\index{Admin@{Admin}!register\+Method@{register\+Method}}
+\index{register\+Method@{register\+Method}!Admin@{Admin}}
+\subsubsection[{register\+Method(\$name\+Method)}]{\setlength{\rightskip}{0pt plus 5cm}register\+Method (
+\begin{DoxyParamCaption}
+\item[{}]{\$name\+Method}
+\end{DoxyParamCaption}
+)}\label{class_admin_ab93521bcae8c90f705635a5788ce1def}
+\hypertarget{class_admin_aceb249eefaec6a62c277546eb03d422f}{}\index{Admin@{Admin}!reserva\+\_\+viagem@{reserva\+\_\+viagem}}
+\index{reserva\+\_\+viagem@{reserva\+\_\+viagem}!Admin@{Admin}}
+\subsubsection[{reserva\+\_\+viagem(\$email, \$token, \$id, \$locali, \$localfin)}]{\setlength{\rightskip}{0pt plus 5cm}static reserva\+\_\+viagem (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$token, }
+\item[{}]{\$id, }
+\item[{}]{\$locali, }
+\item[{}]{\$localfin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_aceb249eefaec6a62c277546eb03d422f}
+method reserva\+\_\+veiculo\+: reserva um veiculo para uma nova viagem do utilizador 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & email do user \\
+\hline
+string & {\em \$token} & token do user \\
+\hline
+string & {\em \$id} & id do carro a alugar \\
+\hline
+string & {\em \$locali} & de onde se encontra a pessoa \\
+\hline
+string & {\em \$localfin} & local de destino  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String correspondete à token da viagem ou se preferir mos , referencia 
+\end{DoxyReturn}
+\hypertarget{class_admin_a2dd5254b4f43ec19fcb59a139151922d}{}\index{Admin@{Admin}!set\+\_\+email@{set\+\_\+email}}
+\index{set\+\_\+email@{set\+\_\+email}!Admin@{Admin}}
+\subsubsection[{set\+\_\+email(\$email)}]{\setlength{\rightskip}{0pt plus 5cm}set\+\_\+email (
+\begin{DoxyParamCaption}
+\item[{}]{\$email}
+\end{DoxyParamCaption}
+)}\label{class_admin_a2dd5254b4f43ec19fcb59a139151922d}
+Short description of method set\+\_\+email
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{class_admin_a0efe0bcf80f6f5b41ac81b80cfb72c65}{}\index{Admin@{Admin}!testa@{testa}}
+\index{testa@{testa}!Admin@{Admin}}
+\subsubsection[{testa(\$nome)}]{\setlength{\rightskip}{0pt plus 5cm}static testa (
+\begin{DoxyParamCaption}
+\item[{}]{\$nome}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a0efe0bcf80f6f5b41ac81b80cfb72c65}
+\hypertarget{class_admin_a64557a7cc0eccd0c96f3d9efa4f3dd87}{}\index{Admin@{Admin}!testeme@{testeme}}
+\index{testeme@{testeme}!Admin@{Admin}}
+\subsubsection[{testeme(\$string)}]{\setlength{\rightskip}{0pt plus 5cm}static testeme (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_admin_a64557a7cc0eccd0c96f3d9efa4f3dd87}
+\hypertarget{class_admin_ac68e01e7272e94db31620ec08a713cd5}{}\index{Admin@{Admin}!update\+Empresa@{update\+Empresa}}
+\index{update\+Empresa@{update\+Empresa}!Admin@{Admin}}
+\subsubsection[{update\+Empresa(\$email, \$nova\+Empresa)}]{\setlength{\rightskip}{0pt plus 5cm}update\+Empresa (
+\begin{DoxyParamCaption}
+\item[{}]{\$email, }
+\item[{}]{\$nova\+Empresa}
+\end{DoxyParamCaption}
+)}\label{class_admin_ac68e01e7272e94db31620ec08a713cd5}
+Short description of method update\+Empresa
+
+public \begin{DoxyAuthor}{Author}
+\href{mailto:author@example.org}{\tt author@example.\+org} 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_admin_ad634f418b20382e2802f80532d76d3cd}{}\index{Admin@{Admin}!\$email@{\$email}}
+\index{\$email@{\$email}!Admin@{Admin}}
+\subsubsection[{\$email}]{\setlength{\rightskip}{0pt plus 5cm}\$email = null}\label{class_admin_ad634f418b20382e2802f80532d76d3cd}
+\hypertarget{class_admin_ad135cc8a47e55f0829949cf62214170f}{}\index{Admin@{Admin}!\$server@{\$server}}
+\index{\$server@{\$server}!Admin@{Admin}}
+\subsubsection[{\$server}]{\setlength{\rightskip}{0pt plus 5cm}\$server = N\+U\+L\+L}\label{class_admin_ad135cc8a47e55f0829949cf62214170f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_admin_8php}{Admin.\+php}\end{DoxyCompactItemize}

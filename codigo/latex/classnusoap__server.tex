@@ -1,0 +1,851 @@
+\hypertarget{classnusoap__server}{}\section{nusoap\+\_\+server Class Reference}
+\label{classnusoap__server}\index{nusoap\+\_\+server@{nusoap\+\_\+server}}
+Inheritance diagram for nusoap\+\_\+server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classnusoap__server}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}{nusoap\+\_\+server} (\$\hyperlink{classwsdl}{wsdl}=false)
+\item 
+\hyperlink{classnusoap__server_ad91e2ca0020e1192392077915db92e41}{service} (\$data)
+\item 
+\hyperlink{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}{parse\+\_\+http\+\_\+headers} ()
+\item 
+\hyperlink{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}{parse\+\_\+request} (\$data=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}{invoke\+\_\+method} ()
+\item 
+\hyperlink{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}{serialize\+\_\+return} ()
+\item 
+\hyperlink{classnusoap__server_a5639906d44165650fa1ee610f2435e89}{send\+\_\+response} ()
+\item 
+\hyperlink{classnusoap__server_a6621bf070937d91b20824bceedac26f4}{verify\+\_\+method} (\$operation, \$request)
+\item 
+\hyperlink{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}{parse\+Request} (\$headers, \$data)
+\item 
+\hyperlink{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}{get\+H\+T\+T\+P\+Body} (\$soapmsg)
+\item 
+\hyperlink{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}{get\+H\+T\+T\+P\+Content\+Type} ()
+\item 
+\hyperlink{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}{get\+H\+T\+T\+P\+Content\+Type\+Charset} ()
+\item 
+\hyperlink{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}{add\+\_\+to\+\_\+map} (\$methodname, \$in, \$out)
+\item 
+\hyperlink{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}{register} (\$name, \$in=array(), \$out=array(), \$namespace=false, \$soapaction=false, \$style=false, \$use=false, \$documentation=\textquotesingle{}\textquotesingle{}, \$encoding\+Style=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}{fault} (\$faultcode, \$faultstring, \$faultactor=\textquotesingle{}\textquotesingle{}, \$faultdetail=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}{configure\+W\+S\+D\+L} (\$service\+Name, \$namespace=false, \$endpoint=false, \$style=\textquotesingle{}rpc\textquotesingle{}, \$transport= \textquotesingle{}http\+://schemas.\+xmlsoap.\+org/soap/http\textquotesingle{}, \$\hyperlink{_admin_8php_ab197a5bef9bb7041545b3f0b6db00f8f}{schema\+Target\+Namespace}=false)
+\item 
+\hyperlink{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}{nusoap\+\_\+server} (\$\hyperlink{classwsdl}{wsdl}=false)
+\item 
+\hyperlink{classnusoap__server_ad91e2ca0020e1192392077915db92e41}{service} (\$data)
+\item 
+\hyperlink{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}{parse\+\_\+http\+\_\+headers} ()
+\item 
+\hyperlink{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}{parse\+\_\+request} (\$data=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}{invoke\+\_\+method} ()
+\item 
+\hyperlink{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}{serialize\+\_\+return} ()
+\item 
+\hyperlink{classnusoap__server_a5639906d44165650fa1ee610f2435e89}{send\+\_\+response} ()
+\item 
+\hyperlink{classnusoap__server_a6621bf070937d91b20824bceedac26f4}{verify\+\_\+method} (\$operation, \$request)
+\item 
+\hyperlink{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}{parse\+Request} (\$headers, \$data)
+\item 
+\hyperlink{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}{get\+H\+T\+T\+P\+Body} (\$soapmsg)
+\item 
+\hyperlink{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}{get\+H\+T\+T\+P\+Content\+Type} ()
+\item 
+\hyperlink{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}{get\+H\+T\+T\+P\+Content\+Type\+Charset} ()
+\item 
+\hyperlink{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}{add\+\_\+to\+\_\+map} (\$methodname, \$in, \$out)
+\item 
+\hyperlink{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}{register} (\$name, \$in=array(), \$out=array(), \$namespace=false, \$soapaction=false, \$style=false, \$use=false, \$documentation=\textquotesingle{}\textquotesingle{}, \$encoding\+Style=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}{fault} (\$faultcode, \$faultstring, \$faultactor=\textquotesingle{}\textquotesingle{}, \$faultdetail=\textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}{configure\+W\+S\+D\+L} (\$service\+Name, \$namespace=false, \$endpoint=false, \$style=\textquotesingle{}rpc\textquotesingle{}, \$transport= \textquotesingle{}http\+://schemas.\+xmlsoap.\+org/soap/http\textquotesingle{}, \$\hyperlink{_admin_8php_ab197a5bef9bb7041545b3f0b6db00f8f}{schema\+Target\+Namespace}=false)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classnusoap__server_a52500036ee807241b8b4b7e2367c49ef}{\$headers} = array()
+\item 
+\hyperlink{classnusoap__server_abb35c8495a232b510389fa6d7b15d38a}{\$request} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a245d2deb868c1cc1a23b10c48c6d0754}{\$request\+Headers} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a6ba1fc8d460c18c97ab0b2597197de22}{\$request\+Header} = N\+U\+L\+L
+\item 
+\hyperlink{classnusoap__server_ac5a31edb787609a3143dec9bfa8063ea}{\$document} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a76b7275a4c31f563c09042986d6e4c3b}{\$request\+S\+O\+A\+P} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a56655c621a045170b3ca350b663b84a6}{\$method\+U\+R\+I} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_ae1579f9ce708fe6faf236f8015d6251b}{\$methodname} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a324e20e34ac140c80ed4709be5658b85}{\$methodparams} = array()
+\item 
+\hyperlink{classnusoap__server_a2c4c10ecb8af347cc9e9e137e8bacab7}{\$\+S\+O\+A\+P\+Action} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a1e2ee3fea6dbb8374da999a9df7d024d}{\$xml\+\_\+encoding} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a15fe586a802bc22337e3fe874d6da038}{\$decode\+\_\+utf8} = true
+\item 
+\hyperlink{classnusoap__server_ac4175695783164be56dd48fda2e405b2}{\$outgoing\+\_\+headers} = array()
+\item 
+\hyperlink{classnusoap__server_af4b6fb1bbc77ccc05f10da3b16935b99}{\$response} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a02f80cf3a7fe7cf42c97b821c167b934}{\$response\+Headers} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a9756c0cde47da4b73e26d109694ea009}{\$response\+S\+O\+A\+P} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a23818ad96db6b887387371cc23d476be}{\$methodreturn} = false
+\item 
+\hyperlink{classnusoap__server_a60fce764fb108d9b6a0572b0583628cb}{\$methodreturnisliteralxml} = false
+\item 
+\hyperlink{classnusoap__server_a365691ed834f59a9a513180136e7a847}{\$fault} = false
+\item 
+\hyperlink{classnusoap__server_a112ef069ddc0454086e3d1e6d8d55d07}{\$result} = \textquotesingle{}successful\textquotesingle{}
+\item 
+\hyperlink{classnusoap__server_a3f662373ff81db09eed5649d07f1931c}{\$operations} = array()
+\item 
+\hyperlink{classnusoap__server_a8b3fb8293ad64e3dc0b814fedf24c5dd}{\$wsdl} = false
+\item 
+\hyperlink{classnusoap__server_ab5b3efddc8a73e3895444f85674950d1}{\$external\+W\+S\+D\+L\+U\+R\+L} = false
+\item 
+\hyperlink{classnusoap__server_a4365dcf21d6ec72c63e5e6fcbddce4fb}{\$debug\+\_\+flag} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classnusoap__server}{nusoap\+\_\+server} allows the user to create a S\+O\+A\+P server that is capable of receiving messages and returning responses
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{class_8soap__server_8php}{class.\+soap\+\_\+server.\+php},v 1.\+63 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public
+
+\hyperlink{classnusoap__server}{nusoap\+\_\+server} allows the user to create a S\+O\+A\+P server that is capable of receiving messages and returning responses
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{nusoap_8php}{nusoap.\+php},v 1.\+123 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public 
+
+\subsection{Member Function Documentation}
+\hypertarget{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!add\+\_\+to\+\_\+map@{add\+\_\+to\+\_\+map}}
+\index{add\+\_\+to\+\_\+map@{add\+\_\+to\+\_\+map}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{add\+\_\+to\+\_\+map(\$methodname, \$in, \$out)}]{\setlength{\rightskip}{0pt plus 5cm}add\+\_\+to\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{}]{\$methodname, }
+\item[{}]{\$in, }
+\item[{}]{\$out}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}
+add a method to the dispatch map (this has been replaced by the register method)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$methodname} & \\
+\hline
+string & {\em \$in} & array of input values \\
+\hline
+string & {\em \$out} & array of output values  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000005}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!add\+\_\+to\+\_\+map@{add\+\_\+to\+\_\+map}}
+\index{add\+\_\+to\+\_\+map@{add\+\_\+to\+\_\+map}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{add\+\_\+to\+\_\+map(\$methodname, \$in, \$out)}]{\setlength{\rightskip}{0pt plus 5cm}add\+\_\+to\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{}]{\$methodname, }
+\item[{}]{\$in, }
+\item[{}]{\$out}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ad2e47223401828fb5e5fe54733abaf9a}
+add a method to the dispatch map (this has been replaced by the register method)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$methodname} & \\
+\hline
+string & {\em \$in} & array of input values \\
+\hline
+string & {\em \$out} & array of output values  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000022}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!configure\+W\+S\+D\+L@{configure\+W\+S\+D\+L}}
+\index{configure\+W\+S\+D\+L@{configure\+W\+S\+D\+L}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{configure\+W\+S\+D\+L(\$service\+Name, \$namespace=false, \$endpoint=false, \$style=\textquotesingle{}rpc\textquotesingle{}, \$transport= \textquotesingle{}http\+://schemas.\+xmlsoap.\+org/soap/http\textquotesingle{}, \$schema\+Target\+Namespace=false)}]{\setlength{\rightskip}{0pt plus 5cm}configure\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$service\+Name, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$endpoint = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$transport = {\ttfamily \textquotesingle{}http\+://schemas.xmlsoap.org/soap/http\textquotesingle{}}, }
+\item[{}]{\$schema\+Target\+Namespace = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}
+Sets up wsdl object. Acts as a flag to enable internal W\+S\+D\+L generation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name,name} & of the service \\
+\hline
+mixed & {\em \$namespace} & optional \textquotesingle{}tns\textquotesingle{} service namespace or false \\
+\hline
+mixed & {\em \$endpoint} & optional U\+R\+L of service endpoint or false \\
+\hline
+string & {\em \$style} & optional (rpc$\vert$document) W\+S\+D\+L style (also specified by operation) \\
+\hline
+string & {\em \$transport} & optional S\+O\+A\+P transport \\
+\hline
+mixed & {\em \$schema\+Target\+Namespace} & optional \textquotesingle{}types\textquotesingle{} target\+Namespace for service schema or false \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!configure\+W\+S\+D\+L@{configure\+W\+S\+D\+L}}
+\index{configure\+W\+S\+D\+L@{configure\+W\+S\+D\+L}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{configure\+W\+S\+D\+L(\$service\+Name, \$namespace=false, \$endpoint=false, \$style=\textquotesingle{}rpc\textquotesingle{}, \$transport= \textquotesingle{}http\+://schemas.\+xmlsoap.\+org/soap/http\textquotesingle{}, \$schema\+Target\+Namespace=false)}]{\setlength{\rightskip}{0pt plus 5cm}configure\+W\+S\+D\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$service\+Name, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$endpoint = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily \textquotesingle{}rpc\textquotesingle{}}, }
+\item[{}]{\$transport = {\ttfamily \textquotesingle{}http\+://schemas.xmlsoap.org/soap/http\textquotesingle{}}, }
+\item[{}]{\$schema\+Target\+Namespace = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a569306e1dcc17e55d737ef6096709e65}
+Sets up wsdl object. Acts as a flag to enable internal W\+S\+D\+L generation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service\+Name,name} & of the service \\
+\hline
+mixed & {\em \$namespace} & optional \textquotesingle{}tns\textquotesingle{} service namespace or false \\
+\hline
+mixed & {\em \$endpoint} & optional U\+R\+L of service endpoint or false \\
+\hline
+string & {\em \$style} & optional (rpc$\vert$document) W\+S\+D\+L style (also specified by operation) \\
+\hline
+string & {\em \$transport} & optional S\+O\+A\+P transport \\
+\hline
+mixed & {\em \$schema\+Target\+Namespace} & optional \textquotesingle{}types\textquotesingle{} target\+Namespace for service schema or false \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!fault@{fault}}
+\index{fault@{fault}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{fault(\$faultcode, \$faultstring, \$faultactor=\textquotesingle{}\textquotesingle{}, \$faultdetail=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}fault (
+\begin{DoxyParamCaption}
+\item[{}]{\$faultcode, }
+\item[{}]{\$faultstring, }
+\item[{}]{\$faultactor = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$faultdetail = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}
+Specify a fault to be returned to the client. This also acts as a flag to the server that a fault has occured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$faultcode} & \\
+\hline
+string & {\em \$faultstring} & \\
+\hline
+string & {\em \$faultactor} & \\
+\hline
+string & {\em \$faultdetail} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!fault@{fault}}
+\index{fault@{fault}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{fault(\$faultcode, \$faultstring, \$faultactor=\textquotesingle{}\textquotesingle{}, \$faultdetail=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}fault (
+\begin{DoxyParamCaption}
+\item[{}]{\$faultcode, }
+\item[{}]{\$faultstring, }
+\item[{}]{\$faultactor = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$faultdetail = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ac6a9b7aaeeeecd1e365f8846d4bfc2d9}
+Specify a fault to be returned to the client. This also acts as a flag to the server that a fault has occured.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$faultcode} & \\
+\hline
+string & {\em \$faultstring} & \\
+\hline
+string & {\em \$faultactor} & \\
+\hline
+string & {\em \$faultdetail} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}}
+\index{get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Body(\$soapmsg)}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Body (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapmsg}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}
+gets the H\+T\+T\+P body for the current response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapmsg} & The S\+O\+A\+P payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The H\+T\+T\+P body, which includes the S\+O\+A\+P payload  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}}
+\index{get\+H\+T\+T\+P\+Body@{get\+H\+T\+T\+P\+Body}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Body(\$soapmsg)}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Body (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapmsg}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ab1e22b0858bdbe61d2d711ff442c0e78}
+gets the H\+T\+T\+P body for the current response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapmsg} & The S\+O\+A\+P payload \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The H\+T\+T\+P body, which includes the S\+O\+A\+P payload  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}}
+\index{get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}
+gets the H\+T\+T\+P content type for the current response.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type for the current response.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}}
+\index{get\+H\+T\+T\+P\+Content\+Type@{get\+H\+T\+T\+P\+Content\+Type}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a2bed19ef2d537dee244535339cd6026a}
+gets the H\+T\+T\+P content type for the current response.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type for the current response.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}}
+\index{get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type\+Charset()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type\+Charset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}
+gets the H\+T\+T\+P content type charset for the current response. returns false for non-\/text content types.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type charset for the current response.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}}
+\index{get\+H\+T\+T\+P\+Content\+Type\+Charset@{get\+H\+T\+T\+P\+Content\+Type\+Charset}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{get\+H\+T\+T\+P\+Content\+Type\+Charset()}]{\setlength{\rightskip}{0pt plus 5cm}get\+H\+T\+T\+P\+Content\+Type\+Charset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a9051db33a9b7e50315d9222ef1c52ce9}
+gets the H\+T\+T\+P content type charset for the current response. returns false for non-\/text content types.
+
+Note\+: get\+H\+T\+T\+P\+Body must be called before this.
+
+\begin{DoxyReturn}{Returns}
+string the H\+T\+T\+P content type charset for the current response.  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!invoke\+\_\+method@{invoke\+\_\+method}}
+\index{invoke\+\_\+method@{invoke\+\_\+method}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{invoke\+\_\+method()}]{\setlength{\rightskip}{0pt plus 5cm}invoke\+\_\+method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}
+invokes a P\+H\+P function for the requested S\+O\+A\+P method
+
+The following fields are set by this function (when successful)
+
+methodreturn
+
+Note that the P\+H\+P function that is called may also set the following fields to affect the response sent to the client
+
+response\+Headers outgoing\+\_\+headers
+
+This sets the fault field on error
+
+private \hypertarget{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!invoke\+\_\+method@{invoke\+\_\+method}}
+\index{invoke\+\_\+method@{invoke\+\_\+method}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{invoke\+\_\+method()}]{\setlength{\rightskip}{0pt plus 5cm}invoke\+\_\+method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_afa0f240a77cba882ddb1096255aaa88c}
+invokes a P\+H\+P function for the requested S\+O\+A\+P method
+
+The following fields are set by this function (when successful)
+
+methodreturn
+
+Note that the P\+H\+P function that is called may also set the following fields to affect the response sent to the client
+
+response\+Headers outgoing\+\_\+headers
+
+This sets the fault field on error
+
+private \hypertarget{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\index{nusoap\+\_\+server@{nusoap\+\_\+server}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{nusoap\+\_\+server(\$wsdl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nusoap\+\_\+server} (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}
+constructor the optional parameter is a path to a W\+S\+D\+L file that you\textquotesingle{}d like to bind the server instance to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$wsdl} & file path or U\+R\+L (string), or wsdl instance (object)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\index{nusoap\+\_\+server@{nusoap\+\_\+server}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{nusoap\+\_\+server(\$wsdl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf nusoap\+\_\+server} (
+\begin{DoxyParamCaption}
+\item[{}]{\$wsdl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a367515afa8e8ec27dc922dc2d66677d0}
+constructor the optional parameter is a path to a W\+S\+D\+L file that you\textquotesingle{}d like to bind the server instance to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$wsdl} & file path or U\+R\+L (string), or wsdl instance (object)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+\_\+http\+\_\+headers@{parse\+\_\+http\+\_\+headers}}
+\index{parse\+\_\+http\+\_\+headers@{parse\+\_\+http\+\_\+headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+\_\+http\+\_\+headers()}]{\setlength{\rightskip}{0pt plus 5cm}parse\+\_\+http\+\_\+headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}
+parses H\+T\+T\+P request headers.
+
+The following fields are set by this function (when successful)
+
+headers request xml\+\_\+encoding S\+O\+A\+P\+Action
+
+private \hypertarget{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+\_\+http\+\_\+headers@{parse\+\_\+http\+\_\+headers}}
+\index{parse\+\_\+http\+\_\+headers@{parse\+\_\+http\+\_\+headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+\_\+http\+\_\+headers()}]{\setlength{\rightskip}{0pt plus 5cm}parse\+\_\+http\+\_\+headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_aa7d62dcdbc6b24667691c66700bec2ea}
+parses H\+T\+T\+P request headers.
+
+The following fields are set by this function (when successful)
+
+headers request xml\+\_\+encoding S\+O\+A\+P\+Action
+
+private \hypertarget{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+\_\+request@{parse\+\_\+request}}
+\index{parse\+\_\+request@{parse\+\_\+request}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+\_\+request(\$data=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}parse\+\_\+request (
+\begin{DoxyParamCaption}
+\item[{}]{\$data = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}
+parses a request
+
+The following fields are set by this function (when successful)
+
+headers request xml\+\_\+encoding S\+O\+A\+P\+Action request request\+S\+O\+A\+P method\+U\+R\+I methodname methodparams request\+Headers document
+
+This sets the fault field on error
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & X\+M\+L string  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+\_\+request@{parse\+\_\+request}}
+\index{parse\+\_\+request@{parse\+\_\+request}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+\_\+request(\$data=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}parse\+\_\+request (
+\begin{DoxyParamCaption}
+\item[{}]{\$data = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ac1c98672ed25f0f3b8a7470a342f45c0}
+parses a request
+
+The following fields are set by this function (when successful)
+
+headers request xml\+\_\+encoding S\+O\+A\+P\+Action request request\+S\+O\+A\+P method\+U\+R\+I methodname methodparams request\+Headers document
+
+This sets the fault field on error
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & X\+M\+L string  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+Request@{parse\+Request}}
+\index{parse\+Request@{parse\+Request}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+Request(\$headers, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}
+processes S\+O\+A\+P message received from client
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & The H\+T\+T\+P headers \\
+\hline
+string & {\em \$data} & unprocessed request data from client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed value of the message, decoded into a P\+H\+P type  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!parse\+Request@{parse\+Request}}
+\index{parse\+Request@{parse\+Request}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{parse\+Request(\$headers, \$data)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers, }
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a7a69990540b6dc277f2775abd40772a1}
+processes S\+O\+A\+P message received from client
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & The H\+T\+T\+P headers \\
+\hline
+string & {\em \$data} & unprocessed request data from client \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed value of the message, decoded into a P\+H\+P type  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!register@{register}}
+\index{register@{register}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{register(\$name, \$in=array(), \$out=array(), \$namespace=false, \$soapaction=false, \$style=false, \$use=false, \$documentation=\textquotesingle{}\textquotesingle{}, \$encoding\+Style=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}register (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$in = {\ttfamily array()}, }
+\item[{}]{\$out = {\ttfamily array()}, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$soapaction = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily false}, }
+\item[{}]{\$use = {\ttfamily false}, }
+\item[{}]{\$documentation = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}
+register a service function with the server
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & the name of the P\+H\+P function, class.\+method or class..method \\
+\hline
+array & {\em \$in} & assoc array of input values\+: key = param name, value = param type \\
+\hline
+array & {\em \$out} & assoc array of output values\+: key = param name, value = param type \\
+\hline
+mixed & {\em \$namespace} & the element namespace for the method or false \\
+\hline
+mixed & {\em \$soapaction} & the soapaction for the method or false \\
+\hline
+mixed & {\em \$style} & optional (rpc$\vert$document) or false Note\+: when \textquotesingle{}document\textquotesingle{} is specified, parameter and return wrappers are created for you automatically \\
+\hline
+mixed & {\em \$use} & optional (encoded$\vert$literal) or false \\
+\hline
+string & {\em \$documentation} & optional Description to include in W\+S\+D\+L \\
+\hline
+string & {\em \$encoding\+Style} & optional (usually \textquotesingle{}\href{http://schemas.xmlsoap.org/soap/encoding/'}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\textquotesingle{}} for encoded)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!register@{register}}
+\index{register@{register}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{register(\$name, \$in=array(), \$out=array(), \$namespace=false, \$soapaction=false, \$style=false, \$use=false, \$documentation=\textquotesingle{}\textquotesingle{}, \$encoding\+Style=\textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}register (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$in = {\ttfamily array()}, }
+\item[{}]{\$out = {\ttfamily array()}, }
+\item[{}]{\$namespace = {\ttfamily false}, }
+\item[{}]{\$soapaction = {\ttfamily false}, }
+\item[{}]{\$style = {\ttfamily false}, }
+\item[{}]{\$use = {\ttfamily false}, }
+\item[{}]{\$documentation = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding\+Style = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a17b5ba99bab794b0a9584592f6e23b04}
+register a service function with the server
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & the name of the P\+H\+P function, class.\+method or class..method \\
+\hline
+array & {\em \$in} & assoc array of input values\+: key = param name, value = param type \\
+\hline
+array & {\em \$out} & assoc array of output values\+: key = param name, value = param type \\
+\hline
+mixed & {\em \$namespace} & the element namespace for the method or false \\
+\hline
+mixed & {\em \$soapaction} & the soapaction for the method or false \\
+\hline
+mixed & {\em \$style} & optional (rpc$\vert$document) or false Note\+: when \textquotesingle{}document\textquotesingle{} is specified, parameter and return wrappers are created for you automatically \\
+\hline
+mixed & {\em \$use} & optional (encoded$\vert$literal) or false \\
+\hline
+string & {\em \$documentation} & optional Description to include in W\+S\+D\+L \\
+\hline
+string & {\em \$encoding\+Style} & optional (usually \textquotesingle{}\href{http://schemas.xmlsoap.org/soap/encoding/'}{\tt http\+://schemas.\+xmlsoap.\+org/soap/encoding/\textquotesingle{}} for encoded)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a5639906d44165650fa1ee610f2435e89}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!send\+\_\+response@{send\+\_\+response}}
+\index{send\+\_\+response@{send\+\_\+response}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{send\+\_\+response()}]{\setlength{\rightskip}{0pt plus 5cm}send\+\_\+response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a5639906d44165650fa1ee610f2435e89}
+sends an H\+T\+T\+P response
+
+The following fields are set by this function (when successful)
+
+outgoing\+\_\+headers response
+
+private \hypertarget{classnusoap__server_a5639906d44165650fa1ee610f2435e89}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!send\+\_\+response@{send\+\_\+response}}
+\index{send\+\_\+response@{send\+\_\+response}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{send\+\_\+response()}]{\setlength{\rightskip}{0pt plus 5cm}send\+\_\+response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a5639906d44165650fa1ee610f2435e89}
+sends an H\+T\+T\+P response
+
+The following fields are set by this function (when successful)
+
+outgoing\+\_\+headers response
+
+private \hypertarget{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!serialize\+\_\+return@{serialize\+\_\+return}}
+\index{serialize\+\_\+return@{serialize\+\_\+return}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{serialize\+\_\+return()}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+\_\+return (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}
+serializes the return value from a P\+H\+P function into a full S\+O\+A\+P Envelope
+
+The following fields are set by this function (when successful)
+
+response\+S\+O\+A\+P
+
+This sets the fault field on error
+
+private \hypertarget{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!serialize\+\_\+return@{serialize\+\_\+return}}
+\index{serialize\+\_\+return@{serialize\+\_\+return}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{serialize\+\_\+return()}]{\setlength{\rightskip}{0pt plus 5cm}serialize\+\_\+return (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a2d107db4f89e00b4028dbfb2827c40dd}
+serializes the return value from a P\+H\+P function into a full S\+O\+A\+P Envelope
+
+The following fields are set by this function (when successful)
+
+response\+S\+O\+A\+P
+
+This sets the fault field on error
+
+private \hypertarget{classnusoap__server_ad91e2ca0020e1192392077915db92e41}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!service@{service}}
+\index{service@{service}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{service(\$data)}]{\setlength{\rightskip}{0pt plus 5cm}service (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ad91e2ca0020e1192392077915db92e41}
+processes request and returns response
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & usually is the value of \$\+H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+T\+A  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_ad91e2ca0020e1192392077915db92e41}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!service@{service}}
+\index{service@{service}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{service(\$data)}]{\setlength{\rightskip}{0pt plus 5cm}service (
+\begin{DoxyParamCaption}
+\item[{}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_ad91e2ca0020e1192392077915db92e41}
+processes request and returns response
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & usually is the value of \$\+H\+T\+T\+P\+\_\+\+R\+A\+W\+\_\+\+P\+O\+S\+T\+\_\+\+D\+A\+T\+A  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classnusoap__server_a6621bf070937d91b20824bceedac26f4}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!verify\+\_\+method@{verify\+\_\+method}}
+\index{verify\+\_\+method@{verify\+\_\+method}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{verify\+\_\+method(\$operation, \$request)}]{\setlength{\rightskip}{0pt plus 5cm}verify\+\_\+method (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$request}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a6621bf070937d91b20824bceedac26f4}
+takes the value that was created by parsing the request and compares to the method\textquotesingle{}s signature, if available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & The operation to be invoked \\
+\hline
+array & {\em \$request} & The array of parameter values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Whether the operation was found  private 
+\end{DoxyReturn}
+\hypertarget{classnusoap__server_a6621bf070937d91b20824bceedac26f4}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!verify\+\_\+method@{verify\+\_\+method}}
+\index{verify\+\_\+method@{verify\+\_\+method}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{verify\+\_\+method(\$operation, \$request)}]{\setlength{\rightskip}{0pt plus 5cm}verify\+\_\+method (
+\begin{DoxyParamCaption}
+\item[{}]{\$operation, }
+\item[{}]{\$request}
+\end{DoxyParamCaption}
+)}\label{classnusoap__server_a6621bf070937d91b20824bceedac26f4}
+takes the value that was created by parsing the request and compares to the method\textquotesingle{}s signature, if available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$operation} & The operation to be invoked \\
+\hline
+array & {\em \$request} & The array of parameter values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Whether the operation was found  private 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{classnusoap__server_a4365dcf21d6ec72c63e5e6fcbddce4fb}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$debug\+\_\+flag@{\$debug\+\_\+flag}}
+\index{\$debug\+\_\+flag@{\$debug\+\_\+flag}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$debug\+\_\+flag}]{\setlength{\rightskip}{0pt plus 5cm}\$debug\+\_\+flag = false}\label{classnusoap__server_a4365dcf21d6ec72c63e5e6fcbddce4fb}
+\hypertarget{classnusoap__server_a15fe586a802bc22337e3fe874d6da038}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$decode\+\_\+utf8@{\$decode\+\_\+utf8}}
+\index{\$decode\+\_\+utf8@{\$decode\+\_\+utf8}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$decode\+\_\+utf8}]{\setlength{\rightskip}{0pt plus 5cm}\$decode\+\_\+utf8 = true}\label{classnusoap__server_a15fe586a802bc22337e3fe874d6da038}
+\hypertarget{classnusoap__server_ac5a31edb787609a3143dec9bfa8063ea}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$document@{\$document}}
+\index{\$document@{\$document}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$document}]{\setlength{\rightskip}{0pt plus 5cm}\$document = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_ac5a31edb787609a3143dec9bfa8063ea}
+\hypertarget{classnusoap__server_ab5b3efddc8a73e3895444f85674950d1}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$external\+W\+S\+D\+L\+U\+R\+L@{\$external\+W\+S\+D\+L\+U\+R\+L}}
+\index{\$external\+W\+S\+D\+L\+U\+R\+L@{\$external\+W\+S\+D\+L\+U\+R\+L}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$external\+W\+S\+D\+L\+U\+R\+L}]{\setlength{\rightskip}{0pt plus 5cm}\$external\+W\+S\+D\+L\+U\+R\+L = false}\label{classnusoap__server_ab5b3efddc8a73e3895444f85674950d1}
+\hypertarget{classnusoap__server_a365691ed834f59a9a513180136e7a847}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$fault@{\$fault}}
+\index{\$fault@{\$fault}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$fault}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf fault} = false}\label{classnusoap__server_a365691ed834f59a9a513180136e7a847}
+\hypertarget{classnusoap__server_a52500036ee807241b8b4b7e2367c49ef}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$headers}]{\setlength{\rightskip}{0pt plus 5cm}\$headers = array()}\label{classnusoap__server_a52500036ee807241b8b4b7e2367c49ef}
+\hypertarget{classnusoap__server_ae1579f9ce708fe6faf236f8015d6251b}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$methodname@{\$methodname}}
+\index{\$methodname@{\$methodname}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$methodname}]{\setlength{\rightskip}{0pt plus 5cm}\$methodname = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_ae1579f9ce708fe6faf236f8015d6251b}
+\hypertarget{classnusoap__server_a324e20e34ac140c80ed4709be5658b85}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$methodparams@{\$methodparams}}
+\index{\$methodparams@{\$methodparams}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$methodparams}]{\setlength{\rightskip}{0pt plus 5cm}\$methodparams = array()}\label{classnusoap__server_a324e20e34ac140c80ed4709be5658b85}
+\hypertarget{classnusoap__server_a23818ad96db6b887387371cc23d476be}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$methodreturn@{\$methodreturn}}
+\index{\$methodreturn@{\$methodreturn}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$methodreturn}]{\setlength{\rightskip}{0pt plus 5cm}\$methodreturn = false}\label{classnusoap__server_a23818ad96db6b887387371cc23d476be}
+\hypertarget{classnusoap__server_a60fce764fb108d9b6a0572b0583628cb}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$methodreturnisliteralxml@{\$methodreturnisliteralxml}}
+\index{\$methodreturnisliteralxml@{\$methodreturnisliteralxml}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$methodreturnisliteralxml}]{\setlength{\rightskip}{0pt plus 5cm}\$methodreturnisliteralxml = false}\label{classnusoap__server_a60fce764fb108d9b6a0572b0583628cb}
+\hypertarget{classnusoap__server_a56655c621a045170b3ca350b663b84a6}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$method\+U\+R\+I@{\$method\+U\+R\+I}}
+\index{\$method\+U\+R\+I@{\$method\+U\+R\+I}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$method\+U\+R\+I}]{\setlength{\rightskip}{0pt plus 5cm}\$method\+U\+R\+I = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a56655c621a045170b3ca350b663b84a6}
+\hypertarget{classnusoap__server_a3f662373ff81db09eed5649d07f1931c}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$operations@{\$operations}}
+\index{\$operations@{\$operations}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$operations}]{\setlength{\rightskip}{0pt plus 5cm}\$operations = array()}\label{classnusoap__server_a3f662373ff81db09eed5649d07f1931c}
+\hypertarget{classnusoap__server_ac4175695783164be56dd48fda2e405b2}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$outgoing\+\_\+headers@{\$outgoing\+\_\+headers}}
+\index{\$outgoing\+\_\+headers@{\$outgoing\+\_\+headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$outgoing\+\_\+headers}]{\setlength{\rightskip}{0pt plus 5cm}\$outgoing\+\_\+headers = array()}\label{classnusoap__server_ac4175695783164be56dd48fda2e405b2}
+\hypertarget{classnusoap__server_abb35c8495a232b510389fa6d7b15d38a}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$request@{\$request}}
+\index{\$request@{\$request}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$request}]{\setlength{\rightskip}{0pt plus 5cm}\$request = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_abb35c8495a232b510389fa6d7b15d38a}
+\hypertarget{classnusoap__server_a6ba1fc8d460c18c97ab0b2597197de22}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$request\+Header@{\$request\+Header}}
+\index{\$request\+Header@{\$request\+Header}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$request\+Header}]{\setlength{\rightskip}{0pt plus 5cm}\$request\+Header = N\+U\+L\+L}\label{classnusoap__server_a6ba1fc8d460c18c97ab0b2597197de22}
+\hypertarget{classnusoap__server_a245d2deb868c1cc1a23b10c48c6d0754}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$request\+Headers@{\$request\+Headers}}
+\index{\$request\+Headers@{\$request\+Headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$request\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}\$request\+Headers = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a245d2deb868c1cc1a23b10c48c6d0754}
+\hypertarget{classnusoap__server_a76b7275a4c31f563c09042986d6e4c3b}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$request\+S\+O\+A\+P@{\$request\+S\+O\+A\+P}}
+\index{\$request\+S\+O\+A\+P@{\$request\+S\+O\+A\+P}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$request\+S\+O\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}\$request\+S\+O\+A\+P = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a76b7275a4c31f563c09042986d6e4c3b}
+\hypertarget{classnusoap__server_af4b6fb1bbc77ccc05f10da3b16935b99}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$response@{\$response}}
+\index{\$response@{\$response}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$response}]{\setlength{\rightskip}{0pt plus 5cm}\$response = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_af4b6fb1bbc77ccc05f10da3b16935b99}
+\hypertarget{classnusoap__server_a02f80cf3a7fe7cf42c97b821c167b934}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$response\+Headers@{\$response\+Headers}}
+\index{\$response\+Headers@{\$response\+Headers}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$response\+Headers}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+Headers = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a02f80cf3a7fe7cf42c97b821c167b934}
+\hypertarget{classnusoap__server_a9756c0cde47da4b73e26d109694ea009}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$response\+S\+O\+A\+P@{\$response\+S\+O\+A\+P}}
+\index{\$response\+S\+O\+A\+P@{\$response\+S\+O\+A\+P}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$response\+S\+O\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+S\+O\+A\+P = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a9756c0cde47da4b73e26d109694ea009}
+\hypertarget{classnusoap__server_a112ef069ddc0454086e3d1e6d8d55d07}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$result@{\$result}}
+\index{\$result@{\$result}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$result}]{\setlength{\rightskip}{0pt plus 5cm}\$result = \textquotesingle{}successful\textquotesingle{}}\label{classnusoap__server_a112ef069ddc0454086e3d1e6d8d55d07}
+\hypertarget{classnusoap__server_a2c4c10ecb8af347cc9e9e137e8bacab7}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$\+S\+O\+A\+P\+Action@{\$\+S\+O\+A\+P\+Action}}
+\index{\$\+S\+O\+A\+P\+Action@{\$\+S\+O\+A\+P\+Action}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$\+S\+O\+A\+P\+Action}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+O\+A\+P\+Action = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a2c4c10ecb8af347cc9e9e137e8bacab7}
+\hypertarget{classnusoap__server_a8b3fb8293ad64e3dc0b814fedf24c5dd}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$wsdl@{\$wsdl}}
+\index{\$wsdl@{\$wsdl}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$wsdl}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf wsdl} = false}\label{classnusoap__server_a8b3fb8293ad64e3dc0b814fedf24c5dd}
+\hypertarget{classnusoap__server_a1e2ee3fea6dbb8374da999a9df7d024d}{}\index{nusoap\+\_\+server@{nusoap\+\_\+server}!\$xml\+\_\+encoding@{\$xml\+\_\+encoding}}
+\index{\$xml\+\_\+encoding@{\$xml\+\_\+encoding}!nusoap\+\_\+server@{nusoap\+\_\+server}}
+\subsubsection[{\$xml\+\_\+encoding}]{\setlength{\rightskip}{0pt plus 5cm}\$xml\+\_\+encoding = \textquotesingle{}\textquotesingle{}}\label{classnusoap__server_a1e2ee3fea6dbb8374da999a9df7d024d}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{class_8soap__server_8php}{class.\+soap\+\_\+server.\+php}\item 
+lib/\hyperlink{nusoap_8php}{nusoap.\+php}\end{DoxyCompactItemize}

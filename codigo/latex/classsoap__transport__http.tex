@@ -1,0 +1,1092 @@
+\hypertarget{classsoap__transport__http}{}\section{soap\+\_\+transport\+\_\+http Class Reference}
+\label{classsoap__transport__http}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+Inheritance diagram for soap\+\_\+transport\+\_\+http\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsoap__transport__http}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoap__transport__http_aa723d51da4074927836863877821ecfd}{soap\+\_\+transport\+\_\+http} (\$url, \$curl\+\_\+options=N\+U\+L\+L, \$use\+\_\+curl=false)
+\item 
+\hyperlink{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{set\+Curl\+Option} (\$option, \$value)
+\item 
+\hyperlink{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}{set\+Header} (\$name, \$value)
+\item 
+\hyperlink{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}{unset\+Header} (\$name)
+\item 
+\hyperlink{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}{set\+U\+R\+L} (\$url)
+\item 
+\hyperlink{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}{io\+\_\+method} ()
+\item 
+\hyperlink{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}{connect} (\$connection\+\_\+timeout=0, \$response\+\_\+timeout=30)
+\item 
+\hyperlink{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}{send} (\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies=N\+U\+L\+L)
+\item 
+\hyperlink{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}{send\+H\+T\+T\+P\+S} (\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies)
+\item 
+\hyperlink{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$digest\+Request=array(), \$cert\+Request=array())
+\item 
+\hyperlink{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}{set\+S\+O\+A\+P\+Action} (\$soapaction)
+\item 
+\hyperlink{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}{set\+Encoding} (\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}{set\+Proxy} (\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{}, \$proxyauthtype= \textquotesingle{}basic\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}{is\+Skippable\+Curl\+Header} (\&\$data)
+\item 
+\hyperlink{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}{decode\+Chunked} (\$buffer, \$lb)
+\item 
+\hyperlink{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}{build\+Payload} (\$data, \$cookie\+\_\+str= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}{send\+Request} (\$data, \$cookies=N\+U\+L\+L)
+\item 
+\hyperlink{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}{get\+Response} ()
+\item 
+\hyperlink{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}{set\+Content\+Type} (\$type, \$charset=false)
+\item 
+\hyperlink{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}{use\+Persistent\+Connection} ()
+\item 
+\hyperlink{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}{parse\+Cookie} (\$cookie\+\_\+str)
+\item 
+\hyperlink{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}{get\+Cookies\+For\+Request} (\$cookies, \$secure=false)
+\item 
+\hyperlink{classsoap__transport__http_aa723d51da4074927836863877821ecfd}{soap\+\_\+transport\+\_\+http} (\$url, \$curl\+\_\+options=N\+U\+L\+L, \$use\+\_\+curl=false)
+\item 
+\hyperlink{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{set\+Curl\+Option} (\$option, \$value)
+\item 
+\hyperlink{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}{set\+Header} (\$name, \$value)
+\item 
+\hyperlink{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}{unset\+Header} (\$name)
+\item 
+\hyperlink{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}{set\+U\+R\+L} (\$url)
+\item 
+\hyperlink{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}{io\+\_\+method} ()
+\item 
+\hyperlink{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}{connect} (\$connection\+\_\+timeout=0, \$response\+\_\+timeout=30)
+\item 
+\hyperlink{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}{send} (\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies=N\+U\+L\+L)
+\item 
+\hyperlink{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}{send\+H\+T\+T\+P\+S} (\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies)
+\item 
+\hyperlink{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}{set\+Credentials} (\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$digest\+Request=array(), \$cert\+Request=array())
+\item 
+\hyperlink{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}{set\+S\+O\+A\+P\+Action} (\$soapaction)
+\item 
+\hyperlink{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}{set\+Encoding} (\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}{set\+Proxy} (\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{}, \$proxyauthtype= \textquotesingle{}basic\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}{is\+Skippable\+Curl\+Header} (\&\$data)
+\item 
+\hyperlink{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}{decode\+Chunked} (\$buffer, \$lb)
+\item 
+\hyperlink{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}{build\+Payload} (\$data, \$cookie\+\_\+str= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}{send\+Request} (\$data, \$cookies=N\+U\+L\+L)
+\item 
+\hyperlink{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}{get\+Response} ()
+\item 
+\hyperlink{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}{set\+Content\+Type} (\$type, \$charset=false)
+\item 
+\hyperlink{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}{use\+Persistent\+Connection} ()
+\item 
+\hyperlink{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}{parse\+Cookie} (\$cookie\+\_\+str)
+\item 
+\hyperlink{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}{get\+Cookies\+For\+Request} (\$cookies, \$secure=false)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsoap__transport__http_acf215f34a917d014776ce684a9ee8909}{\$url} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a653b5458163d338546c47271b4fb81b7}{\$uri} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a7852708352a061a957ebd0fe6f4b0597}{\$digest\+\_\+uri} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a1665950e3e3b63a02fc5a48706ac81c4}{\$scheme} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a711797613cb863ca0756df789c396bf2}{\$host} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_aa0787efab4b22e8a212882f3409d4c77}{\$port} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a0a4baf0b22973c07685c3981f0d17fc4}{\$path} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_afc31291e91d86d30d41495c3774ba977}{\$request\+\_\+method} = \textquotesingle{}P\+O\+S\+T\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_ab3f5771c62cb5f1fc5035d3b863eb84d}{\$protocol\+\_\+version} = \textquotesingle{}1.\+0\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_aee271b7ce67fbe00b9976e6c347cbfbf}{\$encoding} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_ac4175695783164be56dd48fda2e405b2}{\$outgoing\+\_\+headers} = array()
+\item 
+\hyperlink{classsoap__transport__http_afdf0f0ed01b1297a88e948540309701e}{\$incoming\+\_\+headers} = array()
+\item 
+\hyperlink{classsoap__transport__http_aab5d3e1a6450164cd73bcc8360054a4c}{\$incoming\+\_\+cookies} = array()
+\item 
+\hyperlink{classsoap__transport__http_a4a8841d1b10972ec8409318070a84bd9}{\$outgoing\+\_\+payload} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a99bcf594acbbb4a3728040a193f3dd9f}{\$incoming\+\_\+payload} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a15bade455469f6578650cb4a60819a01}{\$response\+\_\+status\+\_\+line}
+\item 
+\hyperlink{classsoap__transport__http_aa1836768f0ac363c44504f84fa890fe0}{\$use\+S\+O\+A\+P\+Action} = true
+\item 
+\hyperlink{classsoap__transport__http_a638b1c5f7dc55a3d0286136de6d56eab}{\$persistent\+Connection} = false
+\item 
+\hyperlink{classsoap__transport__http_a696b903bbc5c02914bdd402e91826eca}{\$ch} = false
+\item 
+\hyperlink{classsoap__transport__http_a661168c70aec028c27911cfce3bd95d0}{\$ch\+\_\+options} = array()
+\item 
+\hyperlink{classsoap__transport__http_a372c0672391a16e4902e172ea3a0ae63}{\$use\+\_\+curl} = false
+\item 
+\hyperlink{classsoap__transport__http_a01564a63e754b8037a987f7f8fde0e6d}{\$proxy} = null
+\item 
+\hyperlink{classsoap__transport__http_a0eb82aa5f81cf845de4b36cd653c42cf}{\$username} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_ae81871b02c5845eb3a1071eb24e1f29c}{\$authtype} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{classsoap__transport__http_ad098598a3adf68983dbf72c92cd594dc}{\$digest\+Request} = array()
+\item 
+\hyperlink{classsoap__transport__http_adcbe9a77644bad97ed599d1651bd2719}{\$cert\+Request} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+transport class for sending/receiving data via H\+T\+T\+P and H\+T\+T\+P\+S N\+O\+T\+E\+: P\+H\+P must be compiled with the C\+U\+R\+L extension for H\+T\+T\+P\+S support
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{class_8soap__transport__http_8php}{class.\+soap\+\_\+transport\+\_\+http.\+php},v 1.\+68 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public
+
+transport class for sending/receiving data via H\+T\+T\+P and H\+T\+T\+P\+S N\+O\+T\+E\+: P\+H\+P must be compiled with the C\+U\+R\+L extension for H\+T\+T\+P\+S support
+
+\begin{DoxyAuthor}{Author}
+Dietrich Ayala \href{mailto:dietrich@ganx4.com}{\tt dietrich@ganx4.\+com} 
+
+Scott Nichol \href{mailto:snichol@users.sourceforge.net}{\tt snichol@users.\+sourceforge.\+net} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{nusoap_8php}{nusoap.\+php},v 1.\+123 2010/04/26 20\+:15\+:08 snichol Exp 
+\end{DoxyParagraph}
+public 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!build\+Payload@{build\+Payload}}
+\index{build\+Payload@{build\+Payload}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{build\+Payload(\$data, \$cookie\+\_\+str= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}build\+Payload (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$cookie\+\_\+str = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}
+Writes the payload, including H\+T\+T\+P headers, to \$this-\/$>$outgoing\+\_\+payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & H\+T\+T\+P body \\
+\hline
+string & {\em \$cookie\+\_\+str} & data for H\+T\+T\+P Cookie header \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!build\+Payload@{build\+Payload}}
+\index{build\+Payload@{build\+Payload}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{build\+Payload(\$data, \$cookie\+\_\+str= \textquotesingle{}\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}build\+Payload (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$cookie\+\_\+str = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a3aaa5b45b7d75364bccaf3918a5ce908}
+Writes the payload, including H\+T\+T\+P headers, to \$this-\/$>$outgoing\+\_\+payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & H\+T\+T\+P body \\
+\hline
+string & {\em \$cookie\+\_\+str} & data for H\+T\+T\+P Cookie header \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!connect@{connect}}
+\index{connect@{connect}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{connect(\$connection\+\_\+timeout=0, \$response\+\_\+timeout=30)}]{\setlength{\rightskip}{0pt plus 5cm}connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection\+\_\+timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}
+establish an H\+T\+T\+P connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if connected, false if not  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!connect@{connect}}
+\index{connect@{connect}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{connect(\$connection\+\_\+timeout=0, \$response\+\_\+timeout=30)}]{\setlength{\rightskip}{0pt plus 5cm}connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$connection\+\_\+timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a8648865ea5c701e29c03c79af40a7ffc}
+establish an H\+T\+T\+P connection
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if connected, false if not  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!decode\+Chunked@{decode\+Chunked}}
+\index{decode\+Chunked@{decode\+Chunked}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{decode\+Chunked(\$buffer, \$lb)}]{\setlength{\rightskip}{0pt plus 5cm}decode\+Chunked (
+\begin{DoxyParamCaption}
+\item[{}]{\$buffer, }
+\item[{}]{\$lb}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}
+decode a string that is encoded w/ "chunked\textquotesingle{} transfer encoding as defined in R\+F\+C2068 19.\+4.\+6
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buffer} & \\
+\hline
+string & {\em \$lb} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000007}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!decode\+Chunked@{decode\+Chunked}}
+\index{decode\+Chunked@{decode\+Chunked}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{decode\+Chunked(\$buffer, \$lb)}]{\setlength{\rightskip}{0pt plus 5cm}decode\+Chunked (
+\begin{DoxyParamCaption}
+\item[{}]{\$buffer, }
+\item[{}]{\$lb}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a6dc9ad42ffb3aaea279c0ee16c4068b2}
+decode a string that is encoded w/ "chunked\textquotesingle{} transfer encoding as defined in R\+F\+C2068 19.\+4.\+6
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buffer} & \\
+\hline
+string & {\em \$lb} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000021}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!get\+Cookies\+For\+Request@{get\+Cookies\+For\+Request}}
+\index{get\+Cookies\+For\+Request@{get\+Cookies\+For\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{get\+Cookies\+For\+Request(\$cookies, \$secure=false)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cookies\+For\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookies, }
+\item[{}]{\$secure = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}
+sort out cookies for the current request
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookies} & array with all cookies \\
+\hline
+boolean & {\em \$secure} & is the send-\/content secure or not? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for Cookie-\/\+H\+T\+T\+P-\/\+Header  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!get\+Cookies\+For\+Request@{get\+Cookies\+For\+Request}}
+\index{get\+Cookies\+For\+Request@{get\+Cookies\+For\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{get\+Cookies\+For\+Request(\$cookies, \$secure=false)}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cookies\+For\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookies, }
+\item[{}]{\$secure = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a51e28e678d231bebb7de006262c31887}
+sort out cookies for the current request
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookies} & array with all cookies \\
+\hline
+boolean & {\em \$secure} & is the send-\/content secure or not? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string for Cookie-\/\+H\+T\+T\+P-\/\+Header  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!get\+Response@{get\+Response}}
+\index{get\+Response@{get\+Response}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{get\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}
+gets the S\+O\+A\+P response via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+string the response (also sets member variables like incoming\+\_\+payload)  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!get\+Response@{get\+Response}}
+\index{get\+Response@{get\+Response}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{get\+Response()}]{\setlength{\rightskip}{0pt plus 5cm}get\+Response (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a6c907e8af775e517a77037dd0164222f}
+gets the S\+O\+A\+P response via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+\begin{DoxyReturn}{Returns}
+string the response (also sets member variables like incoming\+\_\+payload)  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!io\+\_\+method@{io\+\_\+method}}
+\index{io\+\_\+method@{io\+\_\+method}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{io\+\_\+method()}]{\setlength{\rightskip}{0pt plus 5cm}io\+\_\+method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}
+gets the I/\+O method to use
+
+\begin{DoxyReturn}{Returns}
+string I/\+O method to use (socket$\vert$curl$\vert$unknown)  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!io\+\_\+method@{io\+\_\+method}}
+\index{io\+\_\+method@{io\+\_\+method}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{io\+\_\+method()}]{\setlength{\rightskip}{0pt plus 5cm}io\+\_\+method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a83b4320b3379e742a3d064effff0728a}
+gets the I/\+O method to use
+
+\begin{DoxyReturn}{Returns}
+string I/\+O method to use (socket$\vert$curl$\vert$unknown)  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!is\+Skippable\+Curl\+Header@{is\+Skippable\+Curl\+Header}}
+\index{is\+Skippable\+Curl\+Header@{is\+Skippable\+Curl\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{is\+Skippable\+Curl\+Header(\&\$data)}]{\setlength{\rightskip}{0pt plus 5cm}is\+Skippable\+Curl\+Header (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}
+Test if the given string starts with a header that is to be skipped. Skippable headers result from chunked transfer and proxy requests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The string to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Whether a skippable header was found.  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!is\+Skippable\+Curl\+Header@{is\+Skippable\+Curl\+Header}}
+\index{is\+Skippable\+Curl\+Header@{is\+Skippable\+Curl\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{is\+Skippable\+Curl\+Header(\&\$data)}]{\setlength{\rightskip}{0pt plus 5cm}is\+Skippable\+Curl\+Header (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$data}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_af7443369371a7caf67c04b09c6da774a}
+Test if the given string starts with a header that is to be skipped. Skippable headers result from chunked transfer and proxy requests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The string to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Whether a skippable header was found.  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!parse\+Cookie@{parse\+Cookie}}
+\index{parse\+Cookie@{parse\+Cookie}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{parse\+Cookie(\$cookie\+\_\+str)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookie\+\_\+str}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}
+parse an incoming Cookie into it\textquotesingle{}s parts
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cookie\+\_\+str} & content of cookie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with data of that cookie  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!parse\+Cookie@{parse\+Cookie}}
+\index{parse\+Cookie@{parse\+Cookie}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{parse\+Cookie(\$cookie\+\_\+str)}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$cookie\+\_\+str}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_ae8e635ed6f4df1ef3f9329f1103b6941}
+parse an incoming Cookie into it\textquotesingle{}s parts
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cookie\+\_\+str} & content of cookie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array with data of that cookie  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send@{send}}
+\index{send@{send}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send(\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$cookies = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}
+sends the S\+O\+A\+P request and gets the S\+O\+A\+P response via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string data  public 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send@{send}}
+\index{send@{send}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send(\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$cookies = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a124252f4e9d206d86fcd6522854eb919}
+sends the S\+O\+A\+P request and gets the S\+O\+A\+P response via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string data  public 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send\+H\+T\+T\+P\+S@{send\+H\+T\+T\+P\+S}}
+\index{send\+H\+T\+T\+P\+S@{send\+H\+T\+T\+P\+S}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send\+H\+T\+T\+P\+S(\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies)}]{\setlength{\rightskip}{0pt plus 5cm}send\+H\+T\+T\+P\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$cookies}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}
+sends the S\+O\+A\+P request and gets the S\+O\+A\+P response via H\+T\+T\+P\+S using C\+U\+R\+L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string data  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000006}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send\+H\+T\+T\+P\+S@{send\+H\+T\+T\+P\+S}}
+\index{send\+H\+T\+T\+P\+S@{send\+H\+T\+T\+P\+S}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send\+H\+T\+T\+P\+S(\$data, \$timeout=0, \$response\+\_\+timeout=30, \$cookies)}]{\setlength{\rightskip}{0pt plus 5cm}send\+H\+T\+T\+P\+S (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$timeout = {\ttfamily 0}, }
+\item[{}]{\$response\+\_\+timeout = {\ttfamily 30}, }
+\item[{}]{\$cookies}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_aa93a72fdc90b3535f17d471b7ccc3ffd}
+sends the S\+O\+A\+P request and gets the S\+O\+A\+P response via H\+T\+T\+P\+S using C\+U\+R\+L
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+integer & {\em \$timeout} & set connection timeout in seconds \\
+\hline
+integer & {\em \$response\+\_\+timeout} & set response timeout in seconds \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string data  public 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000020}{Deprecated}]\end{DoxyRefDesc}
+\hypertarget{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send\+Request(\$data, \$cookies=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}send\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$cookies = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}
+sends the S\+O\+A\+P request via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if O\+K, false if problem  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{send\+Request(\$data, \$cookies=\+N\+U\+L\+L)}]{\setlength{\rightskip}{0pt plus 5cm}send\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$data, }
+\item[{}]{\$cookies = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a58f0210b24415cdc753d31b425a406be}
+sends the S\+O\+A\+P request via H\+T\+T\+P\mbox{[}S\mbox{]}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & message data \\
+\hline
+array & {\em \$cookies} & cookies to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if O\+K, false if problem  private 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Content\+Type(\$type, \$charset=false)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$charset = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}
+sets the content-\/type for the S\+O\+A\+P message to be sent
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the content type, M\+I\+M\+E style \\
+\hline
+mixed & {\em \$charset} & character set used for encoding (or false)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Content\+Type(\$type, \$charset=false)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$charset = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a1d16955b48732c7b979b7d2ccaea34c8}
+sets the content-\/type for the S\+O\+A\+P message to be sent
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & the content type, M\+I\+M\+E style \\
+\hline
+mixed & {\em \$charset} & character set used for encoding (or false)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$digest\+Request=array(), \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$digest\+Request = {\ttfamily array()}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$digest\+Request} & (keys must be nonce, nc, realm, qop) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, certpassword (optional), verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Credentials@{set\+Credentials}}
+\index{set\+Credentials@{set\+Credentials}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Credentials(\$username, \$password, \$authtype= \textquotesingle{}basic\textquotesingle{}, \$digest\+Request=array(), \$cert\+Request=array())}]{\setlength{\rightskip}{0pt plus 5cm}set\+Credentials (
+\begin{DoxyParamCaption}
+\item[{}]{\$username, }
+\item[{}]{\$password, }
+\item[{}]{\$authtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}, }
+\item[{}]{\$digest\+Request = {\ttfamily array()}, }
+\item[{}]{\$cert\+Request = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_afc1032cca5010f0fefba2f0d5a9c4520}
+if authenticating, set user credentials here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$authtype} & (basic$\vert$digest$\vert$certificate$\vert$ntlm) \\
+\hline
+array & {\em \$digest\+Request} & (keys must be nonce, nc, realm, qop) \\
+\hline
+array & {\em \$cert\+Request} & (keys must be cainfofile (optional), sslcertfile, sslkeyfile, passphrase, certpassword (optional), verifypeer (optional), verifyhost (optional)\+: see corresponding options in c\+U\+R\+L docs)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Curl\+Option@{set\+Curl\+Option}}
+\index{set\+Curl\+Option@{set\+Curl\+Option}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Curl\+Option(\$option, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Curl\+Option (
+\begin{DoxyParamCaption}
+\item[{}]{\$option, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}
+sets a c\+U\+R\+L option
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$option} & The c\+U\+R\+L option (always integer?) \\
+\hline
+mixed & {\em \$value} & The c\+U\+R\+L option value  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Curl\+Option@{set\+Curl\+Option}}
+\index{set\+Curl\+Option@{set\+Curl\+Option}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Curl\+Option(\$option, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Curl\+Option (
+\begin{DoxyParamCaption}
+\item[{}]{\$option, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a314f6d38ace6f3d92d0d1d7e8cfc0aaf}
+sets a c\+U\+R\+L option
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$option} & The c\+U\+R\+L option (always integer?) \\
+\hline
+mixed & {\em \$value} & The c\+U\+R\+L option value  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Encoding@{set\+Encoding}}
+\index{set\+Encoding@{set\+Encoding}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Encoding(\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$enc = {\ttfamily \textquotesingle{}gzip}, }
+\item[{deflate\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}
+use http encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$enc} & encoding style. supported values\+: gzip, deflate, or both  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Encoding@{set\+Encoding}}
+\index{set\+Encoding@{set\+Encoding}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Encoding(\$enc=\textquotesingle{}gzip, deflate\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+Encoding (
+\begin{DoxyParamCaption}
+\item[{}]{\$enc = {\ttfamily \textquotesingle{}gzip}, }
+\item[{deflate\textquotesingle{}}]{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a9dde5d06442abd355db3acbde021121d}
+use http encoding
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$enc} & encoding style. supported values\+: gzip, deflate, or both  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Header@{set\+Header}}
+\index{set\+Header@{set\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Header(\$name, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}
+sets an H\+T\+T\+P header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the header \\
+\hline
+string & {\em \$value} & The value of the header  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Header@{set\+Header}}
+\index{set\+Header@{set\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Header(\$name, \$value)}]{\setlength{\rightskip}{0pt plus 5cm}set\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a48ca020ea3da5f108feab0fa8efde068}
+sets an H\+T\+T\+P header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the header \\
+\hline
+string & {\em \$value} & The value of the header  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Proxy@{set\+Proxy}}
+\index{set\+Proxy@{set\+Proxy}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Proxy(\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{}, \$proxyauthtype= \textquotesingle{}basic\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+Proxy (
+\begin{DoxyParamCaption}
+\item[{}]{\$proxyhost, }
+\item[{}]{\$proxyport, }
+\item[{}]{\$proxyusername = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxypassword = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxyauthtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}
+set proxy info here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$proxyhost} & use an empty string to remove proxy \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & \\
+\hline
+string & {\em \$proxyauthtype} & (basic$\vert$ntlm)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+Proxy@{set\+Proxy}}
+\index{set\+Proxy@{set\+Proxy}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+Proxy(\$proxyhost, \$proxyport, \$proxyusername= \textquotesingle{}\textquotesingle{}, \$proxypassword= \textquotesingle{}\textquotesingle{}, \$proxyauthtype= \textquotesingle{}basic\textquotesingle{})}]{\setlength{\rightskip}{0pt plus 5cm}set\+Proxy (
+\begin{DoxyParamCaption}
+\item[{}]{\$proxyhost, }
+\item[{}]{\$proxyport, }
+\item[{}]{\$proxyusername = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxypassword = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$proxyauthtype = {\ttfamily \textquotesingle{}basic\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a2b6751afa15d43fd627f7689b2997702}
+set proxy info here
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$proxyhost} & use an empty string to remove proxy \\
+\hline
+string & {\em \$proxyport} & \\
+\hline
+string & {\em \$proxyusername} & \\
+\hline
+string & {\em \$proxypassword} & \\
+\hline
+string & {\em \$proxyauthtype} & (basic$\vert$ntlm)  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+S\+O\+A\+P\+Action@{set\+S\+O\+A\+P\+Action}}
+\index{set\+S\+O\+A\+P\+Action@{set\+S\+O\+A\+P\+Action}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+S\+O\+A\+P\+Action(\$soapaction)}]{\setlength{\rightskip}{0pt plus 5cm}set\+S\+O\+A\+P\+Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapaction}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}
+set the soapaction value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapaction} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+S\+O\+A\+P\+Action@{set\+S\+O\+A\+P\+Action}}
+\index{set\+S\+O\+A\+P\+Action@{set\+S\+O\+A\+P\+Action}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+S\+O\+A\+P\+Action(\$soapaction)}]{\setlength{\rightskip}{0pt plus 5cm}set\+S\+O\+A\+P\+Action (
+\begin{DoxyParamCaption}
+\item[{}]{\$soapaction}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a792db42ef189835b80389a838fbf2cef}
+set the soapaction value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$soapaction} & public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+U\+R\+L@{set\+U\+R\+L}}
+\index{set\+U\+R\+L@{set\+U\+R\+L}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+U\+R\+L(\$url)}]{\setlength{\rightskip}{0pt plus 5cm}set\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}
+sets the U\+R\+L to which to connect
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & The U\+R\+L to which to connect  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!set\+U\+R\+L@{set\+U\+R\+L}}
+\index{set\+U\+R\+L@{set\+U\+R\+L}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{set\+U\+R\+L(\$url)}]{\setlength{\rightskip}{0pt plus 5cm}set\+U\+R\+L (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a5a4415db7a7e36f85a4d975c892b0470}
+sets the U\+R\+L to which to connect
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & The U\+R\+L to which to connect  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_aa723d51da4074927836863877821ecfd}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{soap\+\_\+transport\+\_\+http(\$url, \$curl\+\_\+options=\+N\+U\+L\+L, \$use\+\_\+curl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf soap\+\_\+transport\+\_\+http} (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$curl\+\_\+options = {\ttfamily NULL}, }
+\item[{}]{\$use\+\_\+curl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_aa723d51da4074927836863877821ecfd}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & The U\+R\+L to which to connect \\
+\hline
+array & {\em \$curl\+\_\+options} & User-\/specified c\+U\+R\+L options \\
+\hline
+boolean & {\em \$use\+\_\+curl} & Whether to try to force c\+U\+R\+L use  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_aa723d51da4074927836863877821ecfd}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{soap\+\_\+transport\+\_\+http(\$url, \$curl\+\_\+options=\+N\+U\+L\+L, \$use\+\_\+curl=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf soap\+\_\+transport\+\_\+http} (
+\begin{DoxyParamCaption}
+\item[{}]{\$url, }
+\item[{}]{\$curl\+\_\+options = {\ttfamily NULL}, }
+\item[{}]{\$use\+\_\+curl = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_aa723d51da4074927836863877821ecfd}
+constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & The U\+R\+L to which to connect \\
+\hline
+array & {\em \$curl\+\_\+options} & User-\/specified c\+U\+R\+L options \\
+\hline
+boolean & {\em \$use\+\_\+curl} & Whether to try to force c\+U\+R\+L use  public \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!unset\+Header@{unset\+Header}}
+\index{unset\+Header@{unset\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{unset\+Header(\$name)}]{\setlength{\rightskip}{0pt plus 5cm}unset\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}
+unsets an H\+T\+T\+P header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the header  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!unset\+Header@{unset\+Header}}
+\index{unset\+Header@{unset\+Header}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{unset\+Header(\$name)}]{\setlength{\rightskip}{0pt plus 5cm}unset\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_ab3e7f395271d99fe451c42201519c2a9}
+unsets an H\+T\+T\+P header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the header  private \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!use\+Persistent\+Connection@{use\+Persistent\+Connection}}
+\index{use\+Persistent\+Connection@{use\+Persistent\+Connection}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{use\+Persistent\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}use\+Persistent\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}
+specifies that an H\+T\+T\+P persistent connection should be used
+
+\begin{DoxyReturn}{Returns}
+boolean whether the request was honored by this method.  public 
+\end{DoxyReturn}
+\hypertarget{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!use\+Persistent\+Connection@{use\+Persistent\+Connection}}
+\index{use\+Persistent\+Connection@{use\+Persistent\+Connection}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{use\+Persistent\+Connection()}]{\setlength{\rightskip}{0pt plus 5cm}use\+Persistent\+Connection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classsoap__transport__http_a8ae21fdc1993b8741956e86fc58c12b1}
+specifies that an H\+T\+T\+P persistent connection should be used
+
+\begin{DoxyReturn}{Returns}
+boolean whether the request was honored by this method.  public 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\hypertarget{classsoap__transport__http_ae81871b02c5845eb3a1071eb24e1f29c}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$authtype@{\$authtype}}
+\index{\$authtype@{\$authtype}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$authtype}]{\setlength{\rightskip}{0pt plus 5cm}\$authtype = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_ae81871b02c5845eb3a1071eb24e1f29c}
+\hypertarget{classsoap__transport__http_adcbe9a77644bad97ed599d1651bd2719}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$cert\+Request@{\$cert\+Request}}
+\index{\$cert\+Request@{\$cert\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$cert\+Request}]{\setlength{\rightskip}{0pt plus 5cm}\$cert\+Request = array()}\label{classsoap__transport__http_adcbe9a77644bad97ed599d1651bd2719}
+\hypertarget{classsoap__transport__http_a696b903bbc5c02914bdd402e91826eca}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$ch@{\$ch}}
+\index{\$ch@{\$ch}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$ch}]{\setlength{\rightskip}{0pt plus 5cm}\$ch = false}\label{classsoap__transport__http_a696b903bbc5c02914bdd402e91826eca}
+\hypertarget{classsoap__transport__http_a661168c70aec028c27911cfce3bd95d0}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$ch\+\_\+options@{\$ch\+\_\+options}}
+\index{\$ch\+\_\+options@{\$ch\+\_\+options}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$ch\+\_\+options}]{\setlength{\rightskip}{0pt plus 5cm}\$ch\+\_\+options = array()}\label{classsoap__transport__http_a661168c70aec028c27911cfce3bd95d0}
+\hypertarget{classsoap__transport__http_a7852708352a061a957ebd0fe6f4b0597}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$digest\+\_\+uri@{\$digest\+\_\+uri}}
+\index{\$digest\+\_\+uri@{\$digest\+\_\+uri}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$digest\+\_\+uri}]{\setlength{\rightskip}{0pt plus 5cm}\$digest\+\_\+uri = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a7852708352a061a957ebd0fe6f4b0597}
+\hypertarget{classsoap__transport__http_ad098598a3adf68983dbf72c92cd594dc}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$digest\+Request@{\$digest\+Request}}
+\index{\$digest\+Request@{\$digest\+Request}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$digest\+Request}]{\setlength{\rightskip}{0pt plus 5cm}\$digest\+Request = array()}\label{classsoap__transport__http_ad098598a3adf68983dbf72c92cd594dc}
+\hypertarget{classsoap__transport__http_aee271b7ce67fbe00b9976e6c347cbfbf}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$encoding@{\$encoding}}
+\index{\$encoding@{\$encoding}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$encoding}]{\setlength{\rightskip}{0pt plus 5cm}\$encoding = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_aee271b7ce67fbe00b9976e6c347cbfbf}
+\hypertarget{classsoap__transport__http_a711797613cb863ca0756df789c396bf2}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$host@{\$host}}
+\index{\$host@{\$host}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$host}]{\setlength{\rightskip}{0pt plus 5cm}\$host = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a711797613cb863ca0756df789c396bf2}
+\hypertarget{classsoap__transport__http_aab5d3e1a6450164cd73bcc8360054a4c}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$incoming\+\_\+cookies@{\$incoming\+\_\+cookies}}
+\index{\$incoming\+\_\+cookies@{\$incoming\+\_\+cookies}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$incoming\+\_\+cookies}]{\setlength{\rightskip}{0pt plus 5cm}\$incoming\+\_\+cookies = array()}\label{classsoap__transport__http_aab5d3e1a6450164cd73bcc8360054a4c}
+\hypertarget{classsoap__transport__http_afdf0f0ed01b1297a88e948540309701e}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$incoming\+\_\+headers@{\$incoming\+\_\+headers}}
+\index{\$incoming\+\_\+headers@{\$incoming\+\_\+headers}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$incoming\+\_\+headers}]{\setlength{\rightskip}{0pt plus 5cm}\$incoming\+\_\+headers = array()}\label{classsoap__transport__http_afdf0f0ed01b1297a88e948540309701e}
+\hypertarget{classsoap__transport__http_a99bcf594acbbb4a3728040a193f3dd9f}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$incoming\+\_\+payload@{\$incoming\+\_\+payload}}
+\index{\$incoming\+\_\+payload@{\$incoming\+\_\+payload}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$incoming\+\_\+payload}]{\setlength{\rightskip}{0pt plus 5cm}\$incoming\+\_\+payload = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a99bcf594acbbb4a3728040a193f3dd9f}
+\hypertarget{classsoap__transport__http_ac4175695783164be56dd48fda2e405b2}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$outgoing\+\_\+headers@{\$outgoing\+\_\+headers}}
+\index{\$outgoing\+\_\+headers@{\$outgoing\+\_\+headers}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$outgoing\+\_\+headers}]{\setlength{\rightskip}{0pt plus 5cm}\$outgoing\+\_\+headers = array()}\label{classsoap__transport__http_ac4175695783164be56dd48fda2e405b2}
+\hypertarget{classsoap__transport__http_a4a8841d1b10972ec8409318070a84bd9}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$outgoing\+\_\+payload@{\$outgoing\+\_\+payload}}
+\index{\$outgoing\+\_\+payload@{\$outgoing\+\_\+payload}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$outgoing\+\_\+payload}]{\setlength{\rightskip}{0pt plus 5cm}\$outgoing\+\_\+payload = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a4a8841d1b10972ec8409318070a84bd9}
+\hypertarget{classsoap__transport__http_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$password@{\$password}}
+\index{\$password@{\$password}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$password}]{\setlength{\rightskip}{0pt plus 5cm}\$password = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+\hypertarget{classsoap__transport__http_a0a4baf0b22973c07685c3981f0d17fc4}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$path@{\$path}}
+\index{\$path@{\$path}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$path}]{\setlength{\rightskip}{0pt plus 5cm}\$path = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a0a4baf0b22973c07685c3981f0d17fc4}
+\hypertarget{classsoap__transport__http_a638b1c5f7dc55a3d0286136de6d56eab}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$persistent\+Connection@{\$persistent\+Connection}}
+\index{\$persistent\+Connection@{\$persistent\+Connection}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$persistent\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}\$persistent\+Connection = false}\label{classsoap__transport__http_a638b1c5f7dc55a3d0286136de6d56eab}
+\hypertarget{classsoap__transport__http_aa0787efab4b22e8a212882f3409d4c77}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$port@{\$port}}
+\index{\$port@{\$port}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$port}]{\setlength{\rightskip}{0pt plus 5cm}\$port = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_aa0787efab4b22e8a212882f3409d4c77}
+\hypertarget{classsoap__transport__http_ab3f5771c62cb5f1fc5035d3b863eb84d}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$protocol\+\_\+version@{\$protocol\+\_\+version}}
+\index{\$protocol\+\_\+version@{\$protocol\+\_\+version}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$protocol\+\_\+version}]{\setlength{\rightskip}{0pt plus 5cm}\$protocol\+\_\+version = \textquotesingle{}1.\+0\textquotesingle{}}\label{classsoap__transport__http_ab3f5771c62cb5f1fc5035d3b863eb84d}
+\hypertarget{classsoap__transport__http_a01564a63e754b8037a987f7f8fde0e6d}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$proxy@{\$proxy}}
+\index{\$proxy@{\$proxy}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$proxy}]{\setlength{\rightskip}{0pt plus 5cm}\$proxy = null}\label{classsoap__transport__http_a01564a63e754b8037a987f7f8fde0e6d}
+\hypertarget{classsoap__transport__http_afc31291e91d86d30d41495c3774ba977}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$request\+\_\+method@{\$request\+\_\+method}}
+\index{\$request\+\_\+method@{\$request\+\_\+method}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$request\+\_\+method}]{\setlength{\rightskip}{0pt plus 5cm}\$request\+\_\+method = \textquotesingle{}P\+O\+S\+T\textquotesingle{}}\label{classsoap__transport__http_afc31291e91d86d30d41495c3774ba977}
+\hypertarget{classsoap__transport__http_a15bade455469f6578650cb4a60819a01}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$response\+\_\+status\+\_\+line@{\$response\+\_\+status\+\_\+line}}
+\index{\$response\+\_\+status\+\_\+line@{\$response\+\_\+status\+\_\+line}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$response\+\_\+status\+\_\+line}]{\setlength{\rightskip}{0pt plus 5cm}\$response\+\_\+status\+\_\+line}\label{classsoap__transport__http_a15bade455469f6578650cb4a60819a01}
+\hypertarget{classsoap__transport__http_a1665950e3e3b63a02fc5a48706ac81c4}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$scheme@{\$scheme}}
+\index{\$scheme@{\$scheme}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$scheme}]{\setlength{\rightskip}{0pt plus 5cm}\$scheme = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a1665950e3e3b63a02fc5a48706ac81c4}
+\hypertarget{classsoap__transport__http_a653b5458163d338546c47271b4fb81b7}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$uri@{\$uri}}
+\index{\$uri@{\$uri}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$uri}]{\setlength{\rightskip}{0pt plus 5cm}\$uri = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a653b5458163d338546c47271b4fb81b7}
+\hypertarget{classsoap__transport__http_acf215f34a917d014776ce684a9ee8909}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$url@{\$url}}
+\index{\$url@{\$url}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$url}]{\setlength{\rightskip}{0pt plus 5cm}\$url = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_acf215f34a917d014776ce684a9ee8909}
+\hypertarget{classsoap__transport__http_a372c0672391a16e4902e172ea3a0ae63}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$use\+\_\+curl@{\$use\+\_\+curl}}
+\index{\$use\+\_\+curl@{\$use\+\_\+curl}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$use\+\_\+curl}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+\_\+curl = false}\label{classsoap__transport__http_a372c0672391a16e4902e172ea3a0ae63}
+\hypertarget{classsoap__transport__http_a0eb82aa5f81cf845de4b36cd653c42cf}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$username@{\$username}}
+\index{\$username@{\$username}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$username}]{\setlength{\rightskip}{0pt plus 5cm}\$username = \textquotesingle{}\textquotesingle{}}\label{classsoap__transport__http_a0eb82aa5f81cf845de4b36cd653c42cf}
+\hypertarget{classsoap__transport__http_aa1836768f0ac363c44504f84fa890fe0}{}\index{soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}!\$use\+S\+O\+A\+P\+Action@{\$use\+S\+O\+A\+P\+Action}}
+\index{\$use\+S\+O\+A\+P\+Action@{\$use\+S\+O\+A\+P\+Action}!soap\+\_\+transport\+\_\+http@{soap\+\_\+transport\+\_\+http}}
+\subsubsection[{\$use\+S\+O\+A\+P\+Action}]{\setlength{\rightskip}{0pt plus 5cm}\$use\+S\+O\+A\+P\+Action = true}\label{classsoap__transport__http_aa1836768f0ac363c44504f84fa890fe0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+lib/\hyperlink{class_8soap__transport__http_8php}{class.\+soap\+\_\+transport\+\_\+http.\+php}\item 
+lib/\hyperlink{nusoap_8php}{nusoap.\+php}\end{DoxyCompactItemize}

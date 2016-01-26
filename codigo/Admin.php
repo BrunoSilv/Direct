@@ -138,6 +138,14 @@ class Admin  {
         }
     }
     
+     /**
+     * method registarUser: regista um novo user e retorna o token
+     *
+     * @access public
+     * @author  <author@example.org>
+     * @return String
+     */
+    
     public static function registarUser($nome, $email) {
         if($email==""||$nome==""){
             return "não pode registar";
@@ -156,7 +164,12 @@ class Admin  {
 
     /**
      * method regista_condutor: regista um novo condutor
-     *
+     * @param string $token token do admin para ser validada
+     *  @param string $email email do admin para ser validada
+     * @param string $emailcondutor
+     * @param string $nomecondutor
+     * @param string apelido
+     * @param string turno
      * @access public
      * @author  <author@example.org>
      * @return String
@@ -208,10 +221,11 @@ class Admin  {
 
     /**
      * method validate: verifica a autenticacao do gestor
-     *
+     *@param string $token
+     * @param string $email
      * @access private
      * @author <author@example.org>
-     * @return int (Retorna 0 se o email e o token não coincidirem com o gestor e 1 se coincidir)
+     * @return string retorna a token achada para aquele email 
      */
     private static function validate($token,$email){
 //        $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
@@ -231,6 +245,14 @@ class Admin  {
         
     }
     
+     /**
+     * method validate: verifica a autenticacao do gestor
+     *@param string $email
+     * @param string $token
+     * @access private
+     * @author <author@example.org>
+     * @return string retorna a token achada para aquele email 
+     */
     private static function validateUser($email,$token){
         $conn = Admin::connection();
         
@@ -257,6 +279,19 @@ class Admin  {
         return ($result[email]);
     }
     
+     /**
+     * method novalocal: altera a localização de um veiculo
+     *@param string $token
+     * @param string $email
+      * @param string $id
+     * @param string $lat
+      * @param string $long
+     * @param string $local
+     * @access public
+     * @author <author@example.org>
+     * @return string retorna se foi alterado com sucesso ou nao
+     */
+    
     public static function novalocal($token,$email,$id,$lat,$long,$local){
         
         $s=Admin::validate($token, $email);
@@ -277,7 +312,7 @@ class Admin  {
     }
 
     /**
-     * Short description of method actualiza_inf_condutor
+     * Short description of method actualiza_inf_condutor: atualiza campo do condutor
      *
      * @access public
      * @author  <author@example.org>
@@ -356,11 +391,15 @@ class Admin  {
     }
 
     /**
-     * method reserva_veiculo: reserva um veiculo para uma nova viagem
-     *
+     * method reserva_veiculo: reserva um veiculo para uma nova viagem do utilizador
+     * @param string $email email do user
+     * @param string $token token do user
+     * @param string $id id do carro a alugar
+     * @param string $locali de onde se encontra a pessoa
+     * @param string $localfin local de destino
      * @access public
      * @author  <author@example.org>
-     * @return String
+     * @return String correspondete à token da viagem ou se preferir mos , referencia
      */
     public static function reserva_viagem($email,$token,$id,$locali,$localfin){
 //        echo "teste1";
@@ -431,6 +470,16 @@ class Admin  {
         return "nao validou";
     }
     
+     /**
+     * method calculapreco: calcula o preco para uma diferença de latitudes
+     * @param string $locali de onde se encontra a pessoa
+     * @param string $localfin local de destino
+     * @access public
+     * @author  <author@example.org>
+     * @return float correspondente ao preço final da viagem
+     */
+    
+    
      public static function calculapreco($locali,$localfin){
          
          $url ="https://maps.googleapis.com/maps/api/geocode/json?address='".$locali."'&key=AIzaSyDHRTOa0Qh0eq1JTJCRpkn_2Xkv-xgWvlg";
@@ -454,12 +503,20 @@ class Admin  {
          
      }
 
-    /**
-     * method registar_veiculo: regista um novo veiculo
-     *
+     /**
+     * method regista_veiculo: regista um novo veiculo associando-o a um condutor ja criado na bd
+     * @param string $email email do gestor
+     * @param string $token token do gestor
+     * @param string $idc id do condutor a associar
+     * @param string $estado estado atual do carro
+     * @param string $local localidade onde se encontra o carro
+      * @param float $lat latitude do carro
+      * @param float $long longitude do carro
+      * @param int $cap capacidade do carro
+      * @param string $img url ou link para uma possivel imagem 
      * @access public
-     * @author <author@example.org>
-     * @return String
+     * @author  <author@example.org>
+     * @return String 
      */
     public function regista_veiculo($token,$email,$matricula,$idc,$estado,$local,$lat,$long,$cap,$img) {
         /*
@@ -521,6 +578,11 @@ class Admin  {
         mysqli_close($conn);
      
     }
+     /**
+     * method connection: establece uma ligação à bd
+     * 
+     * @return String corresponde à ligação feita à bd
+     */
     
     public static function connection(){
         $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
@@ -578,13 +640,7 @@ class Admin  {
         return $veiculos;*/
     }
 
-    /**
-     * method listAll: lista todos os gestores registados
-     *
-     * @access public
-     * @author  <author@example.org>
-     * @return array
-     */
+   
     public function listAll() {
         $conn = mysqli_connect("127.0.0.1","root","12345","dbws1");
         if($conn==0){
@@ -601,7 +657,16 @@ class Admin  {
         mysqli_close($conn);
         return $gestor;
     }
-    
+
+     /**
+     * method PagaUser: confirma o pagamento e altera o estado da viagem 
+     * @param string $email email do user
+     * @param string $token token do user
+     * @param string $tokenvi token da viagem a pagar
+     * @access public
+     * @author  <author@example.org>
+     * @return String 
+     */
      public function PagaUser($email,$token,$tokenvi) {
          $resultado=Admin::validateUser($email,$token);
          if($token==$resultado){
@@ -618,6 +683,14 @@ class Admin  {
          return "Sem Sucesso!!!!";
      }
     
+      /**
+     * method listAllCars: Lista todos os carros da Bd
+     * @param string $token email do gestor
+     * @param string $email token do admin
+     * @access public
+     * @author  <author@example.org>
+     * @return array 
+     */
     
     
     public function listAllCars($token,$email) {
@@ -640,7 +713,18 @@ class Admin  {
        }
       
     }
-    
+     /**
+     * method alterainfo : altera uma info qualquer de uma dada tabela com um dado valor
+     * @param string $token email do gestor
+     * @param string $email token do gestor
+     * @param string $tabela id do sujeito a alterar
+     * @param string $campo tabela onde está o campo a alterar
+     * @param string $valor campo a alterar
+     * @param string $id valor novo a colocar
+     * @access public
+     * @author  <author@example.org>
+     * @return String 
+     */
     public static function alterainfo($token,$email,$tabela,$campo,$valor,$id){
         $resultado=Admin::validate($token,$email);
         if($token==$resultado){
@@ -693,7 +777,7 @@ class Admin  {
 //        echo "<br>";
 //        echo $var;
         
-        $query = "select * from veiculo where estado='Ocupado' and lat<'".$latsuperior."' and lat>'".$latinferior."' and veiculo.long<'".$lonsuperior."' and veiculo.long>'".$loninferior."' ;";
+        $query = "select * from veiculo where estado='Livre' and lat<'".$latsuperior."' and lat>'".$latinferior."' and veiculo.long<'".$lonsuperior."' and veiculo.long>'".$loninferior."' ;";
 //        echo $query;
         $result = mysqli_query($conn, $query);
         
@@ -703,7 +787,7 @@ class Admin  {
         }
 
         mysqli_close($conn);
-        return $veiculo;
+        return array('result'=>$veiculo);
     }
     
     public function HistoricUser($email,$token){
@@ -807,7 +891,7 @@ $ws->server->register('Admin.findNameCondutor', // method name
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo user'            // documentation
+    'procura o nome do condutor pelo id'            // documentation
 );
 
 
@@ -818,7 +902,7 @@ $ws->server->register('Admin.listAllCars', // method name
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo gestor'            // documentation
+    'Lista todos os carros da bd ao gestor'            // documentation
 );
 
         
@@ -829,7 +913,7 @@ $ws->server->register('Admin.listAllCars', // method name
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo gestor'            // documentation
+    'Lista todos os carros perto do user'            // documentation
 );
 
 $ws->server->register('Admin.testa', // method name
@@ -849,7 +933,7 @@ $ws->server->register('Admin.validate', // method name
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo gestor'            // documentation
+    'valida adminr'            // documentation
 ); 
 
 $ws->server->register('Admin.validateUser', // method name
@@ -859,7 +943,7 @@ $ws->server->register('Admin.validateUser', // method name
     'urn:projectWS1wsdl#registar', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo gestor'            // documentation
+    'valida user'            // documentation
 ); 
 
 
@@ -932,7 +1016,7 @@ $ws->server->register('Admin.testeme', // method name
     'urn:projectWS1wsdl#getUserQuery', // soapaction
     'rpc', // style
     'encoded', // use
-    'regista um novo veiculo'            // documentation
+    'teste'            // documentation
 );
 
 $ws->server->register('Admin.reserva_viagem', // method name
@@ -952,7 +1036,7 @@ $ws->server->register('Admin.novalocal', // method name
     'urn:projectWS1wsdl#getUserQuery', // soapaction
     'rpc', // style
     'encoded', // use
-    'reserva um veiculo para uma nova viagem'            // documentation
+    'novo local para um veiculo'            // documentation
 );
 
 $ws->server->register('Admin.alterainfo', // method name
@@ -962,7 +1046,7 @@ $ws->server->register('Admin.alterainfo', // method name
     'urn:projectWS1wsdl#getUserQuery', // soapaction
     'rpc', // style
     'encoded', // use
-    'reserva um veiculo para uma nova viagem'            // documentation
+    'altera um dado campo de uma dada tabela por um dado valor'            // documentation
 );
 
 
@@ -983,7 +1067,7 @@ $ws->server->register('Admin.HistoricUser', // method name
     'urn:projectWS1wsdl#getUserQuery', // soapaction
     'rpc', // style
     'encoded', // use
-    'muda o estado da viagem para pago'            // documentation
+    'Historico de compras do user'            // documentation
 );
 
 
